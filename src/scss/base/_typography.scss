@@ -1,0 +1,118 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $font-default;
+	font-weight: normal;
+	line-height: 1.35em;
+	margin-bottom: 15px;
+	color: $black;
+}
+
+h1,
+.h1 {
+	color: $white;
+	font-size: 44px;
+	@media (max-width: $breakpointMedium) {
+		font-size: 36px;
+	}
+	@media (max-width: $breakpointSmall) {
+		font-size: 24px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: 44px;
+	font-weight: $semi-bold;
+	@media (max-width: $breakpointSmall) {
+		font-weight: $medium;
+		margin-bottom: 20px;
+	}
+}
+
+h3,
+.h3 {
+	font-size: 30px;
+	font-weight: $medium;
+}
+
+h4,
+.h4 {
+	font-size: 24px;
+	font-weight: 400;
+	@media (max-width: $breakpointSmall) {
+		font-size: 20px;
+	}
+}
+
+h5,
+.h5 {
+	font-size: 20px;
+}
+
+h6,
+.h6 {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+
+p {
+	margin-bottom: 15px;
+	font-size: 20px;
+
+	a {
+		@include hover {
+			text-decoration: none;
+		}
+	}
+}
+
+blockquote {
+	padding: 60px 0 60px 60px;
+	margin-bottom: 20px;
+	font-style: normal;
+	position: relative;
+	&::after {
+		position: absolute;
+		font-family: 'svgicons';
+		content: font-char($quote);
+		// color: $green;
+		top: 0;
+		left: 0;
+		transform: rotate(180deg) translate(17%, -18%);
+		font-size: 86px;
+	}
+	p {
+		font-size: 28px;
+		margin-bottom: 20px;
+		&:last-of-type {
+			margin-bottom: 20px;
+		}
+	}
+	span i {
+		font-weight: $light;
+	}
+}
+
+ul {
+	padding-left: 20px;
+	list-style-type: none;
+}
+
+ol {
+	padding-left: 20px;
+}
+
+img {
+	max-width: 100%;
+}

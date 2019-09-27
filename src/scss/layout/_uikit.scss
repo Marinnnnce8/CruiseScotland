@@ -1,0 +1,48 @@
+// a, .uk-link {
+// 	// color: $red;
+// }
+
+.uk-logo {
+
+	img {
+		width: 228px;
+	}
+}
+
+.uk-navbar,
+.uk-navbar-left,
+.uk-navbar-right {
+
+	@media (max-width: $breakpointMobile) {
+		display: block;
+		text-align: center;
+	}
+}
+
+.uk-navbar-nav {
+
+	@media (max-width: $breakpointMobile) {
+		justify-content: center;
+		overflow: auto;
+	}
+}
+
+.uk-text-lead {
+	color: $black;
+	font-size: 26px;
+	font-weight: $medium;
+
+	a {
+		font-size: inherit;
+		font-weight: inherit;
+		color: $midblue;
+		@include hover {
+			text-decoration: underline;
+		}
+	}
+}
+.uk-text-strong {
+	font-size: 24px;
+	color: $black;
+	font-weight: $medium;
+}

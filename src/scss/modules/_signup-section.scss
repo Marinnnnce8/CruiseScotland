@@ -1,0 +1,67 @@
+.signup-section {
+    padding: 80px 0 60px;
+}
+
+.signup-inner {
+    text-align: center;
+    h2, span {
+        color: $white;
+    }
+    h2 {
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    span {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: $light;
+    }
+    .social-btn {
+        background: transparent;
+        .uk-icon, svg {
+            color: $white;
+        }
+    }
+    @media (max-width: $breakpointLarge) {
+        width: 70%;
+    }
+}
+
+.signup-wrap {
+    background: $white;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    position: relative;
+    padding: 5px;
+    input {
+        padding: 25px 185px 25px 15px;
+        border-radius: 50px;
+        border: 0;
+        background: $white;
+        width: 100%;
+    }
+    .uk-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        z-index: 1;
+        border: 0;
+    }
+    @media (max-width: $breakpointMedium) {
+        background: transparent;
+        border-radius: 0;
+        input {
+            margin-bottom: 10px;
+        }
+        .uk-button {
+            position: static;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            z-index: 1;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,238 @@
+a,
+button {
+	appearance: none;
+	outline: none;
+	&:focus {
+		outline: 1px dashed rgba($midblue, .2) !important;// sass-lint:disable-line no-important
+	}
+	@media (max-width: $breakpointLarge) {
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+}
+
+.uk-button {
+	background: $midblue;
+	border: 4px solid transparent;
+	border-radius: 50px;
+	position: relative;
+	color: $white;
+	cursor: pointer;
+	font-weight: $semi-bold;
+	font-size: 14px;
+	padding: 5px 45px 5px 25px;
+	text-transform: uppercase;
+	transition: $nbSec ease-in-out;
+	text-align: left;
+	min-width: 180px;
+	&:focus {
+		outline: 1px dashed rgba($skyblue, .2);
+	}
+
+	.uk-icon {
+		position: absolute;
+		top: 50%;
+		color: $white;
+		right: 15px;
+		transform: translateY(-50%);
+		transition: $nbSec ease-in-out;
+		z-index: 1;
+	}
+
+	@include hover {
+		background: rgba($midblue, .8);
+		color: $white;
+
+		.uk-icon {
+			color: $white;
+		}
+	}
+
+	@media (max-width: $breakpointLarge) {
+		font-size: 12px;
+		padding: 5px 40px 5px 15px;
+
+		.uk-icon {
+			right: 5px;
+		}
+	}
+
+	@media (max-width: $breakpointMedium) {
+		padding: 5px 31px 5px 15px;
+	}
+}
+
+.uk-button--green {
+	// background: $green;
+
+	@include hover {
+		// background: rgba($green, .8);
+		color: $white;
+
+		svg {
+			color: $white;
+		}
+	}
+}
+
+.uk-button--white {
+	background: $white;
+	border: 4px solid $skyblue;
+	color: $blue;
+	position: relative;
+
+	>.uk-icon {
+		color: $skyblue;
+
+		svg {
+			color: $skyblue;
+		}
+	}
+
+	@include hover {
+		background: $overlayblue;
+		color: $blue;
+
+		>.uk-icon {
+			color: $black;
+			transition: $nbSec ease-in-out;
+
+			svg {
+				color: $black;
+			}
+		}
+	}
+}
+
+.social-btn {
+	width: 40px;
+	height: 40px;
+	border: 3px solid $midblue;
+	background: $white;
+	border-radius: 50px;
+	position: relative;
+	display: inline-block;
+	margin-right: 5px;
+	color: $midblue;
+	transition: $nbSec ease-in-out;
+
+	.uk-icon, svg {
+		color: $midblue;
+	}
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@include hover {
+		transform: scale(1.1);
+	}
+}
+
+.social-btn--twitter {
+	border: 3px solid $twitter-blue;
+	color: $twitter-blue;
+
+	.uk-icon, svg {
+		color: $twitter-blue;
+	}
+}
+
+.social-btn--mail {
+	// border: 3px solid $icon-grey;
+	// color: $icon-grey;
+
+	.icon-staglobe {
+		// color: $icon-grey;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@include hover {
+		// color: $icon-grey;
+		box-shadow: none;
+	}
+}
+
+.text-button {
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	padding: 0 15px 0 0;
+	font-family: $font-default;
+	color: $ui-blue;
+
+	span {
+		position: absolute;
+		top: 50%;
+		transform: translate(50%, -50%);
+		right: 0;
+		color: $skyblue;
+	}
+
+	@include hover {
+		text-decoration: underline;
+		opacity: .8;
+	}
+}
+
+.text-button--white {
+	color: $white;
+
+	@include hover {
+		opacity: 1;
+	}
+}
+
+.check-button {
+	width: 35px;
+	height: 35px;
+	background: $ui-blue;
+	border-radius: 50%;
+	position: relative;
+	padding: 0;
+	min-width: 35px;
+
+	.icon-stacorrect-symbol {
+		text-align: center;
+
+		&::before {
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+			z-index: 1;
+			width: 30px;
+		}
+	}
+}
+
+.listing-button {
+	line-height: 0;
+	padding: 13px 35px 13px 15px;
+	position: relative;
+
+	.icon-stacorrect-symbol {
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		right: 0;
+		width: 14px;
+	}
+}

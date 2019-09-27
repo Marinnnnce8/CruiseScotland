@@ -1,0 +1,69 @@
+.contact-section {
+	padding: 100px 0 60px;
+
+	.contact-item:first-of-type {
+		margin-bottom: 30px;
+	}
+
+	.uk-logo {
+		max-width: 250px;
+		margin-right: 60px;
+	}
+
+	.uk-button {
+		flex: 1 0 30%;
+
+		&:nth-of-type(2) {
+			margin: 0 10px;
+		}
+	}
+
+	@media (max-width: $breakpointMedium) {
+		.uk-logo {
+			max-width: 45%;
+		}
+	}
+
+	@media (max-width: $breakpointSmall) {
+		.uk-logo {
+			margin-right: 0;
+		}
+		.contact-item {
+			flex-direction: column;
+
+			img {
+				margin-bottom: 15px;
+			}
+		}
+
+		.uk-button:nth-of-type(2) {
+			margin: 0;
+		}
+	}
+}
+
+.contact-details {
+	border-top: 7px solid $babyblue;
+	border-bottom: 2px solid $babyblue;
+	padding: 20px 0;
+
+	.h3 {
+		display: block;
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	span:not(:first-of-type) {
+		color: $black;
+		font-size: 18px;
+	}
+
+	a {
+		color: $black;
+		font-weight: $light;
+	}
+
+	@media (max-width: $breakpointSmall) {
+		margin: 0 auto;
+	}
+}

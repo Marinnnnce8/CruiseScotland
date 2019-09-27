@@ -1,0 +1,63 @@
+$font-default: 'Aileron', sans-serif;
+$font-black: 'Aileron Black', sans-serif;
+$font-heavy: 'Aileron Heavy', sans-serif;
+$bold: 700;
+$semi-bold: 600;
+$medium: 500;
+$light: 300;
+$extra-light: 200;
+
+
+$breakpointSmall: 640px;
+$breakpointMedium: 960px;
+$breakpointLarge: 1200px;
+$breakpointXlarge: 1600px;
+$breakpointXsmallMax: ($breakpointSmall - 1);
+$breakpointSmallMax: ($breakpointMedium - 1);
+$breakpointMediumMax: ($breakpointLarge - 1);
+$breakpointLargeMax: ($breakpointXlarge - 1);
+$breakpointMobile: 479px;
+
+
+$nbCent: 37%;
+$nbSec: 256ms;
+
+$nbSpace: 2.5rem;
+$nbSpaceSmall: $nbSpace * 0.6;
+$nbSpaceXsmall: $nbSpace * 0.3;
+$nbSpaceLarge: $nbSpace * 1.4;
+$nbSpaceXlarge: $nbSpace * 2;
+$nbGutter: $nbSpace * 0.2;
+$nbGutterSmall: $nbGutter / 2;
+$nbGutterXsmall: $nbGutterSmall / 2;
+
+$white: #fff;
+$black: #241d1e;
+$blue: #26b4e9;
+$midblue: #3165b0;
+$downblue: #007db3;
+$lightblue: #68cbf0;
+$softblue: #e9f7fd;
+$skyblue: #93c3eb;
+$tableblue: #dce7f7;
+$pastelblue: #eaf7ff;
+$overlayblue: #a6dbfb;
+$babyblue: #dbe7f7;
+$dark-blue: #01215a;
+$twitter-blue: #1da1f2;
+$ui-blue: #3165b0;
+$grey-dark: #333;
+$grey: lighten($black, $nbCent);
+$lightGrey: lighten($grey, $nbCent);
+
+$site-colors: (
+	'black': $black,
+	'white': $white
+) !default;
+
+$nbSpeed: $nbSec;
+$nbSpeedShort: $nbSpeed / 2;
+$nbSpeedLong: $nbSpeed * 2;
+
+$quote: 'ico-quote';
+
