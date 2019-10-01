@@ -32,14 +32,32 @@
 	@if $filename == ico-arrow-right {
 		$char: '\E002';
 	}
-	@if $filename == ico-chevron-down {
+	@if $filename == ico-bollard {
 		$char: '\E003';
 	}
-	@if $filename == ico-phone {
+	@if $filename == ico-calendar {
 		$char: '\E004';
 	}
-	@if $filename == ico-quote {
+	@if $filename == ico-chevron-down {
 		$char: '\E005';
+	}
+	@if $filename == ico-email {
+		$char: '\E006';
+	}
+	@if $filename == ico-linkedin {
+		$char: '\E007';
+	}
+	@if $filename == ico-medal {
+		$char: '\E008';
+	}
+	@if $filename == ico-news {
+		$char: '\E009';
+	}
+	@if $filename == ico-phone {
+		$char: '\E00A';
+	}
+	@if $filename == ico-quote {
+		$char: '\E00B';
 	}
 
 	@return $char;
@@ -66,8 +84,26 @@
 .font-ico-arrow-right {
 	@include font(ico-arrow-right);
 }
+.font-ico-bollard {
+	@include font(ico-bollard);
+}
+.font-ico-calendar {
+	@include font(ico-calendar);
+}
 .font-ico-chevron-down {
 	@include font(ico-chevron-down);
+}
+.font-ico-email {
+	@include font(ico-email);
+}
+.font-ico-linkedin {
+	@include font(ico-linkedin);
+}
+.font-ico-medal {
+	@include font(ico-medal);
+}
+.font-ico-news {
+	@include font(ico-news);
 }
 .font-ico-phone {
 	@include font(ico-phone);

@@ -1,100 +1,41 @@
 .banner-section {
 	min-height: 100vh;
 	position: relative;
+	.uk-container {
+		position: relative;
+		min-height: 100vh;
+	}
 }
 
 .banner-inner {
-	padding: 150px 0;
-	width: 55%;
-
-	h1 {
-		margin-bottom: 70px;
-		color: $black;
-	}
-
-	@media (max-width: $breakpointLarge) {
-		padding: 125px 30px 70px 0;
-		width: 100%;
-	}
-
-	@media (max-width: $breakpointSmall) {
-		padding: 55px 0 30px;
-		width: 100%;
-
-		h1 {
-			margin-bottom: 50px;
-		}
-
-		.uk-button:first-of-type {
-			margin-right: 5px;
-		}
-	}
-}
-
-.banner-box {
-	padding: 0 0 200px 100px;
-
-	@media (max-width: $breakpointSmall) {
-		padding: 0 0 50px 50px;
-	}
-}
-
-.banner-wrap {
-	.banner-item {
-		text-align: center;
-		flex: 1;
-		padding: 0 27px;
-
-		img {
-			margin-bottom: 20px;
-			filter: drop-shadow(6px 6px 10px $grey);
-			width: 100px;
-			height: auto;
-		}
-
-		span {
-			display: block;
-			font-weight: $medium;
-
-			&:first-of-type {
-				color: $black;
-				margin-bottom: 15px;
-				font-size: 24px;
-			}
-		}
-
-		p {
-			font-size: 16px;
-		}
-
-		@media (max-width: $breakpointSmall) {
-			margin-bottom: 70px;
-			padding: 0 15px 0 0;
-
-			&:last-of-type {
-				padding: 0;
-			}
-
-			img {
-				width: 40px;
-			}
-
-			span:first-of-type {
-				font-size: 16px;
-			}
-
-			p {
-				display: none;
-			}
-		}
-	}
-}
-
-.banner-svg {
 	position: absolute;
-	width: 50%;
-	right: 0;
-	top: 0;
 	bottom: 0;
-	z-index: 1;
+	left: 40px;
+	width: calc(100% - 80px);
+
+	>span {
+		color: $white;
+		font-weight: $light;
+		font-size: 34px;
+		display: block;
+		margin-bottom: 40px;
+	}
+
+	.uk-flex {
+		span {
+			position: absolute;
+			right: 0;
+			font-weight: $light;
+			font-size: 14px;
+			color: $white;
+		}
+	}
+
+	// @media (max-width: $breakpointLarge) {
+
+	// }
+
+	// @media (max-width: $breakpointSmall) {
+		
+	// }
 }

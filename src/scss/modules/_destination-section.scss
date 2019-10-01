@@ -1,0 +1,261 @@
+.destination-section {
+	padding: 30px 0 0;
+	position: relative;
+
+	h2,
+	span,
+	a,
+	p {
+		color: $white;
+	}
+	.uk-container {
+		padding-bottom: 140px;
+		position: relative;
+	}
+}
+
+.destination-text-wrap {
+	padding-right: 295px;
+	position: relative;
+}
+
+.destination-text {
+	padding: 110px 200px 0 0;
+
+	span {
+		font-weight: $light;
+		display: block;
+		margin-bottom: 15px;
+
+		&:last-of-type {
+			font-family: $font-black;
+			font-size: 20px;
+		}
+	}
+
+	h2 {
+		margin: 0 0 40px;
+		font-family: $font-black;
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 85px;
+	}
+}
+
+.destination-map {
+	position: relative;
+
+	img {
+		width: 100%;
+		max-width: 340px;
+	}
+}
+
+.pin {
+	transform: rotate(-45deg);
+	transform-origin: 50% 50%;
+	border-radius: 50% 50% 50% 0;
+	padding: 0 3px 3px 0;
+	width: 40px;
+	height: 40px;
+	background: $blue;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	box-shadow: -1px 1px 4px rgba($black, .5);
+	transition: $nbSpeed ease-in-out;
+	z-index: 2;
+
+	&::before {
+		color: $white;
+		transform: rotate(45deg) translateX(-70%);
+		font-size: 16px;
+		left: 50%;
+		top: 50%;
+		position: absolute;
+		transition: $nbSpeed ease-in-out;
+	}
+
+	@include hover {
+		background: $white;
+		transform: rotate(-45deg) scale(1.05);
+
+		&::before {
+			color: $dark-blue;
+		}
+	}
+}
+
+.pin--active {
+	background: $white;
+	width: 45px;
+	height: 45px;
+
+	&::before {
+		color: $dark-blue;
+	}
+}
+
+.beacon {
+	position: absolute;
+	top: 73%;
+	left: 9%;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+.beacon::before,
+.beacon::after {
+	position: absolute;
+	content: '';
+	height: 15px;
+	width: 15px;
+	left: 0;
+	top: 0;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px $blue;
+	animation: active 2s infinite linear;
+}
+
+.beacon::after {
+	animation-delay: 1s;
+}
+
+@keyframes active {
+	0% {
+		transform: scale(.1) box-shadow(0 0 0 1px $blue);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(3.5);
+		opacity: 0;
+	}
+}
+
+.destination-card {
+	position: absolute;
+	right: 0;
+	top: 140px;
+	z-index: 3;
+	width: 290px;
+
+	.uk-card-media-top {
+		position: relative;
+
+		span,
+		button {
+			position: absolute;
+			z-index: 4;
+		}
+
+		span {
+			color: $white;
+
+			&:first-of-type {
+				top: 20px;
+				left: 20px;
+				width: 30px;
+			}
+
+			&:last-of-type {
+				left: 20px;
+				bottom: 20px;
+				font-family: $font-black;
+				font-size: 20px;
+			}
+		}
+
+		button {
+			background: $white;
+			top: 0;
+			right: 0;
+			width: 30px;
+			height: 30px;
+
+			svg {
+				width: 14px;
+			}
+		}
+	}
+
+	.uk-card-body {
+		min-height: 120px;
+		padding: 25px 20px 15px;
+		position: relative;
+
+		.uk-flex {
+			&:last-of-type {
+				margin-bottom: 18px;
+			}
+
+			span {
+				display: inline-block;
+
+				&:first-of-type {
+					font-size: 12px;
+					color: $grey;
+				}
+
+				&:last-of-type {
+					font-size: 14px;
+					color: $black;
+					margin-left: 12px;
+				}
+			}
+		}
+	}
+
+	.uk-button-secondary {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 50px;
+		width: 50px;
+
+		svg {
+			width: 25px;
+		}
+	}
+}
+
+.destination-members {
+	>span {
+		font-size: 12px;
+		font-family: $font-black;
+		display: block;
+		margin-bottom: 7px;
+	}
+
+	ul {
+		width: 100%;
+		li {
+			margin-bottom: 1px;
+			width: 100%;
+
+			button {
+				background: $blue-navy;
+				color: $white;
+				padding: 10px 20px 10px 50px;
+				position: relative;
+				font-family: $font-black;
+				font-size: 14px;
+				width: 100%;
+
+				&::before {
+					position: absolute;
+					top: 50%;
+					left: 15px;
+					transform: translateY(-50%);
+					width: 20px;
+				}
+			}
+		}
+	}
+}

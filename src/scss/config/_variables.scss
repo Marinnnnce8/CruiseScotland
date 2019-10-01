@@ -5,8 +5,8 @@ $bold: 700;
 $semi-bold: 600;
 $medium: 500;
 $light: 300;
-$extra-light: 200;
-
+$thin: 100;
+$italic: italic;
 
 $breakpointSmall: 640px;
 $breakpointMedium: 960px;
@@ -32,6 +32,8 @@ $nbGutterSmall: $nbGutter / 2;
 $nbGutterXsmall: $nbGutterSmall / 2;
 
 $white: #fff;
+$green-positive: #cffff3;
+$green: #4ecdad;
 $black: #241d1e;
 $blue: #26b4e9;
 $midblue: #3165b0;
@@ -40,15 +42,24 @@ $lightblue: #68cbf0;
 $softblue: #e9f7fd;
 $skyblue: #93c3eb;
 $tableblue: #dce7f7;
-$pastelblue: #eaf7ff;
+$pastelblue: #dff4fc;
+$blueprominent: #c5efff;
 $overlayblue: #a6dbfb;
 $babyblue: #dbe7f7;
-$dark-blue: #01215a;
+$blue-navy: #0f71a5;
+$dark-blue: #065090;
 $twitter-blue: #1da1f2;
 $ui-blue: #3165b0;
+$red: #e11e2f;
+$red-error: #ffc5c5;
+$grey: #848484;
+$grey-input-text: #a9acad;
+$grey-input: #eff4f6;
 $grey-dark: #333;
 $grey: lighten($black, $nbCent);
 $lightGrey: lighten($grey, $nbCent);
+$warning: #ffe4c1;
+$warning-dark: #ffb453;
 
 $site-colors: (
 	'black': $black,

@@ -6,7 +6,7 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 	<meta name='format-detection' content='telephone=no'>
 
-	<title>Cruise Scotland</title>
+	<title>Styleguide</title>
 	<meta name='description' content='This is a meta description'>
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -23,103 +23,148 @@
 <body>
 
 	<header class="header">
-		<div class="uk-container uk-container-expand">
-			<nav data-uk-navbar class="uk-navbar">
-				<div class="uk-navbar-left">
-					<a href="javascript:;" class="uk-navbar-item uk-logo">
-						<img src="./images/logo.png" alt="home logo">
-					</a>
-				</div>
-				<div class="uk-navbar-right uk-flex-wrap-bottom">
-					<ul class="uk-navbar-nav uk-padding uk-padding-remove-bottom">
-						<li class="uk-parent">
-							<a href="javascript:;" aria-expanded="false" class="nav-link">Members</a>
-						</li>
-						<li class="uk-parent">
-							<a href="javascript:;" aria-expanded="false" class="nav-link">Public news</a>
-						</li>
-						<li class="uk-parent nav-parent--sub">
-							<a href="javascript:;" aria-expanded="false" class="nav-link">About us</a>
-						</li>
-						<li class="uk-parent nav-parent--sub">
-							<a href="javascript:;" aria-expanded="false" class="nav-link">Strategy</a>
-						</li>
-						<li class="uk-parent nav-parent--sub">
-							<a href="javascript:;" aria-expanded="false" class="nav-link">Links</a>
-						</li>
-						<li class="uk-parent nav-parent--sub nav-parent--last">
-							<a href="javascript:;" aria-expanded="false" class="nav-link">Contact us</a>
-						</li>
-						<li class="uk-parent uk-parent--dropdown uk-hidden@l uk-visible@s">
-							<button aria-expanded="false" class="nav-link push-icon-right js-toggle-dropdown">More<span
-									data-uk-icon="triangle-down" role="presentation"></span></button>
-							<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
+		<nav data-uk-navbar>
+			<div class="uk-navbar-left uk-logo">
+				<img class="uk-visible@l" src="./images/logo.png" alt="home logo">
+				<img class="uk-hidden@l" src="./images/logo_tablet.jpg" alt="home logo">
+			</div>
+			<div class="uk-flex">
+				<div class="uk-flex-wrap-bottom uk-flex uk-flex-column">
+					<div class="uk-flex uk-flex-between">
+						<span class="nav-info uk-visible@s">Information for Scotland's cruise Industry partners</span>
+						<ul class="uk-flex nav-social">
+							<li>
+								<a href="#"><span class="uk-visible@l">Follow us on</span></a>
+							</li>
+							<li>
+								<a href="#"><span class="uk-visible@l">Members area</span></a>
+							</li>
+						</ul>
+					</div>
+					<ul class="uk-navbar-nav uk-flex-middle">
+						<li class="uk-parent uk-parent--dropdown">
+							<button class="js-toggle-dropdown">Why
+								Scotland?<span data-uk-icon="triangle-down" class="uk-visible@s"
+									role="presentation"></span>
+								<span data-uk-icon="triangle-right" class="uk-hidden@s"
+									role="presentation"></span></button>
+							<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" id="nav-children-1">
 								<ul class="uk-nav uk-navbar-dropdown-nav">
-									<li><a href="javascript:;">About us<span data-uk-icon="triangle-right"
-												role="presentation"></span></a></li>
-									<li><a href="javascript:;">Strategy<span data-uk-icon="triangle-right"
-												role="presentation"></span></a></li>
-									<li><a href="javascript:;">Links<span data-uk-icon="triangle-right"
-												role="presentation"></span></a></li>
-									<li><a href="javascript:;">Contact us<span data-uk-icon="triangle-right"
-												role="presentation"></span></a></li>
+									<li class="uk-hidden@s"><button
+											data-uk-toggle="target: #nav-children-1; animation: true">Back<span
+												data-uk-icon="triangle-left" role="presentation"></span></li>
+									<li class="uk-hidden@s"><span class="uk-text-uppercase">Why scotland</span></li>
+									<li><a href="#">History, Heritage, Myths & Legends</a></li>
+									<li><a href="#">Stunning Scenery</a></li>
+									<li><a href="#">Golf</a></li>
+									<li><a href="#">Activities</a></li>
+									<li><a href="#">Wildlife</a></li>
+									<li><a href="#">Cultural Cities</a></li>
 								</ul>
 							</div>
 						</li>
-						<li class="navbar-contact uk-hidden@s">
-							<a href="tel:+4401853989233">+44 (0) 1853 989 233 <span class="font-ico-phone"
-									role="presentation"></span></a>
+						<li class="uk-parent uk-parent--dropdown">
+							<button class="js-toggle-dropdown">Destinations<span data-uk-icon="triangle-down"
+									class="uk-visible@s" role="presentation"></span>
+								<span data-uk-icon="triangle-right" class="uk-hidden@s"
+									role="presentation"></span></button>
+							<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" id="nav-children-2">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li class="uk-hidden@s"><button
+											data-uk-toggle="target: #nav-children-2; animation: true">Back<span
+												data-uk-icon="triangle-left" role="presentation"></span></li>
+									<li class="uk-hidden@s"><span class="uk-text-uppercase">Why scotland</span></li>
+									<li><a href="#">History, Heritage, Myths & Legends</a></li>
+									<li><a href="#">Stunning Scenery</a></li>
+									<li><a href="#">Golf</a></li>
+									<li><a href="#">Activities</a></li>
+									<li><a href="#">Wildlife</a></li>
+									<li><a href="#">Cultural Cities</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="uk-parent uk-parent--dropdown">
+							<button class="js-toggle-dropdown">Members<span data-uk-icon="triangle-down"
+									class="uk-visible@s" role="presentation"></span>
+								<span data-uk-icon="triangle-right" class="uk-hidden@s"
+									role="presentation"></span></button>
+							<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" id="nav-children-3">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li class="uk-hidden@s"><button
+											data-uk-toggle="target: #nav-children-3; animation: true">Back<span
+												data-uk-icon="triangle-left" role="presentation"></span></li>
+									<li class="uk-hidden@s"><span class="uk-text-uppercase">Members</span></li>
+									<li><a href="#">Port Members</a></li>
+									<li><a href="#">Other Members</a></li>
+									<li><a href="#">Associate Members</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">News</a>
+						</li>
+						<li class="nav-hidden-tablet">
+							<a href="#">About us</a>
+						</li>
+						<li class="nav-hidden-tablet">
+							<a href="#">Contact</a>
+						</li>
+						<li class="uk-parent uk-parent--dropdown uk-hidden@l uk-visible@s">
+							<button class="js-toggle-dropdown">More<span data-uk-icon="triangle-down"
+									role="presentation"></span></button>
+							<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
+								<ul class="uk-nav uk-navbar-dropdown-nav">
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</div>
 						</li>
 					</ul>
-					<div class="uk-navbar-item uk-flex-column uk-visible@s">
-						<a href="javascript:;" class="uk-button uk-button--green push-icon-right uk-width-1-1">
-							MEMBERS AREA<span data-uk-icon="triangle-right" role="presentation"></span>
-						</a>
-						<a href="javascript:;" class="uk-button uk-button--white push-icon-right uk-width-1-1">
-							BECOME A MEMBER<span data-uk-icon="triangle-right" role="presentation"></span>
-						</a>
-					</div>
 					<button class="js-toggle-nav uk-navbar-toggle uk-hidden@s" data-uk-navbar-toggle-icon></button>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 	</header>
 
 
 	<main class='nb-main'>
-		<section class="uk-background-cover banner-section uk-flex uk-flex-bottom"
-			style="background-image: url('assets/images/gallery-4.jpg')" data-uk-img>
-			<div class="banner-box">
-				<h1>This is the headline</h1>
-				<h1>In lorem ipsum</h1>
+		<section data-uk-img class="uk-background-cover banner-section" style="background-image: url('/images/home_banner.jpg')"
+			data-uk-img>
+			<div class="uk-container uk-container-small">
+				<div class="banner-inner">
+					<span>About</span>
+					<h1>Standard internal page with style guide</h1>
+					<div class="uk-flex">
+						<a href="#" download class="uk-button uk-button-secondary" aria-label="Click to download file"
+							data-uk-icon="arrow-down"></a>
+					</div>
+				</div>
 			</div>
 		</section>
 		<div class='uk-container uk-container-small'>
-			<ul class="sta-breadcrumb uk-flex">
-				<li><a href="javascript:;">Home <span data-uk-icon="triangle-right"></span></a></li>
-				<li><a href="javascript:;" class="breadcrumb--active">Meet our members</a></li>
+			<ul class="uk-breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><span>Standard internal page with style guide</span></li>
 			</ul>
 			<p class="uk-text-lead">
-				Busta House has stood proud over the <a href="javascript:;">Busta coastline</a> since the 16th century.
-				As Shetland's leading
-				country house hotel, we want you to relax from start to finish and enjoy a special holiday.
+				This is some lead text to introduce the styleguide. It should gently catch the user's eye, initiating
+				the reading of the main page content.
 			</p>
 
 			<div class='nb-block nb-content uk-clearfix' data-nb-block='content'>
 
-				<p>Busta House is run top to bottom by whose passion for our home is matched only by our hospitality.
-					The experience our guests have is always at the very top of our list of priorities.
-					No matter how far you might have travelled, you can be assured that you will arrive through our
-					doors and feel an instant comfort, as though you have arrived at your very own Scottish island home.
-				</p>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+					deleniti
+					atque corrupti quos dolores et quas molestias example link occaecati cupiditate non provident,
+					similique
+					sunt in culpa qui officia deserunt mollitia animi id est laborum et dolorum fuga. Et harum quidem
+					rerum
+					facilis est et expedita distinctio.</p>
 
-				<figure class="align_center hidpi">
-					<a href="https://aws.nbcommunication.com/template/img/placeholder-castle-banner.jpg">
-						<img alt="This is a centre aligned image"
-							src="https://aws.nbcommunication.com/template/img/placeholder-castle-banner.jpg"
-							width="960" />
-					</a>
-					<figcaption>A centered aligned image with caption.</figcaption>
+				<figure class="uk-align-center">
+					<img data-uk-logo src="./images/member_profile_img_5.jpg" alt="Invergordon village">
+					<figcaption>A center-aligned image with caption.</figcaption>
 				</figure>
 
 				<h2>Heading h2</h2>
@@ -131,13 +176,9 @@
 					No matter how far you might have travelled, you can be assured that you will arrive through our
 					doors and feel an instant comfort, as though you have arrived at your</p>
 
-				<figure class="align_left hidpi">
-					<a href="https://aws.nbcommunication.com/template/img/placeholder-columns.jpg">
-						<img alt="This is a left aligned image"
-							src="https://aws.nbcommunication.com/template/img/placeholder-columns.300x0-is-hidpi.jpg"
-							width="300" />
-					</a>
-					<figcaption>A left-aligned image with a caption</figcaption>
+				<figure class="uk-align-left uk-width-1-2">
+					<img data-uk-logo src="./images/member_profile_img_5.jpg" alt="Invergordon village">
+					<figcaption>A left-aligned image with caption.</figcaption>
 				</figure>
 
 				<p>Busta House is run top to bottom by whose passion for our home is matched only by our hospitality.
@@ -147,6 +188,11 @@
 					whispers of volcanoes and vikings, there are few places in the world as connected to centuries past
 					as Shetland's rugged terrain.
 					You will leave with fond</p>
+
+				<figure class="uk-align-right uk-width-1-2">
+					<img data-uk-logo src="./images/member_profile_img_4.jpg" alt="Invergordon village">
+					<figcaption>A right-aligned image with caption.</figcaption>
+				</figure>
 
 				<p>Busta House is run top to bottom by whose passion for our home is matched only by our hospitality.
 					The experience our guests have is always at the very top of our list of priorities. No matter how
@@ -161,43 +207,18 @@
 					as Shetland's rugged terrain.
 					You will leave with fond</p>
 
-				<figure class="align_right hidpi">
-					<a href="https://aws.nbcommunication.com/template/img/placeholder-city.jpg">
-						<img alt="This is a right aligned image"
-							src="https://aws.nbcommunication.com/template/img/placeholder-city.300x0-is-hidpi.jpg"
-							width="300" />
-					</a>
-					<figcaption>A right-aligned image with a caption</figcaption>
-				</figure>
-
-				<p>Busta House is run top to bottom by whose passion for our home is matched only by our hospitality.
-					The experience our guests have is always at the very top of our list of priorities. No matter how
-					far you might have travelled, you can be assured that you will arrive through our doors and feel an
-					instant comfort, as though you have arrived at your very own</p>
-
-				<p>Integer at elementum mi, vitae facilisis purus 4th. Duis quis tellus quis lacus sagittis pharetra a
-					at lorem. Praesent ornare ligula id arcu consequat egestas.</p>
-
-				<p>Aliquam at ligula elit gravida placerat. Nulla facilisi. In in turpis non eros vehicula adipiscing in
-					feugiat ligula. Vivamus et nulla ultricies, auctor tellus ac, fringilla quam.</p>
-
-				<p>Pellentesque ut sollicitudin ante. This is an external link. Donec vel adipiscing sapien, at euismod
-					dui. Duis
-					at eros magna example link. Pellentesque nec porttitor dui. Etiam sit amet venenatis enim. Praesent
-					rutrum arcu eget tortor cursus rutrum.</p>
-
 				<h3>Heading h3</h3>
 
-				<p>Busta House is run top to bottom by whose passion for our home is matched only by our hospitality.
+				<p><a href="#">Busta House is run</a> top to bottom by whose passion for our home is matched only by our
+					hospitality.
 					The experience our guests have is always at the very top of our list of priorities. No matter how
 					far you might have travelled, you can be assured that you will arrive through our doors and feel an
 					instant comfort</p>
 
 				<blockquote>
-					<p>Our members range from ambitious start-ups to some of Shetland's largest. No matter what they
-						produce, or where they are located, they are united in their exceptional quality products,
-						inspired by this exceptional place.</p>
-					<span>A non linked list lorem ipsum, <i>Company name and position</i></span>
+					<p>“Blockquote. Style to be good must be clear. Clearness is secured by using words that are current
+						and ordinary.”</p>
+					<span>-Aristotle</span>
 				</blockquote>
 
 				<p>Busta House is run top to bottom by whose passion for our home is matched only by our hospitality.
@@ -210,11 +231,19 @@
 					The experience our guests have is always at the very top of our list of priorities. No matter how
 				</p>
 
-				<ul class="nb-list nb-list--icon uk-flex-column">
-					<li><img src="assets/images/work-icon-bg.png" alt="icon image" role="presentation" data-uk-img>A non
-						linked list with icon lorem ipsum<span class="list-bottom">Lorem ipsum</span></li>
-					<li><img src="assets/images/work-icon-bg.png" alt="icon image" role="presentation" data-uk-img>A non
-						linked list with icon lorem ipsum<span class="list-bottom">Lorem ipsum</span></li>
+				<ul class="nb-list">
+					<li class="uk-flex uk-flex-middle"><img data-uk-logo src="./images/doc_img_1.png" alt="icon image"
+							role="presentation" data-uk-img>A non
+						linked list with icon lorem ipsum - <a href="#">Download now!</li>
+					<li class="uk-flex uk-flex-middle"><img data-uk-logo src="./images/doc_img_2.png" alt="icon image"
+							role="presentation" data-uk-img>A non
+						linked list with icon lorem ipsum</li>
+					<li class="uk-flex uk-flex-middle"><img data-uk-logo src="./images/doc_img_3.png" alt="icon image"
+							role="presentation" data-uk-img>A non
+						linked list with icon lorem ipsum</li>
+					<li class="uk-flex uk-flex-middle"><img data-uk-logo src="./images/doc_img_4.png" alt="icon image"
+							role="presentation" data-uk-img>A non
+						linked list with icon lorem ipsum</li>
 				</ul>
 
 				<h4>Heading h4</h4>
@@ -223,7 +252,7 @@
 					The experience our guests have is always at the very top of our list of priorities. No matter how
 				</p>
 
-				<ul class="nb-list nb-list--rec uk-flex-column">
+				<ul class="nb-list">
 					<li>A non linked list with icon lorem ipsum<span class="list-bottom">At vero eos et acusamus</span>
 					</li>
 					<li>A non linked list with icon lorem ipsum<span class="list-bottom">At vero eos et acusamus</span>
@@ -237,64 +266,81 @@
 				</p>
 
 				<ol class="nb-ordered-list">
-					<li><a href="javascript:;">A list of ordered links</a> - a link with some further text</li>
-					<li><a href="javascript:;">A list of ordered links</a></li>
-					<li><a href="javascript:;">A list of ordered links</a></li>
+					<li><a href="#">A list of ordered links</a> - a link with some further text</li>
+					<li><a href="#">A list of ordered links</a></li>
+					<li><a href="#">A list of ordered links</a></li>
 				</ol>
 			</div>
 		</div>
 		<div class="uk-container uk-container-large">
-			<div class='nb-block nb-gallery uk-clearfix' data-nb-block='gallery'>
-				<div class="uk-container uk-container-small">
-					<h3 class="uk-margin-bottom">Gallery</h3>
-				</div>
-
+			<div class='nb-block nb-gallery uk-clearfix uk-margin-bottom' data-nb-block='gallery'>
+				<h3 class="uk-margin-bottom">Gallery</h3>
 				<div class='nb-gallery-images' data-uk-lightbox='{"animation":"fade"}'
 					data-uk-scrollspy='{"cls":"uk-animation-fade","delay":128,"target":"> .nb-gallery-row > .nb-gallery-image"}'>
 					<div class='nb-gallery-row'>
-						<a href='https://aws.nbcommunication.com/template/img/placeholder-columns.jpg'
-							class='nb-gallery-image' data-alt='This gallery image has a caption.'
+						<a href='./images/member_gallery_1.jpg' class='nb-gallery-image'
+							data-alt='This gallery image has a caption.'
 							data-caption='<div>This gallery image has a caption.</div>'>
-							<img alt='This gallery image has a caption.' width='1151' height='768'
-								src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='
-								data-src='https://aws.nbcommunication.com/template/img/placeholder-columns.0x768.jpg'
+							<img data-uk-logo alt='This gallery image has a caption.' width='1151' height='768'
+								src='./images/member_gallery_1.jpg' data-src='./images/member_gallery_1.jpg'
 								data-uk-img>
-							<span class="nb-gallery-info">view gallery</span>
+							<span class="nb-gallery-info" data-uk-icon="search" role="presentation"></span>
 						</a>
 						<a href='https://aws.nbcommunication.com/template/img/placeholder-skyscrapers.jpg'
 							class='nb-gallery-image' data-alt data-caption>
-							<img alt='Gallery Block' width='1151' height='768'
-								src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='
-								data-src='https://aws.nbcommunication.com/template/img/placeholder-skyscrapers.0x768.jpg'
-								data-uk-img>
-							<span class="nb-gallery-info">view gallery</span>
+							<img data-uk-logo alt='Gallery Block' width='1151' height='768' src='./images/member_gallery_2.jpg'
+								data-src='./images/member_gallery_2.jpg' data-uk-img>
+							<span class="nb-gallery-info" data-uk-icon="search" role="presentation"></span>
+						</a>
+						<a href='https://aws.nbcommunication.com/template/img/placeholder-skyscrapers.jpg'
+							class='nb-gallery-image' data-alt data-caption>
+							<img data-uk-logo alt='Gallery Block' width='1151' height='768' src='./images/member_gallery_3.jpg'
+								data-src='./images/member_gallery_3.jpg' data-uk-img>
+							<span class="nb-gallery-info" data-uk-icon="search" role="presentation"></span>
+						</a>
+						<a href='https://aws.nbcommunication.com/template/img/placeholder-skyscrapers.jpg'
+							class='nb-gallery-image' data-alt data-caption>
+							<img data-uk-logo alt='Gallery Block' width='1151' height='768' src='./images/member_gallery_4.jpg'
+								data-src='./images/member_gallery_4.jpg' data-uk-img>
+							<span class="nb-gallery-info" data-uk-icon="search" role="presentation"></span>
 						</a>
 					</div>
 					<div class='nb-gallery-row'>
 						<a href='https://aws.nbcommunication.com/template/img/placeholder-sprinkler.jpg'
 							class='nb-gallery-image' data-alt data-caption>
-							<img alt='Gallery Block' width='1151' height='768'
-								src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='
-								data-src='https://aws.nbcommunication.com/template/img/placeholder-sprinkler.0x768.jpg'
-								data-uk-img>
-							<span class="nb-gallery-info">view gallery</span>
+							<img data-uk-logo alt='Gallery Block' width='1151' height='768' src='./images/member_gallery_5.jpg'
+								data-src='./images/member_gallery_5.jpg' data-uk-img>
+							<span class="nb-gallery-info" data-uk-icon="search" role="presentation"></span>
 						</a>
 						<a href='https://aws.nbcommunication.com/template/img/placeholder-town.jpg'
 							class='nb-gallery-image' data-alt='This gallery image also has a caption with HTML.'
 							data-caption='<div>This <em>gallery</em> image also has a <strong>caption</strong> with HTML.</div>'>
-							<img alt='This gallery image also has a caption with HTML.' width='1151' height='768'
-								src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='
-								data-src='https://aws.nbcommunication.com/template/img/placeholder-town.0x768.jpg'
+							<img data-uk-logo alt='This gallery image also has a caption with HTML.' width='1151' height='768'
+								src='./images/member_gallery_6.jpg' data-src='./images/member_gallery_6.jpg'
 								data-uk-img>
-							<span class="nb-gallery-info">view gallery</span>
+							<span class="nb-gallery-info" data-uk-icon="search" role="presentation"></span>
 						</a>
 						<a href='https://aws.nbcommunication.com/template/img/placeholder-waterfall.jpg'
 							class='nb-gallery-image' data-alt data-caption>
-							<img alt='Gallery Block' width='768' height='768'
-								src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='
-								data-src='https://aws.nbcommunication.com/template/img/placeholder-waterfall.0x768.jpg'
+							<img data-uk-logo alt='Gallery Block' width='768' height='768' src='./images/member_gallery_5.jpg'
+								data-src='./images/member_gallery_5.jpg' data-uk-img>
+							<span class="nb-gallery-info" data-uk-icon="search" role="presentation"></span>
+						</a>
+					</div>
+					<div class='nb-gallery-row'>
+						<a href='https://aws.nbcommunication.com/template/img/placeholder-sprinkler.jpg'
+							class='nb-gallery-image' data-alt data-caption>
+							<img data-uk-logo alt='Gallery Block' width='1151' height='768' src='./images/member_gallery_7.jpg'
+								data-src='./images/member_gallery_7.jpg' data-uk-img>
+							<span class="nb-gallery-info" data-uk-icon="search" role="presentation"></span>
+						</a>
+						<a href='https://aws.nbcommunication.com/template/img/placeholder-town.jpg'
+							class='nb-gallery-image' data-alt='This gallery image also has a caption with HTML.'
+							data-caption='<div>This <em>gallery</em> image also has a <strong>caption</strong> with HTML.</div>'>
+							<img data-uk-logo alt='This gallery image also has a caption with HTML.' width='1151' height='768'
+								src='./images/member_gallery_8.jpg' data-src='./images/member_gallery_8.jpg'
 								data-uk-img>
-							<span class="nb-gallery-info">view gallery</span>
+							<span class="nb-gallery-info" data-uk-icon="search" role="presentation"></span>
 						</a>
 					</div>
 				</div>
@@ -305,7 +351,6 @@
 			<div class='nb-block nb-content uk-clearfix' data-nb-block='content'>
 
 				<h3>Table</h3>
-
 				<table class="nb-table">
 					<thead>
 						<tr>
@@ -316,36 +361,34 @@
 							<th>Column 4</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td>Title Name 1</td>
-							<td>Lorem</td>
-							<td>&pound;99.99</td>
-							<td>Lorem</td>
-							<td>07:00 - 23:00</td>
-						</tr>
-						<tr>
-							<td>Title Name 1</td>
-							<td>Lorem</td>
-							<td>&pound;99.99</td>
-							<td>Lorem</td>
-							<td>07:00 - 23:00</td>
-						</tr>
-						<tr>
-							<td>Title Name 1</td>
-							<td>Lorem</td>
-							<td>&pound;99.99</td>
-							<td>Lorem</td>
-							<td>07:00 - 23:00</td>
-						</tr>
-						<tr>
-							<td>Title Name 1</td>
-							<td>Lorem</td>
-							<td>&pound;99.99</td>
-							<td>Lorem</td>
-							<td>07:00 - 23:00</td>
-						</tr>
-					</tbody>
+					<tr>
+						<td>Title Name 1</td>
+						<td>Lorem</td>
+						<td>&pound;99.99</td>
+						<td>Lorem</td>
+						<td>07:00 - 23:00</td>
+					</tr>
+					<tr>
+						<td>Title Name 1</td>
+						<td>Lorem</td>
+						<td>&pound;99.99</td>
+						<td>Lorem</td>
+						<td>07:00 - 23:00</td>
+					</tr>
+					<tr>
+						<td>Title Name 1</td>
+						<td>Lorem</td>
+						<td>&pound;99.99</td>
+						<td>Lorem</td>
+						<td>07:00 - 23:00</td>
+					</tr>
+					<tr>
+						<td>Title Name 1</td>
+						<td>Lorem</td>
+						<td>&pound;99.99</td>
+						<td>Lorem</td>
+						<td>07:00 - 23:00</td>
+					</tr>
 				</table>
 
 				<p class="uk-text-small">*This is some small text</p>
@@ -354,25 +397,25 @@
 
 				<div class="uk-alert-primary nb-alert-prominent" data-uk-alert>
 					<a class="uk-alert-close" data-uk-close></a>
-					<p>Give the message a prominent styling. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					<p><b>Give the message a prominent styling.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 						sed do eiusmod tempor incididunt.</p>
 				</div>
 
 				<div class="uk-alert-success nb-alert-positive" data-uk-alert>
 					<a class="uk-alert-close" data-uk-close></a>
-					<p>Indicates success or a positive message. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					<p><b>Indicates success or a positive message.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 						sed do eiusmod tempor incididunt.</p>
 				</div>
 
 				<div class="uk-alert-warning nb-alert-warning" data-uk-alert>
 					<a class="uk-alert-close" data-uk-close></a>
-					<p>Indicates a message containing a warning. Lorem ipsum dolor sit amet, consectetur adipiscing
+					<p><b>Indicates a message containing a warning.</b> Lorem ipsum dolor sit amet, consectetur adipiscing
 						elit, sed do eiusmod tempor incididunt.</p>
 				</div>
 
 				<div class="uk-alert-danger nb-alert-error" data-uk-alert>
 					<a class="uk-alert-close" data-uk-close></a>
-					<p>Indicates an important or error message. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					<p><b>Indicates an important or error message.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 						sed do eiusmod tempor incididunt.</p>
 				</div>
 
@@ -501,32 +544,64 @@
 	</main>
 
 	<footer class="footer">
-		<div class="uk-container uk-container-expand uk-flex uk-flex-middle uk-flex-between">
-			<div class="footer-top">
-				<span>Copyright &reg; 2019 Shetland Tourism Association. All right reserved.</span>
+		<div data-uk-img class="footer-top uk-background-cover" style="background-image: url('./images/footer_bckg.jpg')">
+			<div class="uk-container uk-container-large">
+				<h2>Get in touch with us</h2>
+				<div class="uk-flex uk-flex-between">
+					<div class="uk-width-1-4 footer-box">
+						<span class="uk-text-bold">Allison McGuire</span>
+						<span>Market Development Manager</span>
+						<span>c/o Port od Cromarty Firth</span>
+						<span>Shore Road, Invergordon</span>
+						<span>Ross-shire, Scotland</span>
+						<span>IV18 0HD</span>
+					</div>
+					<div class="uk-width-1-4 footer-box">
+						<ul>
+							<li>
+								<a href="#" class="font-ico-calendar">Make enquiry</a>
+							</li>
+							<li><a class="font-ico-phone" href="tel:+4401349852308">+44 (0) 1349 852308</a></li>
+							<li><a class="font-ico-email" href="mailto:allison@cfpa.co.uk">allison@cfpa.co.uk</a></li>
+							<li><a class="font-ico-linkedin" href="#">Follow us on Linkedin</a></li>
+						</ul>
+					</div>
+					<div class="uk-width-1-4 footer-box">
+						<ul>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Disclaimer</a></li>
+						</ul>
+					</div>
+					<div class="uk-width-1-4 footer-img-wrap">
+						<div class="footer-img">
+							<h2>Download Our Brochure</h2>
+							<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
+							<img data-uk-logo src="./images/brochure.png" alt="brochure">
+							<a href="#" class="uk-button-secondary" download aria-label="Click to download brochure"></a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="footer-bottom">
-				<ul class="uk-nav uk-flex uk-flex-right">
-					<li class="uk-parent">
-						<a href="javascript:;" aria-expanded="false" class="">Contact Us</a>
-					</li>
-					<li class="uk-parent">
-						<a href="javascript:;" aria-expanded="false" class="">Terms and Conditions</a>
-					</li>
-					<li class="uk-parent">
-						<a href="javascript:;" aria-expanded="false" class="">Privacy Policy</a>
-					</li>
-					<li class="uk-parent">
-						<a href="javascript:;" aria-expanded="false" class="">Disclaimer</a>
-					</li>
-					<li class="uk-parent">
-						<a href="javascript:;" aria-expanded="false" class="">Website by NB</a>
-					</li>
-				</ul>
+		</div>
+		<div class="footer-bottom">
+			<div class="uk-container uk-container-large">
+				<div class="uk-nav uk-flex uk-flex-between uk-flex-bottom">
+					<div class="uk-width-1-2">
+						<img data-uk-logo src="./images/footer_logos.jpg" alt="companies logos">
+					</div>
+					<div class="uk-width-1-2 uk-flex uk-flex-between">
+						<span>Copyright &reg; 2009-2019 Cruise Scotland. All right reserved.</span>
+						<span>Website by NB</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
-
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'
 		integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>
 	<script src='js/uikit.min.js'></script>

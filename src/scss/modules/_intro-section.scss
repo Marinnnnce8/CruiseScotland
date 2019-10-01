@@ -1,0 +1,119 @@
+.intro-section {
+	min-height: 100vh;
+	padding: 100px 0 125px;
+
+	.uk-slider-items {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.intro__container {
+	width: 100%;
+	position: relative;
+
+	.uk-slider {
+		position: relative;
+        min-height: 300px;
+        margin-bottom: 115px;
+		left: 0;
+
+		li {
+			position: relative;
+
+			h3,
+			h2,
+			a {
+				color: $white;
+				font-family: $font-black;
+			}
+
+			h3 {
+				font-size: 26px;
+            }
+            
+            >a {
+                background: rgba($blue, .4);
+                opacity: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                position: absolute;
+                width: 100%;
+                z-index: 2;
+                transition: $nbSpeed ease-in-out;
+                @include hover {
+                    opacity: 1;
+                }
+            }
+
+			&:first-of-type {
+				background: $blue;
+
+				.uk-panel {
+					min-height: 100%;
+				}
+
+				h2 {
+
+					font-size: 44px;
+				}
+
+				a {
+					font-size: 14px;
+				}
+			}
+
+			.uk-panel {
+				padding: 50px 40px 40px;
+
+				>span {
+					background: rgba($white, .5);
+					bottom: 0;
+					display: block;
+					height: 48px;
+					right: 0;
+					position: absolute;
+					width: 48px;
+					z-index: 1;
+
+					svg {
+						position: absolute;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						left: 50%;
+                        color: $white;
+                        width: 30px;
+					}
+				}
+			}
+		}
+    }
+    .uk-button-secondary {
+        position: absolute;
+        left: auto;
+        bottom: 0;
+        top: auto;
+        transform: none;
+        margin: 0;
+        svg {
+            width: 22px;
+        }
+    }
+}
+
+.intro-text {
+    h2 {
+        color: $blue;
+        font-size: 54px;
+        font-family: $font-black;
+        margin-bottom: 45px;
+    }
+    p {
+        margin: 0 0 20px;
+        font-weight: $light;
+        font-size: 18px;
+        width: 47%;
+    }
+}

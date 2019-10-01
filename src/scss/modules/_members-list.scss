@@ -1,0 +1,101 @@
+.members-section {
+    padding: 305px 0 100px;
+	h2 {
+		font-size: 67px;
+		font-family: $font-black;
+		margin: 0 0 40px;
+    }
+    
+    h2, span {
+        color: $blue;
+    }
+
+	span,
+	p {
+		font-size: 34px;
+	}
+
+	span {
+        font-weight: $light;
+	}
+
+	p {
+		font-weight: $thin;
+		margin-bottom: 70px;
+	}
+
+	li {
+		padding: 1px;
+		position: relative;
+        min-height: 300px;
+
+		@include hover {
+			a {
+				opacity: 1;
+			}
+
+			.uk-button-secondary {
+				background: rgba($blue, 1);
+			}
+        }
+        
+        >.uk-flex {
+            padding: 30px;
+            height: 100%;
+        }
+
+		span {
+			color: $white;
+		}
+
+		.uk-background-cover {
+			position: absolute;
+			left: 1px;
+			bottom: 1px;
+			top: 1px;
+			width: calc(100% - 1px);
+		}
+
+		.font-ico-bollard {
+			position: absolute;
+			top: 30px;
+			left: 35px;
+			z-index: 2;
+			pointer-events: none;
+		}
+
+		.member-title {
+			font-size: 26px;
+			font-family: $font-black;
+            z-index: 2;
+            display: block;
+            padding-right: 100px;
+            position: relative;
+			pointer-events: none;
+		}
+
+		.uk-button-secondary {
+			background: rgba($white, .3);
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transition: $nbSpeed ease-in-out;
+			z-index: 2;
+			pointer-events: none;
+			width: 50px;
+			height: 50px;
+		}
+
+		a {
+			background: rgba($blue, .7);
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			opacity: 0;
+			width: 100%;
+			transition: $nbSpeed ease-in-out;
+			z-index: 1;
+		}
+	}
+}

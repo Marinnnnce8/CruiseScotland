@@ -1,0 +1,59 @@
+.port-section {
+    min-height: 100vh;
+	position: relative;
+}
+
+.port-wrap {
+
+	span,
+	p,
+	h2,
+	a {
+		color: $white;
+    }
+    
+    span {
+        position: relative;
+        padding-left: 45px;
+        font-weight: $light;
+        font-size: 20px;
+        display: block;
+        margin-bottom: 20px;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+        }
+    }
+
+    h2 {
+        font-family: $font-black;
+        margin: 0 0 60px;
+    }
+    p {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+    .uk-button-primary:last-of-type {
+        background: rgba($white, .5);
+    }
+}
+
+.port-img {
+    background: $white;
+    max-width: 300px;
+    position: relative;
+    min-height: 240px;
+    width: 100%;
+
+    img {
+        width: 115px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+}

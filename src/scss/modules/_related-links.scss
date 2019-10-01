@@ -1,0 +1,46 @@
+.related-links {
+	h2 {
+		font-size: 34px;
+		font-family: $font-black;
+		color: $blue;
+	}
+}
+
+.related-link {
+	background: $white;
+	min-height: 150px;
+	padding: 30px 50px 50px 30px;
+	position: relative;
+
+	&:not(:first-of-type) {
+		margin-left: 1px;
+	}
+
+	a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	span {
+		color: $blue;
+		font-size: 20px;
+		text-decoration: underline;
+	}
+
+	.uk-button-secondary {
+		color: $white;
+		bottom: 0;
+		position: absolute;
+		right: 0;
+		height: 50px;
+		width: 50px;
+
+		svg {
+			transform: translate(-32%, -70%) rotate(45deg);
+		}
+	}
+}

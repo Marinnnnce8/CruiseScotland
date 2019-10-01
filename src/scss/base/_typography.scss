@@ -20,7 +20,9 @@ h6,
 h1,
 .h1 {
 	color: $white;
-	font-size: 44px;
+	font-family: $font-black;
+	font-size: 67px;
+	font-weight: $bold;
 	@media (max-width: $breakpointMedium) {
 		font-size: 36px;
 	}
@@ -31,18 +33,15 @@ h1,
 
 h2,
 .h2 {
-	font-size: 44px;
-	font-weight: $semi-bold;
+	font-size: 54px;
 	@media (max-width: $breakpointSmall) {
-		font-weight: $medium;
 		margin-bottom: 20px;
 	}
 }
 
 h3,
 .h3 {
-	font-size: 30px;
-	font-weight: $medium;
+	font-size: 34px;
 }
 
 h4,
@@ -69,6 +68,7 @@ h6,
 p {
 	margin-bottom: 15px;
 	font-size: 20px;
+	color: $black;
 
 	a {
 		@include hover {
@@ -77,35 +77,12 @@ p {
 	}
 }
 
-blockquote {
-	padding: 60px 0 60px 60px;
-	margin-bottom: 20px;
-	font-style: normal;
-	position: relative;
-	&::after {
-		position: absolute;
-		font-family: 'svgicons';
-		content: font-char($quote);
-		// color: $green;
-		top: 0;
-		left: 0;
-		transform: rotate(180deg) translate(17%, -18%);
-		font-size: 86px;
-	}
-	p {
-		font-size: 28px;
-		margin-bottom: 20px;
-		&:last-of-type {
-			margin-bottom: 20px;
-		}
-	}
-	span i {
-		font-weight: $light;
-	}
+span {
+	font-size: 18px;
 }
 
 ul {
-	padding-left: 20px;
+	padding-left: 0;
 	list-style-type: none;
 }
 
@@ -115,4 +92,8 @@ ol {
 
 img {
 	max-width: 100%;
+}
+
+b {
+	font-weight: $bold;
 }
