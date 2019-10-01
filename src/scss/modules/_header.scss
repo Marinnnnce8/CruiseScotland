@@ -100,8 +100,10 @@
 	}
 
 	@media (max-width: $breakpointLarge) {
+		padding-left: 180px;
+
 		.uk-logo {
-			min-width: 175px;
+			max-width: 175px;
 		}
 
 		.uk-navbar-nav {
@@ -129,54 +131,76 @@
 	}
 
 	.uk-navbar-toggle {
-		color: $black;
+		background: $lightblue;
+		color: $white;
 		position: absolute;
 		right: 0;
+		bottom: 0;
 		top: 0;
-		height: calc(100% + 2px);
+		height: 100%;
 		border-left: 1px solid transparent;
 		z-index: 3;
-	}
-
-	.uk-navbar-toggle--active {
-		border-left: 1px solid $skyblue;
-
-		&::after {
+		min-height: 0;
+		width: 55px;
+		span {
+			font-size: 8px;
 			position: absolute;
-			background: $white;
-			content: '';
-			width: calc(100% + 1px);
-			left: -1px;
-			bottom: -8px;
-			height: 10px;
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 
+	// .uk-navbar-toggle--active {
+	// 	border-left: 1px solid $skyblue;
+
+	// 	&::after {
+	// 		position: absolute;
+	// 		background: $white;
+	// 		content: '';
+	// 		width: calc(100% + 1px);
+	// 		left: -1px;
+	// 		bottom: -8px;
+	// 		height: 10px;
+	// 	}
+	// }
+
 	@media (max-width: $breakpointSmall) {
+		min-height: 55px;
 		>.uk-navbar {
 			display: flex;
 			flex-direction: row;
 		}
+
 		.uk-logo {
 			min-width: 110px;
 			max-width: 110px;
+			padding: 0;
 			width: 100%;
+			z-index: 3;
+			img {
+				width: 100%;
+				top: 0;
+				left: 0;
+				transform: none;
+			}
 		}
 
-		.uk-navbar-nav {
+		.nav-wrap {
+			position: absolute;
+			top: 55px;
+			left: 0;
+			width: 100%;
+			z-index: 2;
 			display: none;
 		}
 
 		.uk-navbar-nav,
 		.uk-navbar-dropdown {
 			flex-direction: column;
-			padding: 0 20px;
+			padding: 40px 20px;
 			background: $white;
-			position: absolute;
-			top: 132px;
-			left: 0;
 			width: 100%;
-			z-index: 2;
 
 			li {
 				width: 100%;
@@ -231,8 +255,9 @@
 			z-index: 3;
 			max-width: 100%;
 			box-shadow: none;
-			left: 0 !important;// sass-lint:disable-line no-important
-			top: -1px !important;// sass-lint:disable-line no-important
+			left: 0 !important; // sass-lint:disable-line no-important
+			top: -1px !important; // sass-lint:disable-line no-important
+
 			li button {
 				.uk-icon {
 					left: -20px;
@@ -269,19 +294,80 @@
 	li {
 		a {
 			display: block;
-			padding: 25px;
 			color: $white;
 			font-family: $font-heavy;
 			text-transform: uppercase;
+			padding: 25px;
+		}
 
-			&:first-of-type {
+		&:first-of-type {
+			a {
+				position: relative;
+				padding-right: 65px;
+
+				&::before {
+					font-size: 20px;
+					right: 30px;
+					top: 50%;
+					transform: translateY(-50%);
+					position: absolute;
+				}
+			}
+
+			span {
 				font-size: 8px;
 			}
 		}
 
-		&:last-of-type a {
+		&:last-of-type {
 			background: $lightblue;
 			font-size: 12px;
+
+			span {
+				font-size: inherit;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointLarge) {
+		li {
+			a {
+				width: 50px;
+				height: 50px;
+				padding: 7px 9px;
+			}
+
+			&:first-of-type {
+				a {
+					padding-right: 9px;
+
+					&::before {
+						transform: translate(-50%, -50%);
+						top: 50%;
+						left: 50%;
+						right: auto;
+					}
+				}
+			}
+
+			&:last-of-type {
+				background: $lightblue;
+				font-size: 7px;
+
+				span {
+					font-size: inherit;
+				}
+			}
+		}
+	}
+	@media (max-width: $breakpointSmall) {
+		li:last-of-type {
+			background: transparent;
+			position: absolute;
+			right: 55px;
+			top: 0;
+			height: 100%;
+			bottom: 0;
 		}
 	}
 }

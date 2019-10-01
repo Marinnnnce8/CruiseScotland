@@ -20,7 +20,7 @@ rules:
   class-name-format:
     - 0
     - convention: hyphenatedbem
-  clean-import-paths: 2
+  clean-import-paths: 0
   empty-args: 2
   # TODO
   empty-line-between-blocks:

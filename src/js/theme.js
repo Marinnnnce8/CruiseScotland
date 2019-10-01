@@ -10,7 +10,7 @@ var theme = {
 		this.protectLinks();
 		this.touchHelper();
 		const toggleBtn = $('.js-toggle-nav');
-		const nav = $('.uk-navbar-nav');
+		const nav = $('.nav-wrap');
 		const classActive = 'uk-navbar-toggle--active';
 		const dropdownBtn = $('.js-toggle-dropdown');
 		const dropdownActive = 'dropdown--active';
