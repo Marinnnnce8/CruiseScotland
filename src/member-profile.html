@@ -24,23 +24,24 @@
 
 	<header class="header">
 		<nav data-uk-navbar>
-			<div class="uk-navbar-left uk-logo">
+			<div class="uk-logo">
 				<img class="uk-visible@l" src="./images/logo.png" alt="home logo">
 				<img class="uk-hidden@l" src="./images/logo_tablet.jpg" alt="home logo">
 			</div>
-			<div class="uk-flex">
-				<div class="uk-flex-wrap-bottom uk-flex uk-flex-column">
-					<div class="uk-flex uk-flex-between">
-						<span class="nav-info uk-visible@s">Information for Scotland's cruise Industry partners</span>
-						<ul class="uk-flex nav-social">
-							<li>
-								<a href="#"><span class="uk-visible@l">Follow us on</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="uk-visible@l">Members area</span></a>
-							</li>
-						</ul>
-					</div>
+			<div class="uk-flex-wrap-bottom uk-flex uk-flex-column">
+				<div class="uk-flex uk-flex-between">
+					<span class="nav-info uk-visible@s">Information for Scotland's cruise Industry partners</span>
+					<ul class="uk-flex nav-social">
+						<li>
+							<a href="#" class="font-ico-linkedin uk-visible@s"><span class="uk-visible@l">Follow us
+									on</span></a>
+						</li>
+						<li>
+							<a href="#">Members <span class="uk-visible@l">area</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-wrap">
 					<ul class="uk-navbar-nav uk-flex-middle">
 						<li class="uk-parent uk-parent--dropdown">
 							<button class="js-toggle-dropdown">Why
@@ -120,14 +121,16 @@
 							</div>
 						</li>
 					</ul>
-					<button class="js-toggle-nav uk-navbar-toggle uk-hidden@s" data-uk-navbar-toggle-icon></button>
 				</div>
+				<button class="js-toggle-nav uk-navbar-toggle uk-hidden@s"
+					aria-label="Click to open navigation menu"><span class="uk-text-uppercase">menu</span><span
+						role="presentation"></span></button>
 			</div>
 		</nav>
 	</header>
 
 	<main>
-		<section class="uk-background-cover banner-section"
+		<section class="uk-background-cover uk-background-fixed banner-section"
 			style="background-image: url('./images/member_profile_banner.jpg')" data-uk-img>
 			<div class="uk-container uk-container-large">
 				<div class="banner-inner">
@@ -149,7 +152,7 @@
 					<li><span>Dunvegan Castle</span></li>
 				</ul>
 				<div class="uk-flex uk-flex-between">
-					<div class="uk-width-2-3 ports-left">
+					<div class="uk-width-2-3@l uk-width-1-1 ports-left">
 						<h2>Any visit to the Isle of Skye would be incomplete without savouring the wealth of history
 							offered by Dunvegan Castle and Gardens.</h2>
 						<p>Built on a rock in an idyllic lochside setting, Dunvegan is the oldest continuously inhabited
@@ -328,7 +331,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="uk-width-1-3 ports-right">
+					<div class="uk-width-1-3@l uk-width-1-1 ports-right">
 						<div class="uk-card uk-card-default contact-card">
 							<div class="uk-card-media-top">
 								<img data-uk-img src="./images/dunvegan.jpg" alt="Dunvegan logo">
@@ -357,7 +360,7 @@
 		</section>
 		<section class="signup-section">
 			<div class="uk-container uk-container-large">
-				<div class="signup-wrap uk-width-1-2">
+				<div class="signup-wrap uk-width-1-2@l uk-width-1-1@m">
 					<h2 class="font-ico-news">Sign up to our mailing list</h2>
 					<span>Our monthly newletter will give you an idea of what we're about</span>
 					<form action="/action_page.php">
@@ -368,16 +371,26 @@
 						</div>
 					</form>
 				</div>
+				<div class="uk-width-1-4 uk-width-1-1@l footer-img-wrap uk-hidden@s">
+					<div class="footer-img">
+						<h2>Download Our Brochure</h2>
+						<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
+						<img data-uk-img src="./images/brochure.png" alt="brochure">
+						<a href="#" class="uk-button-secondary" download
+							aria-label="Click to download brochure"></a>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
-		<div data-uk-img class="footer-top uk-background-cover" style="background-image: url('./images/footer_bckg.jpg')">
+		<div data-uk-img class="footer-top uk-background-cover"
+			style="background-image: url('./images/footer_bckg.jpg')">
 			<div class="uk-container uk-container-large">
 				<h2>Get in touch with us</h2>
 				<div class="uk-flex uk-flex-between">
-					<div class="uk-width-1-4 footer-box">
+					<div class="uk-width-1-4@l uk-width-1-1@m footer-box">
 						<span class="uk-text-bold">Allison McGuire</span>
 						<span>Market Development Manager</span>
 						<span>c/o Port od Cromarty Firth</span>
@@ -406,12 +419,13 @@
 							<li><a href="#">Disclaimer</a></li>
 						</ul>
 					</div>
-					<div class="uk-width-1-4 footer-img-wrap">
+					<div class="uk-width-1-4 footer-img-wrap uk-visible@s">
 						<div class="footer-img">
 							<h2>Download Our Brochure</h2>
 							<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
 							<img data-uk-img src="./images/brochure.png" alt="brochure">
-							<a href="#" class="uk-button-secondary" download aria-label="Click to download brochure"></a>
+							<a href="#" class="uk-button-secondary" download
+								aria-label="Click to download brochure"></a>
 						</div>
 					</div>
 				</div>
@@ -419,11 +433,11 @@
 		</div>
 		<div class="footer-bottom">
 			<div class="uk-container uk-container-large">
-				<div class="uk-nav uk-flex uk-flex-between uk-flex-bottom">
-					<div class="uk-width-1-2">
+				<div class="uk-flex uk-flex-between uk-flex-bottom">
+					<div class="uk-width-1-2@l uk-width-1-1@m">
 						<img data-uk-img src="./images/footer_logos.jpg" alt="companies logos">
 					</div>
-					<div class="uk-width-1-2 uk-flex uk-flex-between">
+					<div class="uk-width-1-2@l uk-width-1-1@m uk-flex uk-flex-between">
 						<span>Copyright &reg; 2009-2019 Cruise Scotland. All right reserved.</span>
 						<span>Website by NB</span>
 					</div>

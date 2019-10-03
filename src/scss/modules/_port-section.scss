@@ -1,5 +1,6 @@
 .port-section {
-    min-height: 100vh;
+	min-height: 100vh;
+	padding-top: 145px;
 	position: relative;
 }
 
@@ -10,50 +11,127 @@
 	h2,
 	a {
 		color: $white;
-    }
-    
-    span {
-        position: relative;
-        padding-left: 45px;
-        font-weight: $light;
-        font-size: 20px;
-        display: block;
-        margin-bottom: 20px;
-        &::before {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 30px;
-        }
-    }
+	}
 
-    h2 {
-        font-family: $font-black;
-        margin: 0 0 60px;
-    }
-    p {
-        font-size: 18px;
-        padding-left: 40px;
-    }
-    .uk-button-primary:last-of-type {
-        background: rgba($white, .5);
-    }
+	span {
+		position: relative;
+		padding-left: 45px;
+		font-weight: $light;
+		font-size: 20px;
+		display: block;
+		margin-bottom: 20px;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 30px;
+		}
+	}
+
+	h2 {
+		font-family: $font-black;
+		margin: 0 0 60px;
+	}
+
+	p {
+		font-size: 18px;
+		padding-left: 40px;
+	}
+
+	.uk-button-primary {
+		padding: 45px 0;
+	}
+
+	.uk-button-primary:last-of-type {
+		background: rgba($white, .5);
+	}
+
+	@media (max-width: $breakpointLarge) {
+		h2 {
+			margin: 0 0 40px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		.uk-button-primary {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: $breakpointSmall) {
+		padding-bottom: 92px;
+		position: relative;
+
+		span {
+			font-size: 12px;
+		}
+
+		h2 {
+			font-size: 44px;
+		}
+
+		p {
+			padding-left: 0;
+		}
+
+		>.uk-flex {
+			flex-direction: column-reverse;
+		}
+
+		.uk-button-primary {
+			padding: 45px 20px;
+			text-align: left;
+			&:last-of-type {
+				position: absolute;
+				bottom: 0;
+			}
+		}
+	}
 }
 
 .port-img {
-    background: $white;
-    max-width: 300px;
-    position: relative;
-    min-height: 240px;
-    width: 100%;
+	background: $white;
+	max-width: 300px;
+	position: relative;
+	min-height: 240px;
+	width: 100%;
 
-    img {
-        width: 115px;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        left: 50%;
-    }
+	img {
+		width: 115px;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left: 50%;
+	}
+
+	@media (max-width: $breakpointLarge) {
+		padding-top: 20px;
+		flex-direction: column;
+		max-width: 50%;
+
+		img {
+			width: 100px;
+			position: relative;
+			display: block;
+			margin: 0 auto;
+			left: auto;
+			transform: none;
+			top: auto;
+			margin-bottom: 20px;
+		}
+
+		.uk-button-primary:last-of-type {
+			background: $blue;
+		}
+	}
+
+	@media (max-width: $breakpointSmall) {
+		max-width: 100%;
+		padding-bottom: 92px;
+	}
 }

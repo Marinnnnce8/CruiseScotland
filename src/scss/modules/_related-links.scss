@@ -4,16 +4,25 @@
 		font-family: $font-black;
 		color: $blue;
 	}
+
+	@media (max-width: $breakpointSmall) {
+		padding-top: 30px;
+		>.uk-flex {
+			flex-direction: column;
+		}
+	}
 }
 
 .related-link {
-	background: $white;
-	min-height: 150px;
-	padding: 30px 50px 50px 30px;
-	position: relative;
+	>div {
+		background: $white;
+		min-height: 150px;
+		padding: 30px 50px 50px 30px;
+		position: relative;
+	}
 
 	&:not(:first-of-type) {
-		margin-left: 1px;
+		padding-left: 1px;
 	}
 
 	a {
@@ -41,6 +50,26 @@
 
 		svg {
 			transform: translate(-32%, -70%) rotate(45deg);
+		}
+	}
+
+	@media (max-width: $breakpointLarge) {
+		span {
+			font-size: 16px;
+		}
+		&:not(:first-of-type) {
+			padding: 0 0 1px;
+		}
+		&:nth-of-type(even) {
+			padding-left: 1px;
+		}
+	}
+	@media (max-width: $breakpointSmall) {
+		&:not(:first-of-type) {
+			padding: 0 0 1px;
+		}
+		&:first-of-type {
+			padding: 0 0 1px;
 		}
 	}
 }

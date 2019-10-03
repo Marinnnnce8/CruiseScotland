@@ -18,10 +18,26 @@
 		color: $blue;
 		font-family: $font-black;
 	}
+	@media (max-width: $breakpointLarge) {
+		>.uk-container >.uk-flex {
+			flex-direction: column;
+		}
+		h2 {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+		h3 {
+			margin-top: 25px;
+			font-size: 28px;
+		}
+	}
 }
 
 .ports-left {
 	padding-right: 50px;
+	@media (max-width: $breakpointLarge) {
+		padding-right: 0;
+	}
 }
 
 .ports-text {
@@ -43,6 +59,11 @@
 	box-shadow: 9px 0 25px -12px rgba($black, .3);
 	margin-bottom: 2px;
 	position: relative;
+	padding-left: 215px;
+	@media (max-width: $breakpointSmall) {
+		padding: 250px 0 0;	
+		margin-bottom: 25px;
+	}
 }
 
 .ports-card-img {
@@ -50,6 +71,16 @@
 	min-height: 200px;
 	max-width: 215px;
 	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	@media (max-width: $breakpointSmall) {
+		width: 100%;
+		max-width: 100%;
+		min-height: 250px;
+		bottom: auto;
+	}
 }
 
 .ports-card-body {
@@ -63,6 +94,9 @@
 
 	p {
 		font-size: 14px;
+	}
+	@media (max-width: $breakpointSmall) {
+		padding: 30px 20px;
 	}
 }
 
@@ -88,6 +122,9 @@
 		position: absolute;
 		width: 1px;
 		z-index: 2;
+	}
+	@media (max-width: $breakpointSmall) {
+		left: 0;
 	}
 }
 

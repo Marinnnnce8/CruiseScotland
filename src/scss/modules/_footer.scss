@@ -23,7 +23,9 @@
 		}
 	}
 
-	ul {
+	.footer-box {
+		padding-bottom: 85px;
+
 		li {
 			margin-bottom: 12px;
 
@@ -36,7 +38,6 @@
 			a {
 				text-decoration: underline;
 				display: block;
-				padding-left: 35px;
 				position: relative;
 
 				&::before {
@@ -49,15 +50,63 @@
 				}
 			}
 		}
-	}
-}
 
-.footer-box {
-	padding-bottom: 85px;
+		&:nth-of-type(2) {
+			li a {
+				padding-left: 35px;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointLarge) {
+		padding: 50px 0 70px;
+
+		>.uk-container>.uk-flex {
+			justify-content: left;
+			flex-wrap: wrap;
+			position: relative;
+		}
+
+		.footer-box {
+			padding-bottom: 15px;
+		}
+	}
+
+	@media (max-width: $breakpointSmall) {
+		.uk-width-1-4 {
+			width: 100%;
+
+			.footer-box:last-of-type {
+				li a {
+					padding-left: 0;
+				}
+			}
+		}
+	}
 }
 
 .footer-img-wrap {
 	position: relative;
+
+	img {
+		width: 100%;
+	}
+
+	@media (max-width: $breakpointLarge) {
+		bottom: 25px;
+		position: absolute;
+		right: 0;
+		max-width: 300px;
+		width: 100%;
+	}
+
+	@media (max-width: $breakpointSmall) {
+		left: 20px;
+		width: calc(100% - 40px);
+		right: auto;
+		bottom: 0;
+		max-width: calc(100% - 40px);
+	}
 }
 
 .footer-img {
@@ -91,12 +140,17 @@
 		bottom: 0;
 	}
 
+	@media (max-width: $breakpointSmall) {
+		max-width: 100%;
+	}
 }
 
 .footer-bottom {
 	padding: 5px 0 35px;
+
 	span {
 		font-size: 12px;
+
 		&:last-of-type {
 			position: relative;
 			padding-right: 20px;
@@ -112,6 +166,41 @@
 				background-image: url('../images/nb-logo.png');
 				background-size: cover;
 				z-index: 1;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointLarge) {
+		>.uk-container>.uk-flex {
+			flex-direction: column;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.uk-width-1-1\@m {
+			&:first-of-type {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointSmall) {
+		>.uk-container >.uk-flex >.uk-flex {
+			flex-direction: column;
+		}
+		.uk-width-1-1\@m:last-of-type span {
+			display: inline-block;
+			&:first-of-type {
+				margin-bottom: 20px;
+			}
+			&:last-of-type {
+				width: 35%;
+				&::before {
+					right: 0;
+				}
 			}
 		}
 	}

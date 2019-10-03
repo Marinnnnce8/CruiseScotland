@@ -43,6 +43,14 @@
 			border: 2px solid $red;
 		}
 	}
+	@media (max-width: $breakpointSmall) { 
+		margin-bottom: 20px;
+		padding: 30px 25px 20px;
+
+		.uk-button {
+			width: 100%;
+		}
+	}
 }
 
 .contact-details {
@@ -109,5 +117,8 @@
 			color: $blue;
 			font-size: 18px;
 		}
+	}
+	@media (max-width: $breakpointSmall) { 
+		max-width: 100%;
 	}
 }

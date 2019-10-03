@@ -98,4 +98,17 @@
 			z-index: 1;
 		}
 	}
+	@media (max-width: $breakpointLarge) {
+		padding: 150px 0 25px;
+		span {
+			font-size: 30px;
+		}
+		h2 {
+			font-size: 54px;
+		}
+		p {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+	}
 }

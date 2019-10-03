@@ -122,15 +122,16 @@
 						</li>
 					</ul>
 				</div>
-				<button class="js-toggle-nav uk-navbar-toggle uk-hidden@s" data-uk-navbar-toggle-icon
-					aria-label="Click to open navigation menu"><span class="uk-text-uppercase">menu</span></button>
+				<button class="js-toggle-nav uk-navbar-toggle uk-hidden@s"
+					aria-label="Click to open navigation menu"><span class="uk-text-uppercase">menu</span><span
+						role="presentation"></span></button>
 			</div>
 		</nav>
 	</header>
 
 	<main>
-		<section class="uk-background-cover banner-section" style="background-image: url('/images/home_banner.jpg')"
-			data-uk-img>
+		<section class="uk-background-cover uk-background-fixed banner-section"
+			style="background-image: url('/images/home_banner.jpg')" data-uk-img>
 			<div class="uk-container uk-container-large">
 				<div class="banner-inner">
 					<h1>Destination Scotland</h1>
@@ -143,7 +144,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="intro-section">
+		<!-- <section class="intro-section">
 			<div class="uk-container uk-container-large intro__container">
 				<div uk-slider class="js-intro-slider">
 					<ul class="uk-slider-items uk-child-width-1-5@s uk-child-width-1-5@">
@@ -228,20 +229,20 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section data-uk-img class="destination-section uk-background-cover"
+		<section data-uk-img class="uk-background-fixed destination-section uk-background-cover"
 			style="background-image: url(./images/destination_bckg.jpg)">
 			<div class="uk-container uk-container-large">
 				<div class="uk-flex uk-flex-between destination-text-wrap">
-					<div class="destination-text uk-width-1-2">
-						<span class="uk-text-uppercase">Destinations</span>
+					<div class="destination-text uk-width-1-2@l uk-width-1-1@s">
+						<span class="uk-text-uppercase"><img src="./images/boat_img.png" alt="logo">Destinations</span>
 						<h2>Scotland's Cruise Ports</h2>
 						<p>To best optimizse the page and provide the visitor with useful and onformative text. it would
 							be good to have a sentence or two included here.</p>
 						<span>Click on a member to view their profile</span>
 					</div>
-					<div class="destination-map uk-width-1-2">
+					<div class="destination-map uk-width-1-2@l uk-width-1-1@s">
 						<img src="./images/map.png" alt="map" data-uk-img>
 						<ul>
 							<li><button class="pin font-ico-bollard" aria-label="map pin"><span class="beacon"
@@ -284,92 +285,72 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="uk-container uk-container-large">
 				<div class="destination-members uk-flex-column uk-margin-bottom">
 					<span class="uk-text-uppercase">port members</span>
-					<div class="uk-flex uk-flex-left">
-						<div class="uk-flex-column uk-width-1-4">
-							<ul class="uk-padding-remove-left">
-								<li><button class="font-ico-bollard uk-text-left">Aberdeen</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Holy Loch Port</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Montrose</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Portree</button></li>
-							</ul>
-						</div>
-						<div class="uk-flex-column uk-width-1-4">
-							<ul>
-								<li><button class="font-ico-bollard uk-text-left">Dundee</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Invegordon</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Oban</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Scrabster</button></li>
-							</ul>
-						</div>
-						<div class="uk-flex-column uk-width-1-4">
-							<ul>
-								<li><button class="font-ico-bollard uk-text-left">Edinburhg</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Inverness</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Peterhead</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Stronoway</button></li>
-							</ul>
-						</div>
-						<div class="uk-flex-column uk-width-1-4">
-							<ul>
-								<li><button class="font-ico-bollard uk-text-left">Glasgow (Greenrock)</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Lerwick</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Port Ellen</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Ullapool</button></li>
-							</ul>
-						</div>
-					</div>
+					<ul class="uk-flex uk-flex-left uk-flex-wrap">
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Aberdeen</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Holy
+								Loch Port</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Montrose</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Portree</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Dundee</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Invegordon</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Oban</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Scrabster</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Edinburhg</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Inverness</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Peterhead</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Stronoway</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Glasgow
+								(Greenrock)</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Lerwick</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Port
+								Ellen</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Ullapool</button></li>
+					</ul>
 				</div>
 				<div class="destination-members uk-flex-column uk-margin-bottom">
 					<span class="uk-text-uppercase">other members</span>
-					<div class="uk-flex uk-flex-left">
-						<div class="uk-flex-column uk-width-1-4">
-							<ul class="uk-padding-remove-left">
-								<li><button class="font-ico-bollard uk-text-left">European Cruise Service UK
-										Ltd</button></li>
-							</ul>
-						</div>
-						<div class="uk-flex-column uk-width-1-4">
-							<ul>
-								<li><button class="font-ico-bollard uk-text-left">Excursions Ltd</button></li>
-							</ul>
-						</div>
-					</div>
+					<ul class="uk-flex uk-flex-left uk-flex-wrap">
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">European
+								Cruise Service UK
+								Ltd</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left">Excursions Ltd</button></li>
+					</ul>
 				</div>
 				<div class="destination-members uk-flex-column uk-margin-bottom">
 					<span class="uk-text-uppercase">associate members</span>
-					<div class="uk-flex uk-flex-left">
-						<div class="uk-flex-column uk-width-1-4">
-							<ul class="uk-padding-remove-left">
-								<li><button class="font-ico-bollard uk-text-left">Cruise Forth</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Inveraray Castle</button></li>
-							</ul>
-						</div>
-						<div class="uk-flex-column uk-width-1-4">
-							<ul>
-								<li><button class="font-ico-bollard uk-text-left">Dunvegan Castle</button></li>
-								<li><button class="font-ico-bollard uk-text-left">Visit Aberdeenshire</button></li>
-							</ul>
-						</div>
-						<div class="uk-flex-column uk-width-1-4">
-							<ul>
-								<li><button class="font-ico-bollard uk-text-left">Ellean Donan Castle</button></li>
-							</ul>
-						</div>
-						<div class="uk-flex-column uk-width-1-4">
-							<ul>
-								<li><button class="font-ico-bollard uk-text-left">Jacobite Cruises Ltd</button></li>
-							</ul>
-						</div>
-					</div>
+					<ul class="uk-flex uk-flex-left uk-flex-wrap">
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Cruise Forth</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Inveraray Castle</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Dunvegan Castle</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Visit Aberdeenshire</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Ellean Donan Castle</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Jacobite Cruises Ltd</button></li>
+					</ul>
 				</div>
 				<div class="distance-calculator uk-flex">
-					<div class="uk-width-1-2">
+					<div class="uk-width-1-2@l uk-width-1-1@s">
 						<img data-uk-img src="./images/distance_calculator.png" alt="distance" role="presentation">
 						<span>Distance calculator</span>
 					</div>
-					<div class="uk-width-1-2">
+					<div class="uk-width-1-2@l uk-width-1-1@s">
 						<span>Helps you find the distance between ports and calculate the voyage time.</span>
 					</div>
 					<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
@@ -378,22 +359,24 @@
 			</div>
 		</section>
 
-		<section data-uk-img class="port-section uk-background-cover uk-flex uk-flex-bottom"
+		<section data-uk-img class="port-section uk-background-cover uk-background-fixed uk-flex uk-flex-bottom"
 			style="background-image: url('./images/port_group_bckg.jpg')">
 			<div class="uk-container uk-container-large">
-				<div class="port-wrap uk-flex uk-flex-column uk-width-2-3">
+				<div class="port-wrap uk-flex uk-flex-column uk-width-2-3@l uk-width-1-1@s">
 					<span class="font-ico-medal uk-text-uppercase">member of the month</span>
 					<h2>Forth Ports Group</h2>
 					<div class="uk-flex">
-						<div class="port-img">
+						<div class="port-img uk-flex uk-flex-bottom uk-width-1-2@s">
 							<img data-uk-img src="./images/port_logo.png" alt="port logo">
+							<a href="#" class="uk-button-primary uk-button-primary-big uk-hidden@l"
+									data-uk-icon="arrow-right">Meet the member</a>
 						</div>
-						<div class="uk-flex uk-flex-column uk-flex-between">
+						<div class="uk-flex uk-flex-column uk-flex-between uk-width-1-2@s">
 							<p>Forth Ports offers dedicated berthing facilities to cruise operators at Forth Ports
 								Leith, Forth Ports Dundee and Forth Ports Rosyth in Scotland, each accommodating
 								European and international turnaround and transit cruises.</p>
 							<div class="uk-flex uk-flex-between">
-								<a href="#" class="uk-button-primary uk-button-primary-big uk-width-1-2"
+								<a href="#" class="uk-button-primary uk-button-primary-big uk-width-1-2 uk-visible@l"
 									data-uk-icon="arrow-right">Meet the member</a>
 								<a href="#" class="uk-button-primary uk-button-primary-big uk-width-1-2"
 									data-uk-icon="arrow-right">View all the
@@ -404,7 +387,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="recent-stories">
+		<!-- <section class="recent-stories">
 			<div class="uk-container uk-container-large">
 				<h2>Most Recent Stories</h2>
 				<div uk-slider class="js-intro-slider">
@@ -486,10 +469,10 @@
 						uk-slidenav-next uk-slider-item="next"></a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section class="signup-section">
 			<div class="uk-container uk-container-large">
-				<div class="signup-wrap uk-width-1-2">
+				<div class="signup-wrap uk-width-1-2@l uk-width-1-1@m">
 					<h2 class="font-ico-news">Sign up to our mailing list</h2>
 					<span>Our monthly newletter will give you an idea of what we're about</span>
 					<form action="/action_page.php">
@@ -499,6 +482,15 @@
 							<button class="uk-button-primary" data-uk-icon="arrow-right">Subscribe</button>
 						</div>
 					</form>
+				</div>
+				<div class="uk-width-1-4 uk-width-1-1@l footer-img-wrap uk-hidden@s">
+					<div class="footer-img">
+						<h2>Download Our Brochure</h2>
+						<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
+						<img data-uk-img src="./images/brochure.png" alt="brochure">
+						<a href="#" class="uk-button-secondary" download
+							aria-label="Click to download brochure"></a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -510,7 +502,7 @@
 			<div class="uk-container uk-container-large">
 				<h2>Get in touch with us</h2>
 				<div class="uk-flex uk-flex-between">
-					<div class="uk-width-1-4 footer-box">
+					<div class="uk-width-1-4@l uk-width-1-1@m footer-box">
 						<span class="uk-text-bold">Allison McGuire</span>
 						<span>Market Development Manager</span>
 						<span>c/o Port od Cromarty Firth</span>
@@ -539,7 +531,7 @@
 							<li><a href="#">Disclaimer</a></li>
 						</ul>
 					</div>
-					<div class="uk-width-1-4 footer-img-wrap">
+					<div class="uk-width-1-4 footer-img-wrap uk-visible@s">
 						<div class="footer-img">
 							<h2>Download Our Brochure</h2>
 							<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
@@ -553,11 +545,11 @@
 		</div>
 		<div class="footer-bottom">
 			<div class="uk-container uk-container-large">
-				<div class="uk-nav uk-flex uk-flex-between uk-flex-bottom">
-					<div class="uk-width-1-2">
+				<div class="uk-flex uk-flex-between uk-flex-bottom">
+					<div class="uk-width-1-2@l uk-width-1-1@m">
 						<img data-uk-img src="./images/footer_logos.jpg" alt="companies logos">
 					</div>
-					<div class="uk-width-1-2 uk-flex uk-flex-between">
+					<div class="uk-width-1-2@l uk-width-1-1@m uk-flex uk-flex-between">
 						<span>Copyright &reg; 2009-2019 Cruise Scotland. All right reserved.</span>
 						<span>Website by NB</span>
 					</div>

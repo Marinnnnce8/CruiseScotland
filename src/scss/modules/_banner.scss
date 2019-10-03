@@ -31,11 +31,18 @@
 		}
 	}
 
-	// @media (max-width: $breakpointLarge) {
+	@media (max-width: $breakpointLarge) {
+		>span {
+			font-size: 26px;
+		}
+		.uk-flex span {
+			display: none;
+		}
+	}
 
-	// }
-
-	// @media (max-width: $breakpointSmall) {
-		
-	// }
+	@media (max-width: $breakpointSmall) {
+		>span {
+			font-size: 18px;
+		}
+	}
 }

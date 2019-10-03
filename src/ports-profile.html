@@ -24,23 +24,24 @@
 
 	<header class="header">
 		<nav data-uk-navbar>
-			<div class="uk-navbar-left uk-logo">
+			<div class="uk-logo">
 				<img class="uk-visible@l" src="./images/logo.png" alt="home logo">
 				<img class="uk-hidden@l" src="./images/logo_tablet.jpg" alt="home logo">
 			</div>
-			<div class="uk-flex">
-				<div class="uk-flex-wrap-bottom uk-flex uk-flex-column">
-					<div class="uk-flex uk-flex-between">
-						<span class="nav-info uk-visible@s">Information for Scotland's cruise Industry partners</span>
-						<ul class="uk-flex nav-social">
-							<li>
-								<a href="#"><span class="uk-visible@l">Follow us on</span></a>
-							</li>
-							<li>
-								<a href="#"><span class="uk-visible@l">Members area</span></a>
-							</li>
-						</ul>
-					</div>
+			<div class="uk-flex-wrap-bottom uk-flex uk-flex-column">
+				<div class="uk-flex uk-flex-between">
+					<span class="nav-info uk-visible@s">Information for Scotland's cruise Industry partners</span>
+					<ul class="uk-flex nav-social">
+						<li>
+							<a href="#" class="font-ico-linkedin uk-visible@s"><span class="uk-visible@l">Follow us
+									on</span></a>
+						</li>
+						<li>
+							<a href="#">Members <span class="uk-visible@l">area</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-wrap">
 					<ul class="uk-navbar-nav uk-flex-middle">
 						<li class="uk-parent uk-parent--dropdown">
 							<button class="js-toggle-dropdown">Why
@@ -120,14 +121,16 @@
 							</div>
 						</li>
 					</ul>
-					<button class="js-toggle-nav uk-navbar-toggle uk-hidden@s" data-uk-navbar-toggle-icon></button>
 				</div>
+				<button class="js-toggle-nav uk-navbar-toggle uk-hidden@s"
+					aria-label="Click to open navigation menu"><span class="uk-text-uppercase">menu</span><span
+						role="presentation"></span></button>
 			</div>
 		</nav>
 	</header>
 
 	<main>
-		<section class="uk-background-cover banner-section"
+		<section class="uk-background-cover uk-background-fixed banner-section"
 			style="background-image: url('./images/member_profile_banner.jpg')" data-uk-img>
 			<div class="uk-container uk-container-large">
 				<div class="banner-inner">
@@ -149,57 +152,59 @@
 					<li><span>Invergordon</span></li>
 				</ul>
 				<div class="uk-flex uk-flex-between">
-					<div class="uk-width-2-3 ports-left">
+					<div class="uk-width-2-3@l uk-width-1-1 ports-left">
 						<h2>Invergordon – "the small friendly village with the big Cruise Liner Port".</h2>
 						<figure class="ports-figure uk-align-center">
 							<img data-uk-img src="./images/ports_profile_img.jpg" alt="Invergordon village">
 							<figcaption>A centered aligned image with caption.</figcaption>
 						</figure>
-						<table class="nb-table">
-							<caption class="uk-text-uppercase">Nautical Information</caption>
-							<tbody>
-								<tr>
-									<th colspan="1">Location:</th>
-									<td colspan="2">57° 41’N 004° 10’ W</td>
-									<th colspan="1">Anchorage Position:</th>
-									<td colspan="2">57° 40.95’N 004° 09.6W</td>
-								</tr>
-								<tr>
-									<th colspan="1">No. of Berths:</th>
-									<td colspan="2">4</td>
-									<th colspan="1">Distance to Landing Stage:</th>
-									<td colspan="2">0.3 NM</td>
-								</tr>
-								<tr>
-									<th colspan="1">Berth details:</th>
-									<td colspan="2">
-										<span>Admiralty Pier – Max LOA 350 m, Max Draught 10.5 m</span>
-										<span>Saltburn Pier – Max LOA 300 m, Max Draught 10.5 m</span>
-										<span>Service Base – Max LOA 300 m, Max Draught 9 m</span>
-									</td>
-									<th colspan="1">Tidal range/movement:</th>
-									<td colspan="2">Springs 3.7 m, Neaps 1.8 m</td>
-								</tr>
-								<tr>
-									<th colspan="1">Airdraught:</th>
-									<td colspan="2">No restrictions</td>
-									<th colspan="1">Town centre:</th>
-									<td colspan="2">0.5 km</td>
-								</tr>
-								<tr>
-									<th colspan="1">Width of Ship:</th>
-									<td colspan="2">No restrictions</td>
-									<th colspan="1">Shuttle to town:</th>
-									<td colspan="2">Only when vessel berthed on Saltburn Pier</td>
-								</tr>
-								<tr>
-									<th colspan="1">Anchorage:</th>
-									<td colspan="2">Yes - available if all Berths occupied</td>
-									<th colspan="1">Nearest airport</th>
-									<td colspan="2">Inverness 50 km</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="nb-table-wrap">
+							<table class="nb-table">
+								<caption class="uk-text-uppercase">Nautical Information</caption>
+								<tbody>
+									<tr>
+										<th colspan="1">Location:</th>
+										<td colspan="2">57° 41’N 004° 10’ W</td>
+										<th colspan="1">Anchorage Position:</th>
+										<td colspan="2">57° 40.95’N 004° 09.6W</td>
+									</tr>
+									<tr>
+										<th colspan="1">No. of Berths:</th>
+										<td colspan="2">4</td>
+										<th colspan="1">Distance to Landing Stage:</th>
+										<td colspan="2">0.3 NM</td>
+									</tr>
+									<tr>
+										<th colspan="1">Berth details:</th>
+										<td colspan="2">
+											<span>Admiralty Pier – Max LOA 350 m, Max Draught 10.5 m</span>
+											<span>Saltburn Pier – Max LOA 300 m, Max Draught 10.5 m</span>
+											<span>Service Base – Max LOA 300 m, Max Draught 9 m</span>
+										</td>
+										<th colspan="1">Tidal range/movement:</th>
+										<td colspan="2">Springs 3.7 m, Neaps 1.8 m</td>
+									</tr>
+									<tr>
+										<th colspan="1">Airdraught:</th>
+										<td colspan="2">No restrictions</td>
+										<th colspan="1">Town centre:</th>
+										<td colspan="2">0.5 km</td>
+									</tr>
+									<tr>
+										<th colspan="1">Width of Ship:</th>
+										<td colspan="2">No restrictions</td>
+										<th colspan="1">Shuttle to town:</th>
+										<td colspan="2">Only when vessel berthed on Saltburn Pier</td>
+									</tr>
+									<tr>
+										<th colspan="1">Anchorage:</th>
+										<td colspan="2">Yes - available if all Berths occupied</td>
+										<th colspan="1">Nearest airport</th>
+										<td colspan="2">Inverness 50 km</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 						<div class="ports-text">
 							<h2>Overview</h2>
 							<p><b>Invergordon lies in a particularly beautiful part of the Highlands
@@ -462,7 +467,8 @@
 								<h3>Contact Port</h3>
 
 								<div class='uk-margin-bottom'>
-									<div class='Inputfield InputfieldText' id='wrap_nb-form-nb-styleguide_name'>
+									<div class='Inputfield InputfieldText uk-width-2-3@l uk-width-1-1'
+										id='wrap_nb-form-nb-styleguide_name'>
 										<label class='uk-form-label' for='nb-form-nb-styleguide_name'>Your Name</label>
 										<span class="nb-form-hint">Error message style</span>
 										<div class='nb-form-content'>
@@ -471,7 +477,8 @@
 												title="Please enter your name" />
 										</div>
 									</div>
-									<div class='Inputfield InputfieldEmail' id='wrap_nb-form-nb-styleguide_email'>
+									<div class='Inputfield InputfieldEmail uk-width-2-3@l uk-width-1-1'
+										id='wrap_nb-form-nb-styleguide_email'>
 										<label class='uk-form-label' for='nb-form-nb-styleguide_email'>Your Email
 											Address</label>
 										<span class="nb-form-hint">Error message style</span>
@@ -481,7 +488,7 @@
 												title="Please enter a valid email address" />
 										</div>
 									</div>
-									<div class='Inputfield Inputfield--error InputfieldPhone'
+									<div class='Inputfield Inputfield--error InputfieldPhone uk-width-1-3@l uk-width-1-1'
 										id='wrap_nb-form-nb-styleguide_phone'>
 										<label class='uk-form-label' for='nb-form-nb-styleguide_phone'>Your Phone
 											Number</label>
@@ -571,7 +578,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="uk-width-1-3 ports-right">
+					<div class="uk-width-1-3@l uk-width-1-1 ports-right">
 						<div class="uk-card uk-card-default contact-card">
 							<div class="uk-card-media-top">
 								<img data-uk-img src="./images/dunvegan.jpg" alt="Dunvegan logo">
@@ -581,7 +588,8 @@
 								<span class="uk-text-uppercase">Contact person:</span>
 								<span class="uk-margin-bottom">Allison McGuire, Cruise Manager</span>
 								<span class="uk-text-uppercase">contact details</span>
-								<span class="uk-margin-bottom">Port of Cromatry Firthm Shore Road, Invergordon, Ross-shire, Scotland IV18 0HD</span>
+								<span class="uk-margin-bottom">Port of Cromatry Firthm Shore Road, Invergordon,
+									Ross-shire, Scotland IV18 0HD</span>
 								<ul>
 									<li><a href="tel:+4401349852308" class="font-ico-phone">+44 (0) 1349 852308</a></li>
 									<li><a href="mailto:allison@cfpa.co.uk"
@@ -596,30 +604,38 @@
 			<div class="uk-container uk-container-large">
 				<div class="related-links">
 					<h2>Related links</h2>
-					<div class="uk-flex">
-						<div class="related-link uk-width-1-4">
-							<a href="#"></a>
-							<span>Invergordon Town Website</span>
-							<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
-								role="presentation"></span>
+					<div class="uk-flex uk-flex-left uk-flex-wrap">
+						<div class="related-link uk-width-1-4@l uk-width-1-2@m uk-width-1-1">
+							<div>
+								<a href="#"></a>
+								<span>Invergordon Town Website</span>
+								<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
+									role="presentation"></span>
+							</div>
 						</div>
-						<div class="related-link uk-width-1-4">
-							<a href="#"></a>
-							<span>Invergordon Tourism Alliance Website</span>
-							<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
-								role="presentation"></span>
+						<div class="related-link uk-width-1-4@l uk-width-1-2@m uk-width-1-1">
+							<div>
+								<a href="#"></a>
+								<span>Invergordon Tourism Alliance Website</span>
+								<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
+									role="presentation"></span>
+							</div>
 						</div>
-						<div class="related-link uk-width-1-4">
-							<a href="#"></a>
-							<span>Walk Highlands - Loch Ness & Glen Affric</span>
-							<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
-								role="presentation"></span>
+						<div class="related-link uk-width-1-4@l uk-width-1-2@m uk-width-1-1">
+							<div>
+								<a href="#"></a>
+								<span>Walk Highlands - Loch Ness & Glen Affric</span>
+								<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
+									role="presentation"></span>
+							</div>
 						</div>
-						<div class="related-link uk-width-1-4">
-							<a href="#"></a>
-							<span>Cawdor Castle</span>
-							<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
-								role="presentation"></span>
+						<div class="related-link uk-width-1-4@l uk-width-1-2@m uk-width-1-1">
+							<div>
+								<a href="#"></a>
+								<span>Cawdor Castle</span>
+								<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
+									role="presentation"></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -627,7 +643,7 @@
 		</section>
 		<section class="signup-section">
 			<div class="uk-container uk-container-large">
-				<div class="signup-wrap uk-width-1-2">
+				<div class="signup-wrap uk-width-1-2@l uk-width-1-1@m">
 					<h2 class="font-ico-news">Sign up to our mailing list</h2>
 					<span>Our monthly newletter will give you an idea of what we're about</span>
 					<form action="/action_page.php">
@@ -638,16 +654,25 @@
 						</div>
 					</form>
 				</div>
+				<div class="uk-width-1-4 uk-width-1-1@l footer-img-wrap uk-hidden@s">
+					<div class="footer-img">
+						<h2>Download Our Brochure</h2>
+						<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
+						<img data-uk-img src="./images/brochure.png" alt="brochure">
+						<a href="#" class="uk-button-secondary" download aria-label="Click to download brochure"></a>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
-		<div data-uk-img class="footer-top uk-background-cover" style="background-image: url('./images/footer_bckg.jpg')">
+		<div data-uk-img class="footer-top uk-background-cover"
+			style="background-image: url('./images/footer_bckg.jpg')">
 			<div class="uk-container uk-container-large">
 				<h2>Get in touch with us</h2>
 				<div class="uk-flex uk-flex-between">
-					<div class="uk-width-1-4 footer-box">
+					<div class="uk-width-1-4@l uk-width-1-1@m footer-box">
 						<span class="uk-text-bold">Allison McGuire</span>
 						<span>Market Development Manager</span>
 						<span>c/o Port od Cromarty Firth</span>
@@ -676,12 +701,13 @@
 							<li><a href="#">Disclaimer</a></li>
 						</ul>
 					</div>
-					<div class="uk-width-1-4 footer-img-wrap">
+					<div class="uk-width-1-4 footer-img-wrap uk-visible@s">
 						<div class="footer-img">
 							<h2>Download Our Brochure</h2>
 							<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
 							<img data-uk-img src="./images/brochure.png" alt="brochure">
-							<a href="#" class="uk-button-secondary" download aria-label="Click to download brochure"></a>
+							<a href="#" class="uk-button-secondary" download
+								aria-label="Click to download brochure"></a>
 						</div>
 					</div>
 				</div>
@@ -689,11 +715,11 @@
 		</div>
 		<div class="footer-bottom">
 			<div class="uk-container uk-container-large">
-				<div class="uk-nav uk-flex uk-flex-between uk-flex-bottom">
-					<div class="uk-width-1-2">
+				<div class="uk-flex uk-flex-between uk-flex-bottom">
+					<div class="uk-width-1-2@l uk-width-1-1@m">
 						<img data-uk-img src="./images/footer_logos.jpg" alt="companies logos">
 					</div>
-					<div class="uk-width-1-2 uk-flex uk-flex-between">
+					<div class="uk-width-1-2@l uk-width-1-1@m uk-flex uk-flex-between">
 						<span>Copyright &reg; 2009-2019 Cruise Scotland. All right reserved.</span>
 						<span>Website by NB</span>
 					</div>
