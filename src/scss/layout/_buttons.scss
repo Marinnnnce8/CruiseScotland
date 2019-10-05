@@ -2,9 +2,11 @@ a,
 button {
 	appearance: none;
 	outline: none;
+
 	&:focus {
-		outline: 1px dashed rgba($midblue, .2) !important;// sass-lint:disable-line no-important
+		outline: 1px dashed rgba($midblue, .2) !important; // sass-lint:disable-line no-important
 	}
+
 	@media (max-width: $breakpointLarge) {
 		&:focus {
 			outline: none;
@@ -23,16 +25,18 @@ input[type='submit'] {
 }
 
 .uk-button {
-	background: $midblue;
+	background: $blue;
 	position: relative;
 	color: $white;
 	cursor: pointer;
+	overflow: hidden;
 	font-weight: $semi-bold;
 	font-size: 14px;
-	padding: 5px 45px 5px 25px;
+	padding: 15px 45px 15px 25px;
 	text-transform: uppercase;
 	transition: $nbSec ease-in-out;
 	text-align: left;
+
 	// min-width: 180px;
 	&:focus {
 		outline: 1px dashed rgba($skyblue, .2);
@@ -42,17 +46,50 @@ input[type='submit'] {
 		position: absolute;
 		top: 50%;
 		color: $white;
+		border: 1px solid $blue;
 		right: 15px;
 		transform: translateY(-50%);
 		transition: $nbSec ease-in-out;
+	}
+
+	svg {
+		z-index: 1;
+	}
+
+	.uk-button--text {
+		font-weight: inherit;
+		font-size: inherit;
+		position: relative;
+		z-index: 2;
+	}
+
+	.uk-button-hover {
+		position: absolute;
+		display: block;
+		height: 0;
+		border-radius: 50%;
+		background-color: $midblue;
+		transition: width .4s ease-in-out, height .4s ease-in-out;
+		transform: translate(-50%, -50%);
+		width: 0;
 		z-index: 1;
 	}
 
 	@include hover {
-		background: rgba($midblue, .8);
-		color: $white;
+		border: 1px solid $midblue;
+		background: $blue;
+		color: tint($midblue, 75%);
 
-		.uk-icon {
+		.uk-button--text {
+			color: $white;
+		}
+
+		.uk-button-hover {
+			height: calc(100% * 2.25);
+			width: 225%;
+		}
+
+		svg {
 			color: $white;
 		}
 	}
@@ -69,6 +106,7 @@ input[type='submit'] {
 	@media (max-width: $breakpointMedium) {
 		padding: 5px 31px 5px 15px;
 	}
+
 	@media (max-width: $breakpointSmall) {
 		padding: 15px 30px 15px 15px;
 	}
@@ -83,6 +121,7 @@ input[type='submit'] {
 	text-transform: uppercase;
 	position: relative;
 	transition: $nbSpeed ease-in-out;
+
 	svg {
 		right: 10px;
 		width: 25px;
@@ -93,7 +132,17 @@ input[type='submit'] {
 }
 
 .uk-button-primary-big {
-	padding: 45px 80px 45px 50px;
+	padding: 31px 80px 31px 50px;
+}
+
+.uk-button-primary-small {
+	padding: 10px 50px 10px 15px;
+	font-size: 12px;
+	width: 185px;
+
+	.uk-button-text {
+		font-size: 12px;
+	}
 }
 
 .uk-button-secondary {
@@ -103,6 +152,11 @@ input[type='submit'] {
 	width: 100px;
 	padding: 0;
 	position: relative;
+
+	&::before {
+		z-index: 2;
+	}
+
 	svg {
 		position: absolute;
 		left: 50%;
@@ -110,19 +164,6 @@ input[type='submit'] {
 		transform: translate(-50%, -50%);
 		z-index: 1;
 		width: 70px;
-	}
-}
-
-.uk-button--green {
-	// background: $green;
-
-	@include hover {
-		// background: rgba($green, .8);
-		color: $white;
-
-		svg {
-			color: $white;
-		}
 	}
 }
 
@@ -155,124 +196,55 @@ input[type='submit'] {
 	}
 }
 
-.social-btn {
-	width: 40px;
-	height: 40px;
-	border: 3px solid $midblue;
-	background: $white;
-	border-radius: 50px;
+.uk-button--underline {
+	background: none;
 	position: relative;
+	text-decoration: none;
 	display: inline-block;
-	margin-right: 5px;
 	color: $midblue;
-	transition: $nbSec ease-in-out;
+	padding: 0 1px;
+	transition: color ease .3s;
 
-	.uk-icon, svg {
-		color: $midblue;
-	}
-
-	svg {
+	&::before,
+	&::after {
+		content: '';
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		background-color: $midblue;
+		z-index: 0;
+		height: 5%;
+	}
+
+	&::before {
+		width: 0%;
+		left: 0;
+		bottom: 0;
+		transition: width ease .4s;
+	}
+
+	&::after {
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		transition: ease .6s;
 	}
 
 	@include hover {
-		transform: scale(1.1);
-	}
-}
-
-.social-btn--twitter {
-	border: 3px solid $twitter-blue;
-	color: $twitter-blue;
-
-	.uk-icon, svg {
-		color: $twitter-blue;
-	}
-}
-
-.social-btn--mail {
-	// border: 3px solid $icon-grey;
-	// color: $icon-grey;
-
-	.icon-staglobe {
-		// color: $icon-grey;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-	@include hover {
-		// color: $icon-grey;
-		box-shadow: none;
-	}
-}
-
-.text-button {
-	text-transform: uppercase;
-	position: relative;
-	display: inline-block;
-	padding: 0 15px 0 0;
-	font-family: $font-default;
-	color: $ui-blue;
-
-	span {
-		position: absolute;
-		top: 50%;
-		transform: translate(50%, -50%);
-		right: 0;
-		color: $skyblue;
-	}
-
-	@include hover {
-		text-decoration: underline;
-		opacity: .8;
-	}
-}
-
-.text-button--white {
-	color: $white;
-
-	@include hover {
-		opacity: 1;
-	}
-}
-
-.check-button {
-	width: 35px;
-	height: 35px;
-	background: $ui-blue;
-	border-radius: 50%;
-	position: relative;
-	padding: 0;
-	min-width: 35px;
-
-	.icon-stacorrect-symbol {
-		text-align: center;
 
 		&::before {
-			position: absolute;
-			transform: translate(-50%, -50%);
-			top: 50%;
-			left: 50%;
-			z-index: 1;
-			width: 30px;
+			width: 100%;
+		}
+
+		&::after {
+			left: 100%;
+			width: 0%;
+			transition: ease .2s;
 		}
 	}
 }
 
-.listing-button {
-	line-height: 0;
-	padding: 13px 35px 13px 15px;
-	position: relative;
 
-	.icon-stacorrect-symbol {
-		position: absolute;
-		top: 50%;
-		transform: translate(-50%, -50%);
-		right: 0;
-		width: 14px;
+.uk-slidenav {
+	@include hover {
+		color: $white;
 	}
 }

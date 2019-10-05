@@ -1,62 +1,78 @@
 .recent-stories {
 	background: $pastelblue;
-    padding-top: 170px;
-    
-    .uk-slider {
-        position: relative;
-    }
+	padding-top: 170px;
+
+	.uk-slider {
+		position: relative;
+	}
 
 	li {
 		position: relative;
 
 		h3 {
 			color: $blue;
-            font-family: $font-black;
-            font-size: 20px;
+			font-family: $font-black;
+			font-size: 20px;
 		}
-        
-        p {
-            font-weight: $light;
-            display: none;
-            font-size: 16px;
-            margin-bottom: 30px;
+
+		p {
+			font-weight: $light;
+			font-size: 16px;
+			margin-bottom: 30px;
+			overflow-y: hidden;
+			max-height: 0;
+			transition-duration: .5s;
+			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        }
+        p.closed {
+            max-height: 30px;
+            overflow-y: visible;
         }
 
-        .uk-card-media-top {
-            display: block;
-            height: 340px;
-        }
+		.uk-card {
+			min-height: 550px;
+		}
 
-        .uk-card-body {
-            min-height: 180px;
-            position: relative;
-            .uk-button-secondary {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                width: 50px;
-                height: 50px;
-            }
-        }
+		.uk-card-media-top {
+			display: block;
+			height: 340px;
+		}
 
-        .font-ico-calendar {
-            display: block;
-            font-size: 12px;
-            padding-left: 45px;
-            position: relative;
-            &::before {
-                color: $blue;
-                font-size: 20px;
-                left: 0;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        }
+		.uk-card-body {
+			min-height: 180px;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			background: $white;
+
+			.uk-button-secondary {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		.font-ico-calendar {
+			display: block;
+			font-size: 12px;
+			padding-left: 45px;
+			position: relative;
+
+			&::before {
+				color: $blue;
+				font-size: 20px;
+				left: 0;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
 
 		>a {
-            background: transparent;
-            opacity: 0;
+			background: transparent;
+			opacity: 0;
 			left: 0;
 			top: 0;
 			bottom: 0;
@@ -64,16 +80,18 @@
 			width: 100%;
 			z-index: 2;
 		}
-    }
-    .uk-button-secondary {
-        position: absolute;
-        left: auto;
-        bottom: 0;
-        top: auto;
-        transform: none;
-        margin: 0;
-        svg {
-            width: 22px;
-        }
-    }
+	}
+
+	.uk-button-secondary {
+		position: absolute;
+		left: auto;
+		bottom: 0;
+		top: auto;
+		transform: none;
+		margin: 0;
+
+		svg {
+			width: 22px;
+		}
+	}
 }

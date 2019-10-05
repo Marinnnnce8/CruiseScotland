@@ -81,12 +81,19 @@
 .contact-card {
 	box-shadow: 0 0 25px -12px rgba($black, .3);
 	max-width: 300px;
+	.uk-card-media-top {
+		padding: 30px 25px;
+		border-bottom: 1px solid $grey-input;
+	}
 	img {
 		width: 100%;
 		height: auto;
 	}
 	.uk-card-body {
-		padding: 25px 40px 65px 50px;
+		padding: 25px 25px 65px;
+		>span {
+			padding-left: 25px;
+		}
 	}
 
 	h4 {
@@ -98,24 +105,69 @@
 		display: block;
 		margin-bottom: 10px;
 		font-size: 12px;
+		color: $grey;
+		position: relative;
+		span {
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			color: $blue;
+			font-size: 18px;
+			position: absolute;
+		}
 	}
-	span:not(.uk-text-uppercase) {
+	span {
 		font-size: 14px;	
 		color: $black;
 		display: block;
 	}
-	a {
+	a:not(.uk-button) {
 		position: relative;
 		color: $downblue;
 		text-decoration: underline;
 		transition: $nbSpeed ease-in-out;
-		&::before {
+		padding-left: 25px;
+		span {
 			position: absolute;
-			left: -25px;
+			left: -5px;
 			top: 50%;
 			transform: translateY(-50%);
 			color: $blue;
 			font-size: 18px;
+		}
+	}
+	.uk-button {
+		background: $blue;
+		font-family: $font-heavy;
+		font-size: 14px;
+		color: $white;
+		border: 1px solid $blue;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		margin-bottom: 0;
+		padding: 10px 50px 10px 25px;
+		text-align: center;
+		span {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 20px;
+			color: $white;
+			font-size: 30px;
+			left: auto;
+			&::before {
+				transition: $nbSpeed ease-in-out;
+			}
+		}
+		@include hover {
+			background: $white;
+			color: $blue;
+			border-color: $blue;
+			span::before {
+				color: $blue;
+			}
 		}
 	}
 	@media (max-width: $breakpointSmall) { 

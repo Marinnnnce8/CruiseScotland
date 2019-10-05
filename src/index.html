@@ -17,6 +17,7 @@
 
 	<link rel='shortcut icon' href='favicon/favicon.ico'>
 	<link rel='stylesheet' href='css/uikit.min.css' />
+	<link rel='stylesheet' href='css/style.css' />
 	<link rel='stylesheet' href='css/theme.min.css' />
 </head>
 
@@ -33,11 +34,11 @@
 					<span class="nav-info uk-visible@s">Information for Scotland's cruise Industry partners</span>
 					<ul class="uk-flex nav-social">
 						<li>
-							<a href="#" class="font-ico-linkedin uk-visible@s"><span class="uk-visible@l">Follow us
+							<a href="#" class="font-ico-linkedin uk-visible@s"><span>Follow us
 									on</span></a>
 						</li>
 						<li>
-							<a href="#">Members <span class="uk-visible@l">area</span></a>
+							<a href="#">Members <span class="icon-user" role="presentation"></span><span>area</span></a>
 						</li>
 					</ul>
 				</div>
@@ -138,13 +139,13 @@
 					<span>Promoting Scotland as a cruise destination to industry operators.</span>
 					<div class="uk-flex">
 						<a href="#" download class="uk-button uk-button-secondary" aria-label="Click to download file"
-							data-uk-icon="arrow-down"></a>
+							data-uk-icon="arrow-down"><span class="uk-button-hover" role="presentation"></span></a>
 						<span>Image Caption - With Nearest Port Name</span>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- <section class="intro-section">
+		<section class="intro-section">
 			<div class="uk-container uk-container-large intro__container">
 				<div uk-slider class="js-intro-slider">
 					<ul class="uk-slider-items uk-child-width-1-5@s uk-child-width-1-5@">
@@ -212,10 +213,12 @@
 							</div>
 						</li>
 					</ul>
-					<a class="js-slider-arrow-next uk-button-secondary uk-position-small uk-hidden-hover" href="#"
-						uk-slidenav-previous uk-slider-item="previous"></a>
-					<a class="js-slider-arrow-prev uk-button-secondary uk-position-small uk-hidden-hover" href="#"
-						uk-slidenav-next uk-slider-item="next"></a>
+					<a class="js-slider-arrow-next uk-button uk-button-secondary uk-position-small uk-hidden-hover"
+						href="#" uk-slidenav-previous uk-slider-item="previous"><span class="uk-button-hover"
+							role="presentation"></span></a>
+					<a class="js-slider-arrow-prev uk-button uk-button-secondary uk-position-small uk-hidden-hover"
+						href="#" uk-slidenav-next uk-slider-item="next"><span class="uk-button-hover"
+							role="presentation"></span></a>
 				</div>
 				<div class="intro-text">
 					<h2>World-class scenery awaits your guests</h2>
@@ -229,7 +232,7 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 		<section data-uk-img class="uk-background-fixed destination-section uk-background-cover"
 			style="background-image: url(./images/destination_bckg.jpg)">
@@ -242,119 +245,239 @@
 							be good to have a sentence or two included here.</p>
 						<span>Click on a member to view their profile</span>
 					</div>
-					<div class="destination-map uk-width-1-2@l uk-width-1-1@s">
-						<img src="./images/map.png" alt="map" data-uk-img>
-						<ul>
-							<li><button class="pin font-ico-bollard" aria-label="map pin"><span class="beacon"
-										role="presentation"></span></button></li>
-						</ul>
-					</div>
-					<div class="destination-cards">
-						<div data-uk-alert class="destination-card uk-card uk-card-default uk-padding-remove"
-							id="card-1">
-							<div class="uk-card-media-top">
-								<span class="font-ico-bollard"></span>
-								<img data-uk-img src="./images/destination_card_1.jpg" alt="card img">
-								<span>Invergordon</span>
-								<button class="uk-alert-close" type="button" data-uk-close
-									aria-label="Click here to close info card"></button>
+					<div class="uk-width-1-2@l uk-width-1-1@s destination-map__wrap">
+						<div class="destination-map js-destination-map">
+							<img src="./images/map.png" alt="map" data-uk-img>
+							<ul>
+								<li class="active"><button class="font-ico-bollard js-button-map" data-card="1"
+										aria-label="map pin" title="Invergordon"><span
+											role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="2" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="3" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="4" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="5" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="6" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="7" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="8" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="9" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="10" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="11" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="12" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="13" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="14" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+								<li><button class="font-ico-bollard js-button-map" data-card="15" aria-label="map pin"
+										title="Invergordon"><span role="presentation"></span></button></li>
+							</ul>
+						</div>
+						<div class="destination-cards">
+							<div data-uk-alert class="destination-card uk-card uk-card-default uk-padding-remove">
+								<div class="uk-card-media-top">
+									<span class="font-ico-bollard"></span>
+									<img data-uk-img src="./images/destination_card_1.jpg" alt="card img">
+									<span>Aberdeen</span>
+									<button class="js-card-close" data-uk-icon="close"
+										aria-label="Click here to close info card"></button>
+								</div>
+								<div class="uk-card-body">
+									<div class="uk-flex-column">
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Town</span>
+											<span>0.5 km</span>
+										</div>
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Centre:</span>
+											<span></span>
+										</div>
+									</div>
+									<div class="uk-flex-column">
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Nearest</span>
+											<span>Inverness, 50 km</span>
+										</div>
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Airport:</span>
+											<span></span>
+										</div>
+									</div>
+									<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right"><span class="uk-button-hover"></span></a>
+								</div>
 							</div>
-							<div class="uk-card-body">
-								<div class="uk-flex-column">
-									<div class="uk-flex uk-flex-middle">
-										<span class="uk-text-uppercase">Town</span>
-										<span>0.5 km</span>
-									</div>
-									<div class="uk-flex uk-flex-middle">
-										<span class="uk-text-uppercase">Centre:</span>
-										<span></span>
-									</div>
+							<div data-uk-alert class="destination-card uk-card uk-card-default uk-padding-remove">
+								<div class="uk-card-media-top">
+									<span class="font-ico-bollard"></span>
+									<img data-uk-img src="./images/destination_card_1.jpg" alt="card img">
+									<span>Holy Loch Port</span>
+									<button class="js-card-close" data-uk-icon="close"
+										aria-label="Click here to close info card"></button>
 								</div>
-								<div class="uk-flex-column">
-									<div class="uk-flex uk-flex-middle">
-										<span class="uk-text-uppercase">Nearest</span>
-										<span>Inverness, 50 km</span>
+								<div class="uk-card-body">
+									<div class="uk-flex-column">
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Town</span>
+											<span>0.5 km</span>
+										</div>
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Centre:</span>
+											<span></span>
+										</div>
 									</div>
-									<div class="uk-flex uk-flex-middle">
-										<span class="uk-text-uppercase">Airport:</span>
-										<span></span>
+									<div class="uk-flex-column">
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Nearest</span>
+											<span>Inverness, 50 km</span>
+										</div>
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Airport:</span>
+											<span></span>
+										</div>
 									</div>
+									<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right"></a>
 								</div>
-								<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right"></a>
+							</div>
+							<div data-uk-alert class="destination-card uk-card uk-card-default uk-padding-remove">
+								<div class="uk-card-media-top">
+									<span class="font-ico-bollard"></span>
+									<img data-uk-img src="./images/destination_card_1.jpg" alt="card img">
+									<span>Montrose</span>
+									<button class="js-card-close" data-uk-icon="close"
+										aria-label="Click here to close info card"></button>
+								</div>
+								<div class="uk-card-body">
+									<div class="uk-flex-column">
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Town</span>
+											<span>0.5 km</span>
+										</div>
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Centre:</span>
+											<span></span>
+										</div>
+									</div>
+									<div class="uk-flex-column">
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Nearest</span>
+											<span>Inverness, 50 km</span>
+										</div>
+										<div class="uk-flex uk-flex-middle">
+											<span class="uk-text-uppercase">Airport:</span>
+											<span></span>
+										</div>
+									</div>
+									<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right"><span
+											class="uk-button-hover" role="presentation"></span></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="uk-container uk-container-large">
-				<div class="destination-members uk-flex-column uk-margin-bottom">
+				<div class="destination-members js-destination-members uk-flex-column uk-margin-bottom">
 					<span class="uk-text-uppercase">port members</span>
 					<ul class="uk-flex uk-flex-left uk-flex-wrap">
+						<li class="uk-width-1-4@l uk-width-1-2@s active"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="1">Aberdeen</button></li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Aberdeen</button></li>
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Holy
+								class="font-ico-bollard uk-text-left js-button-map" data-card="2">Holy
 								Loch Port</button></li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Montrose</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="3">Montrose</button></li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Portree</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="4">Portree</button></li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Dundee</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="5">Dundee</button></li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Invegordon</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="6">Invegordon</button>
+						</li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Oban</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="7">Oban</button></li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Scrabster</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="8">Scrabster</button>
+						</li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Edinburhg</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="9">Edinburhg</button>
+						</li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Inverness</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="10">Inverness</button>
+						</li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Peterhead</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="11">Peterhead</button>
+						</li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Stronoway</button></li>
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Glasgow
+								class="font-ico-bollard uk-text-left js-button-map" data-card="12">Stronoway</button>
+						</li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="13">Glasgow
 								(Greenrock)</button></li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Lerwick</button></li>
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Port
+								class="font-ico-bollard uk-text-left js-button-map" data-card="14">Lerwick</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="15">Port
 								Ellen</button></li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Ullapool</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="16">Ullapool</button>
+						</li>
 					</ul>
 				</div>
 				<div class="destination-members uk-flex-column uk-margin-bottom">
 					<span class="uk-text-uppercase">other members</span>
 					<ul class="uk-flex uk-flex-left uk-flex-wrap">
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">European
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="17">European
 								Cruise Service UK
 								Ltd</button></li>
 						<li class="uk-width-1-4@l uk-width-1-2@s"><button
-								class="font-ico-bollard uk-text-left">Excursions Ltd</button></li>
+								class="font-ico-bollard uk-text-left js-button-map" data-card="18">Excursions
+								Ltd</button></li>
 					</ul>
 				</div>
 				<div class="destination-members uk-flex-column uk-margin-bottom">
 					<span class="uk-text-uppercase">associate members</span>
 					<ul class="uk-flex uk-flex-left uk-flex-wrap">
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Cruise Forth</button></li>
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Inveraray Castle</button></li>
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Dunvegan Castle</button></li>
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Visit Aberdeenshire</button></li>
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Ellean Donan Castle</button></li>
-						<li class="uk-width-1-4@l uk-width-1-2@s"><button class="font-ico-bollard uk-text-left">Jacobite Cruises Ltd</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="19">Cruise Forth</button>
+						</li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="20">Inveraray
+								Castle</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="21">Dunvegan
+								Castle</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="22">Visit
+								Aberdeenshire</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="23">Ellean Donan
+								Castle</button></li>
+						<li class="uk-width-1-4@l uk-width-1-2@s"><button
+								class="font-ico-bollard uk-text-left js-button-map" data-card="24">Jacobite Cruises
+								Ltd</button></li>
 					</ul>
 				</div>
-				<div class="distance-calculator uk-flex">
+				<div class="distance-calculator uk-flex uk-flex-middle">
 					<div class="uk-width-1-2@l uk-width-1-1@s">
-						<img data-uk-img src="./images/distance_calculator.png" alt="distance" role="presentation">
+						<span class="icon-chat" role="presentation"></span>
 						<span>Distance calculator</span>
 					</div>
 					<div class="uk-width-1-2@l uk-width-1-1@s">
 						<span>Helps you find the distance between ports and calculate the voyage time.</span>
 					</div>
 					<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
-						aria-label="Click to calculate distance between ports and calculate the voyage time"></a>
+						aria-label="Click to calculate distance between ports and calculate the voyage time"><span
+							class="uk-button-hover" role="presentation"></span></a>
 				</div>
 			</div>
 		</section>
@@ -363,31 +486,37 @@
 			style="background-image: url('./images/port_group_bckg.jpg')">
 			<div class="uk-container uk-container-large">
 				<div class="port-wrap uk-flex uk-flex-column uk-width-2-3@l uk-width-1-1@s">
-					<span class="font-ico-medal uk-text-uppercase">member of the month</span>
+					<span class="uk-text-uppercase"><span class="icon-medal" role="presentation"></span>member of the
+						month</span>
 					<h2>Forth Ports Group</h2>
 					<div class="uk-flex">
 						<div class="port-img uk-flex uk-flex-bottom uk-width-1-2@s">
 							<img data-uk-img src="./images/port_logo.png" alt="port logo">
-							<a href="#" class="uk-button-primary uk-button-primary-big uk-hidden@l"
-									data-uk-icon="arrow-right">Meet the member</a>
+							<a href="#" class="uk-button uk-button-primary uk-button-primary-big uk-hidden@l"
+								data-uk-icon="arrow-right"><span class="uk-button-hover"
+									role="presentation"></span><span class="uk-button--text">Meet the member</span></a>
 						</div>
 						<div class="uk-flex uk-flex-column uk-flex-between uk-width-1-2@s">
 							<p>Forth Ports offers dedicated berthing facilities to cruise operators at Forth Ports
 								Leith, Forth Ports Dundee and Forth Ports Rosyth in Scotland, each accommodating
 								European and international turnaround and transit cruises.</p>
 							<div class="uk-flex uk-flex-between">
-								<a href="#" class="uk-button-primary uk-button-primary-big uk-width-1-2 uk-visible@l"
-									data-uk-icon="arrow-right">Meet the member</a>
+								<a href="#"
+									class="uk-button uk-button-primary uk-button-primary-big uk-width-1-2 uk-visible@l"
+									data-uk-icon="arrow-right"><span class="uk-button-hover"
+										role="presentation"></span><span class="uk-button--text">Meet the
+										member</span></a>
 								<a href="#" class="uk-button-primary uk-button-primary-big uk-width-1-2"
-									data-uk-icon="arrow-right">View all the
-									members</a>
+									data-uk-icon="arrow-right"><span class="uk-button-hover"
+										role="presentation"></span><span class="uk-button--text">View all the
+										members</span></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- <section class="recent-stories">
+		<section class="recent-stories">
 			<div class="uk-container uk-container-large">
 				<h2>Most Recent Stories</h2>
 				<div uk-slider class="js-intro-slider">
@@ -397,7 +526,7 @@
 							<div class="uk-card uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_1.jpg')"></span>
-								<div class="uk-card-body js-height-match">
+								<div class="uk-card-body recent-story__bottom" data-uk-height-match=".uk-card-body">
 									<h3>Viking Jupiter visits Scotland for first time</h3>
 									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
 									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
@@ -411,7 +540,7 @@
 							<div class="uk-card uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_2.jpg')"></span>
-								<div class="uk-card-body js-height-match">
+								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
 									<h3>Record-breaking cruise season at Lerwick includes multiple visits</h3>
 									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
 									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
@@ -425,7 +554,7 @@
 							<div class="uk-card uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_3.jpg')"></span>
-								<div class="uk-card-body js-height-match">
+								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
 									<h3>New initiatives for record cruise season underway at Lerwick</h3>
 									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
 									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
@@ -439,7 +568,7 @@
 							<div class="uk-card uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_1.jpg')"></span>
-								<div class="uk-card-body js-height-match">
+								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
 									<h3>Another Record-Breaking Year for Cruise in the Port of Cromarty</h3>
 									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
 									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
@@ -453,7 +582,7 @@
 							<div class="uk-card uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_2.jpg')"></span>
-								<div class="uk-card-body js-height-match">
+								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
 									<h3>Viking Jupiter visits Scotland for first time</h3>
 									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
 									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
@@ -463,13 +592,15 @@
 							</div>
 						</li>
 					</ul>
-					<a class="js-slider-arrow-next uk-button-secondary uk-position-small uk-hidden-hover" href="#"
-						uk-slidenav-previous uk-slider-item="previous"></a>
-					<a class="js-slider-arrow-prev uk-button-secondary uk-position-small uk-hidden-hover" href="#"
-						uk-slidenav-next uk-slider-item="next"></a>
+					<a class="js-slider-arrow-next uk-button uk-button-secondary uk-position-small uk-hidden-hover"
+						href="#" uk-slidenav-previous uk-slider-item="previous"><span class="uk-button-hover"
+							role="presentation"></span></a>
+					<a class="js-slider-arrow-prev uk-button uk-button-secondary uk-position-small uk-hidden-hover"
+						href="#" uk-slidenav-next uk-slider-item="next"><span class="uk-button-hover"
+							role="presentation"></span></a>
 				</div>
 			</div>
-		</section> -->
+		</section>
 		<section class="signup-section">
 			<div class="uk-container uk-container-large">
 				<div class="signup-wrap uk-width-1-2@l uk-width-1-1@m">
@@ -479,17 +610,19 @@
 						<div class="signup-box">
 							<input id="email" type="email" name="email" aria-label="Enter your email address"
 								placeholder="Enter your email address..." required>
-							<button class="uk-button-primary" data-uk-icon="arrow-right">Subscribe</button>
+							<button class="uk-button uk-button-primary" data-uk-icon="arrow-right"><span
+									class="uk-button-hover" role="presentation"></span><span class="uk-button--text">Subscribe</span></button>
 						</div>
 					</form>
 				</div>
-				<div class="uk-width-1-4 uk-width-1-1@l footer-img-wrap uk-hidden@s">
-					<div class="footer-img">
+				<div class="uk-width-1-4 uk-width-1-1@l brochure-img-wrap uk-hidden@s">
+					<div class="brochure-img">
 						<h2>Download Our Brochure</h2>
 						<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
 						<img data-uk-img src="./images/brochure.png" alt="brochure">
-						<a href="#" class="uk-button-secondary" download
-							aria-label="Click to download brochure"></a>
+						<a href="#" class="uk-button uk-button-secondary icon-download-1" download
+							aria-label="Click to download brochure"><span class="uk-button-hover"
+								role="presentation"></span></a>
 					</div>
 				</div>
 			</div>
@@ -513,31 +646,34 @@
 					<div class="uk-width-1-4 footer-box">
 						<ul>
 							<li>
-								<a href="#" class="font-ico-calendar">Make enquiry</a>
+								<a href="#"><span class="icon-calendar"></span>Make enquiry</a>
 							</li>
-							<li><a class="font-ico-phone" href="tel:+4401349852308">+44 (0) 1349 852308</a></li>
-							<li><a class="font-ico-email" href="mailto:allison@cfpa.co.uk">allison@cfpa.co.uk</a></li>
-							<li><a class="font-ico-linkedin" href="#">Follow us on Linkedin</a></li>
+							<li><a href="tel:+4401349852308"><span class="icon-phone-call"></span>+44 (0) 1349
+									852308</a></li>
+							<li><a href="mailto:allison@cfpa.co.uk"><span
+										class="icon-mail"></span>allison@cfpa.co.uk</a></li>
+							<li><a href="#"><span class="font-ico-linkedin"></span>Follow us on Linkedin</a></li>
 						</ul>
 					</div>
 					<div class="uk-width-1-4 footer-box">
 						<ul>
-							<li><a href="#">Terms & Conditions</a></li>
+							<li><a class="uk-button--underline" href="#">Terms & Conditions</a></li>
 						</ul>
 						<ul>
-							<li><a href="#">Privacy Policy</a></li>
+							<li><a class="uk-button--underline" href="#">Privacy Policy</a></li>
 						</ul>
 						<ul>
-							<li><a href="#">Disclaimer</a></li>
+							<li><a class="uk-button--underline" href="#">Disclaimer</a></li>
 						</ul>
 					</div>
-					<div class="uk-width-1-4 footer-img-wrap uk-visible@s">
-						<div class="footer-img">
+					<div class="uk-width-1-4 brochure-img-wrap uk-visible@s">
+						<div class="brochure-img">
 							<h2>Download Our Brochure</h2>
 							<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
 							<img data-uk-img src="./images/brochure.png" alt="brochure">
-							<a href="#" class="uk-button-secondary" download
-								aria-label="Click to download brochure"></a>
+							<a href="#" class="uk-button uk-button-secondary icon-download-1" download
+							aria-label="Click to download brochure"><span class="uk-button-hover"
+								role="presentation"></span></a>
 						</div>
 					</div>
 				</div>

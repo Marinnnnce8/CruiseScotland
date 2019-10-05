@@ -1,6 +1,6 @@
 .header {
 	background: $blue;
-	padding-left: 440px;
+	padding-left: 400px;
 	left: 0;
 	position: absolute;
 	top: 0;
@@ -10,7 +10,7 @@
 	.uk-logo {
 		background: $white;
 		padding: 0 35px 0 40px;
-		max-width: 410px;
+		max-width: 395px;
 		position: absolute;
 		width: 100%;
 		left: 0;
@@ -191,17 +191,17 @@
 
 		>span:last-of-type {
 			background: transparent;
-	
+
 			&::after,
 			&::before {
 				top: 0;
 			}
-	
+
 			&::after {
 				transform: rotate(45deg);
 				left: 0;
 			}
-	
+
 			&::before {
 				transform: rotate(-45deg);
 				right: 0;
@@ -350,11 +350,11 @@
 		&:first-of-type {
 			a {
 				position: relative;
-				padding-right: 65px;
+				padding-right: 45px;
 
 				&::before {
 					font-size: 20px;
-					right: 30px;
+					right: 13px;
 					top: 50%;
 					transform: translateY(-50%);
 					position: absolute;
@@ -370,8 +370,22 @@
 			background: $lightblue;
 			font-size: 12px;
 
+			a {
+				padding: 25px 45px 25px 20px;
+				position: relative;
+
+				&::before {
+					position: absolute;
+					right: 20px;
+					font-size: 18px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+
 			span {
-				font-size: inherit;
+				font-family: $font-heavy;
+				font-size: 12px;
 			}
 		}
 	}
@@ -394,6 +408,10 @@
 						left: 50%;
 						right: auto;
 					}
+
+					span {
+						display: none;
+					}
 				}
 			}
 
@@ -401,8 +419,23 @@
 				background: $lightblue;
 				font-size: 7px;
 
-				span {
-					font-size: inherit;
+				a {
+					padding: 8px;
+					text-align: center;
+
+					&::before {
+						transform: none;
+						position: relative;
+						display: block;
+						right: auto;
+						top: auto;
+						text-align: center;
+						margin-bottom: 7px;
+					}
+
+					span {
+						display: none;
+					}
 				}
 			}
 		}

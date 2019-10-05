@@ -123,6 +123,14 @@
 		width: 1px;
 		z-index: 2;
 	}
+	span {
+		color: $white;
+		position: absolute;
+		font-size: 18px;
+		right: 7px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 	@media (max-width: $breakpointSmall) {
 		left: 0;
 	}

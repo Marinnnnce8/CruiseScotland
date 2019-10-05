@@ -36,11 +36,10 @@
 			}
 
 			a {
-				text-decoration: underline;
-				display: block;
+				text-decoration: none;
 				position: relative;
 
-				&::before {
+				span {
 					position: absolute;
 					font-size: 20px;
 					color: inherit;
@@ -54,6 +53,9 @@
 		&:nth-of-type(2) {
 			li a {
 				padding-left: 35px;
+				@include hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
@@ -85,7 +87,7 @@
 	}
 }
 
-.footer-img-wrap {
+.brochure-img-wrap {
 	position: relative;
 
 	img {
@@ -109,7 +111,7 @@
 	}
 }
 
-.footer-img {
+.brochure-img {
 	box-shadow: 0 -1px 19px -5px rgba($black, .7);
 	position: absolute;
 	bottom: 0;
@@ -138,6 +140,14 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
+		&::before {
+			color: $white;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 55px;
+		}
 	}
 
 	@media (max-width: $breakpointSmall) {

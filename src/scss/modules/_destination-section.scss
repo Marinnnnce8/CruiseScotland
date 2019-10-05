@@ -34,6 +34,7 @@
 		.uk-container:last-of-type {
 			padding: 0 20px 140px;
 		}
+
 		>.uk-container>.uk-flex {
 			flex-direction: column;
 
@@ -109,130 +110,16 @@
 	}
 }
 
-.destination-map {
-	position: relative;
-
-	img {
-		width: 100%;
-		max-width: 340px;
-	}
-
-	ul {
-		position: absolute;
-		left: 0;
-		width: 100%;
-		top: 0;
-		bottom: 0;
-		li {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-		}
-	}
-
-	@media (max-width: $breakpointSmall) {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-	}
-}
-
-.pin {
-	transform: rotate(-45deg);
-	transform-origin: 50% 50%;
-	border-radius: 50% 50% 50% 0;
-	padding: 0 3px 3px 0;
-	width: 40px;
-	height: 40px;
-	background: $blue;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	box-shadow: -1px 1px 4px rgba($black, .5);
-	transition: $nbSpeed ease-in-out;
-	z-index: 2;
-
-	&::before {
-		color: $white;
-		transform: rotate(45deg) translateX(-70%);
-		font-size: 16px;
-		left: 50%;
-		top: 50%;
-		position: absolute;
-		transition: $nbSpeed ease-in-out;
-	}
-
-	@include hover {
-		background: $white;
-		transform: rotate(-45deg) scale(1.05);
-
-		&::before {
-			color: $dark-blue;
-		}
-	}
-}
-
-.pin--active {
-	background: $white;
-	width: 45px;
-	height: 45px;
-
-	&::before {
-		color: $dark-blue;
-	}
-}
-
-.beacon {
-	position: absolute;
-	top: 73%;
-	left: 9%;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	transform: translateX(-50%);
-	z-index: -1;
-}
-
-.beacon::before,
-.beacon::after {
-	position: absolute;
-	content: '';
-	height: 15px;
-	width: 15px;
-	left: 0;
-	top: 0;
-	background-color: transparent;
-	border-radius: 50%;
-	box-shadow: 0 0 0 10px $blue;
-	animation: active 2s infinite linear;
-}
-
-.beacon::after {
-	animation-delay: 1s;
-}
-
-@keyframes active {
-	0% {
-		transform: scale(.1) box-shadow(0 0 0 1px $blue);
-		opacity: 1;
-	}
-
-	100% {
-		transform: scale(3.5);
-		opacity: 0;
-	}
-}
-
 .destination-cards {
-	@media (max-width: $breakpointLarge) {
+	.destination-card:not(:first-of-type) {
 		display: none;
 	}
 
 	@media (max-width: $breakpointSmall) {
-		display: block;
-		position: relative;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
 	}
 }
 
@@ -240,8 +127,9 @@
 	position: absolute;
 	right: 0;
 	top: 140px;
-	z-index: 3;
+	z-index: 30;
 	width: 290px;
+	margin-top: 0;
 
 	.uk-card-media-top {
 		position: relative;
@@ -249,7 +137,7 @@
 		span,
 		button {
 			position: absolute;
-			z-index: 4;
+			z-index: 31;
 		}
 
 		span {
@@ -275,9 +163,13 @@
 			right: 0;
 			width: 30px;
 			height: 30px;
+			transition: $nbSpeed ease-in-out;
 
 			svg {
 				width: 14px;
+			}
+			@include hover {
+				background: rgba($white, .7);
 			}
 		}
 	}
@@ -322,13 +214,13 @@
 	}
 
 	@media (max-width: $breakpointSmall) {
-		position: relative;
-		top: auto;
+		top: 0;
 		right: auto;
 		width: 100%;
 
 		img {
 			width: 100%;
+			max-width: 100%;
 		}
 	}
 }
@@ -374,6 +266,17 @@
 					&::before {
 						color: $dark-blue;
 					}
+				}
+			}
+		}
+
+		.active {
+			button {
+				background: $white;
+				color: $dark-blue;
+
+				&::before {
+					color: $dark-blue;
 				}
 			}
 		}

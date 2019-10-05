@@ -53,11 +53,8 @@
 	@if $filename == ico-news {
 		$char: '\E009';
 	}
-	@if $filename == ico-phone {
-		$char: '\E00A';
-	}
 	@if $filename == ico-quote {
-		$char: '\E00B';
+		$char: '\E00A';
 	}
 
 	@return $char;
@@ -104,9 +101,6 @@
 }
 .font-ico-news {
 	@include font(ico-news);
-}
-.font-ico-phone {
-	@include font(ico-phone);
 }
 .font-ico-quote {
 	@include font(ico-quote);

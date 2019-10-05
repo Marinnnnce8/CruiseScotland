@@ -18,6 +18,12 @@ em {
 	clear: both;
 	margin: $nbSpace 0;
 
+	.uk-table-divider>:first-child>tr:not(:first-child),
+	.uk-table-divider>:not(:first-child)>tr,
+	.uk-table-divider>tr:not(:first-child) {
+		border-top: 0;
+	}
+
 	&:first-of-type {
 		margin-top: 0;
 	}
@@ -291,14 +297,21 @@ em {
 	background: $pastelblue;
 	margin-bottom: 35px;
 	padding: 1px;
+	border-collapse: separate;
+    border-spacing: 2px;
 
 	caption,
 	thead th {
 		background: $pastelblue;
-		padding: 25px;
 		color: $blue;
 		font-family: $font-black;
 		text-transform: uppercase;
+	}
+
+	caption,
+	th,
+	td {
+		padding: 25px !important;
 	}
 
 	caption {
@@ -335,6 +348,7 @@ em {
 			display: block;
 		}
 	}
+
 	@media (max-width: $breakpointLarge) {
 		min-width: 600px;
 	}
@@ -490,7 +504,14 @@ em {
 		}
 
 		img {
-			margin: 0 10px;
+			margin-right: 20px;
+		}
+
+		.icon-propeller {
+			position: absolute;
+			left: 0;
+			color: $blue;
+			top: 0;
 		}
 	}
 
@@ -517,6 +538,7 @@ em {
 }
 
 .uk-alert {
+	box-shadow: -1px 5px 16px rgba($black, .5);
 	color: $grey;
 	padding: 23px 29px 23px 35px;
 

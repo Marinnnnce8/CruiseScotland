@@ -21,6 +21,9 @@
         display: block;
         margin-bottom: 25px;
     }
+    .uk-button--text {
+        margin-bottom: 0;
+    }
     @media (max-width: $breakpointSmall) {
         padding: 160px 0 655px;
         position: relative;
@@ -35,7 +38,7 @@
         span {
             font-size: 16px;
         }
-        .footer-img h2 {
+        .brochure-img h2 {
             padding: 0;
             font-size: 26px;
         }
@@ -71,7 +74,7 @@
         top: 0;
         right: 0;
         bottom: 0;
-        padding: 25px 90px 25px 35px;
+        padding: 10px 90px 10px 35px;
         z-index: 1;
     }
     @media (max-width: $breakpointMedium) {
@@ -99,7 +102,7 @@
             width: 100%;
             min-height: 60px;
             text-align: left;
-            padding: 15px 30px 15px 15px;
+            padding: 10px 30px 10px 15px;
         }
     }
 }

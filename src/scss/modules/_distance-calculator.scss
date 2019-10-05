@@ -5,7 +5,7 @@
 	bottom: 0;
 	transform: translateY(50%);
 	min-height: 100px;
-	padding: 20px 220px 20px 160px;
+	padding: 20px 170px 20px 160px;
 	width: calc(100% - 80px);
 	z-index: 1;
 
@@ -15,8 +15,20 @@
 		}
 
 		&:first-of-type span {
-			font-family: $font-black;
-			font-size: 34px;
+			&:first-of-type {
+				position: absolute;
+				left: 35px;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 80px;
+			}
+
+			&:last-of-type {
+				font-family: $font-black;
+				display: block;
+				font-size: 34px;
+			}
+
 		}
 
 		&:last-of-type span {
@@ -24,21 +36,10 @@
 		}
 	}
 
-	img,
 	a {
 		position: absolute;
 		top: 0;
 		bottom: 0;
-	}
-
-	img {
-		top: 10px;
-		left: 35px;
-		max-width: 80px;
-		height: auto;
-	}
-
-	a {
 		background: $white;
 		right: 0;
 		height: 100%;
@@ -56,17 +57,12 @@
 		flex-direction: column;
 		min-height: 0;
 
-		img {
-			max-width: 70px;
-			top: 50%;
-			left: 25px;
-			transform: translateY(-50%);
-		}
-
 		>div {
 
 			&:first-of-type span {
-				font-size: 26px;
+				&:last-of-type {
+					font-size: 26px;
+				}
 			}
 
 			&:last-of-type span {
@@ -74,29 +70,43 @@
 			}
 		}
 	}
+
 	@media (max-width: $breakpointSmall) {
 		padding: 25px 20px 70px 25px;
 		left: 20px;
 		width: calc(100% - 40px);
+
+		>div:first-of-type {
+			span:first-of-type {
+				top: 10px;
+				left: 20px;
+				transform: translateY(0%);
+				width: 70px;
+			}
+		}
+
 		.uk-width-1-1\@s {
 			&:first-of-type {
 				padding-left: 100px;
 				min-height: 80px;
 			}
+
 			&:last-of-type {
 				padding-top: 10px;
 			}
 		}
-		
+
 		img {
 			top: 20px;
 			transform: none;
 		}
+
 		a {
 			left: 0;
 			width: 100%;
 			height: 50px;
 			top: auto;
+
 			svg {
 				right: 10px;
 				left: auto;
