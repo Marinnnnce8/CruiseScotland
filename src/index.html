@@ -25,10 +25,10 @@
 
 	<header class="header">
 		<nav data-uk-navbar>
-			<div class="uk-logo">
+			<a class="uk-logo">
 				<img class="uk-visible@l" src="./images/logo.png" alt="home logo">
 				<img class="uk-hidden@l" src="./images/logo_tablet.jpg" alt="home logo">
-			</div>
+			</a>
 			<div class="uk-flex-wrap-bottom uk-flex uk-flex-column">
 				<div class="uk-flex uk-flex-between">
 					<span class="nav-info uk-visible@s">Information for Scotland's cruise Industry partners</span>
@@ -38,7 +38,7 @@
 									on</span></a>
 						</li>
 						<li>
-							<a href="#">Members <span class="icon-user" role="presentation"></span><span>area</span></a>
+							<a href="#"><span class="icon-user" role="presentation"></span>Members <span>area</span></a>
 						</li>
 					</ul>
 				</div>
@@ -54,7 +54,7 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-hidden@s"><button
 											data-uk-toggle="target: #nav-children-1; animation: true">Back<span
-												data-uk-icon="triangle-left" role="presentation"></span></li>
+												data-uk-icon="triangle-left" role="presentation"></span></button></li>
 									<li class="uk-hidden@s"><span class="uk-text-uppercase">Why scotland</span></li>
 									<li><a href="#">History, Heritage, Myths & Legends</a></li>
 									<li><a href="#">Stunning Scenery</a></li>
@@ -74,7 +74,7 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-hidden@s"><button
 											data-uk-toggle="target: #nav-children-2; animation: true">Back<span
-												data-uk-icon="triangle-left" role="presentation"></span></li>
+												data-uk-icon="triangle-left" role="presentation"></span></button></li>
 									<li class="uk-hidden@s"><span class="uk-text-uppercase">Why scotland</span></li>
 									<li><a href="#">History, Heritage, Myths & Legends</a></li>
 									<li><a href="#">Stunning Scenery</a></li>
@@ -94,7 +94,7 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-hidden@s"><button
 											data-uk-toggle="target: #nav-children-3; animation: true">Back<span
-												data-uk-icon="triangle-left" role="presentation"></span></li>
+												data-uk-icon="triangle-left" role="presentation"></span></button></li>
 									<li class="uk-hidden@s"><span class="uk-text-uppercase">Members</span></li>
 									<li><a href="#">Port Members</a></li>
 									<li><a href="#">Other Members</a></li>
@@ -132,7 +132,7 @@
 
 	<main>
 		<section class="uk-background-cover uk-background-fixed banner-section"
-			style="background-image: url('/images/home_banner.jpg')" data-uk-img>
+			style="background-image: url('./images/home_banner.jpg')" data-uk-img>
 			<div class="uk-container uk-container-large">
 				<div class="banner-inner">
 					<h1>Destination Scotland</h1>
@@ -147,86 +147,103 @@
 		</section>
 		<section class="intro-section">
 			<div class="uk-container uk-container-large intro__container">
-				<div uk-slider class="js-intro-slider">
-					<ul class="uk-slider-items uk-child-width-1-5@s uk-child-width-1-5@">
+				<div class="uk-hidden@s">
+					<div class="uk-flex uk-flex-column uk-flex-between">
+						<h2>Why Scotland?</h2>
+						<a href="#" data-uk-icon="arrow-right" class="uk-text-uppercase">Find out more</a>
+					</div>
+				</div>
+				<div data-uk-slider class="js-intro-slider">
+					<ul class="uk-slider-items uk-child-width-1-5@l uk-child-width-1-3@s uk-child-width-1-1">
 						<li>
 							<div class="uk-panel uk-flex uk-flex-column uk-flex-between">
 								<h2>Why Scotland?</h2>
 								<a href="#" data-uk-icon="arrow-right" class="uk-text-uppercase">Find out more</a>
 							</div>
 						</li>
-						<li>
+						<li class="uk-background-cover" data-uk-img
+							style="background-image: url('./images/home_slide_1.jpg')">
 							<a href="#" aria-label="Click here to visit page"></a>
-							<img data-uk-img src="./images/home_slide_1.jpg" alt="slide">
 							<div class="uk-position-left uk-panel">
 								<h3>History, Heritage, Myths & Legends</h3>
 								<span data-uk-icon="arrow-right"></span>
 							</div>
 						</li>
-						<li>
+						<li class="uk-background-cover" data-uk-img
+							style="background-image: url('./images/home_slide_2.jpg')">
 							<a href="#" aria-label="Click here to visit page"></a>
-							<img data-uk-img src="./images/home_slide_2.jpg" alt="slide">
 							<div class="uk-position-left uk-panel">
 								<h3>Stunning Scenery</h3>
+								<span data-uk-icon="arrow-right" role="presentation"></span>
 							</div>
 						</li>
-						<li>
+						<li class="uk-background-cover" data-uk-img
+							style="background-image: url('./images/home_slide_3.jpg')">
 							<a href="#" aria-label="Click here to visit page"></a>
-							<img data-uk-img src="./images/home_slide_3.jpg" alt="slide">
 							<div class="uk-position-left uk-panel">
 								<h3>Cultural Cities</h3>
+								<span data-uk-icon="arrow-right" role="presentation"></span>
 							</div>
 						</li>
-						<li>
+						<li class="uk-background-cover" data-uk-img
+							style="background-image: url('./images/home_slide_1.jpg')">
 							<a href="#" aria-label="Click here to visit page"></a>
-							<img data-uk-img src="./images/home_slide_1.jpg" alt="slide">
 							<div class="uk-position-left uk-panel">
 								<h3>Activities</h3>
+								<span data-uk-icon="arrow-right" role="presentation"></span>
 							</div>
 						</li>
-						<li>
+						<li class="uk-background-cover" data-uk-img
+							style="background-image: url('./images/home_slide_2.jpg')">
 							<a href="#" aria-label="Click here to visit page"></a>
-							<img data-uk-img src="./images/home_slide_2.jpg" alt="slide">
 							<div class="uk-position-left uk-panel">
 								<h3>Lorem ipsum</h3>
+								<span data-uk-icon="arrow-right" role="presentation"></span>
 							</div>
 						</li>
-						<li>
+						<li class="uk-background-cover" data-uk-img
+							style="background-image: url('./images/home_slide_3.jpg')">
 							<a href="#" aria-label="Click here to visit page"></a>
-							<img data-uk-img src="./images/home_slide_3.jpg" alt="slide">
 							<div class="uk-position-left uk-panel">
 								<h3>Cultural Cities</h3>
+								<span data-uk-icon="arrow-right" role="presentation"></span>
 							</div>
 						</li>
-						<li>
+						<li class="uk-background-cover" data-uk-img
+							style="background-image: url('./images/home_slide_1.jpg')">
 							<a href="#" aria-label="Click here to visit page"></a>
-							<img data-uk-img src="./images/home_slide_1.jpg" alt="slide">
 							<div class="uk-position-left uk-panel">
 								<h3>Activities</h3>
+								<span data-uk-icon="arrow-right" role="presentation"></span>
 							</div>
 						</li>
-						<li>
+						<li class="uk-background-cover" data-uk-img
+							style="background-image: url('./images/home_slide_2.jpg')">
 							<a href="#" aria-label="Click here to visit page"></a>
-							<img data-uk-img src="./images/home_slide_2.jpg" alt="slide">
 							<div class="uk-position-left uk-panel">
 								<h3>Lorem ipsum</h3>
+								<span data-uk-icon="arrow-right" role="presentation"></span>
 							</div>
 						</li>
 					</ul>
-					<a class="js-slider-arrow-next uk-button uk-button-secondary uk-position-small uk-hidden-hover"
-						href="#" uk-slidenav-previous uk-slider-item="previous"><span class="uk-button-hover"
-							role="presentation"></span></a>
-					<a class="js-slider-arrow-prev uk-button uk-button-secondary uk-position-small uk-hidden-hover"
-						href="#" uk-slidenav-next uk-slider-item="next"><span class="uk-button-hover"
-							role="presentation"></span></a>
+					<button class="js-intro-arrow-next uk-button uk-button-secondary uk-position-small uk-hidden-hover"
+						data-uk-slidenav-previous data-uk-slider-item="previous"><span class="uk-button-hover"
+							role="presentation"></span></button>
+					<button class="js-intro-arrow-prev uk-button uk-button-secondary uk-position-small uk-hidden-hover"
+						data-uk-slidenav-next data-uk-slider-item="next"><span class="uk-button-hover"
+							role="presentation"></span></button>
 				</div>
+			</div>
+			<div class="uk-container uk-container-large intro__container">
 				<div class="intro-text">
 					<h2>World-class scenery awaits your guests</h2>
 					<div class="uk-flex uk-flex-between">
-						<p>As a cruise destination, Scotland is undoubtedly up there with the best. Breathtaking
+						<p class="uk-width-1-2@l uk-width-1-1">As a cruise destination, Scotland is undoubtedly up there
+							with the best. Breathtaking
 							scenery, stunning cities, haunting history, UNESCO World Heritage sites, and a variety of
 							ports large and small make Scotland the perfect cruise destination.</p>
-						<p>Scotland's cruise ports are ideally located for inclusion in Britain and Ireland itineraries,
+						<p class="uk-width-1-2@l uk-width-1-1">Scotland's cruise ports are ideally located for inclusion
+							in Britain and Ireland itineraries,
 							transatlantic re-positioning, or for combining with cruises to Iceland, Faroe Islands or the
 							Norwegian Fjords and Europe.</p>
 					</div>
@@ -312,7 +329,8 @@
 											<span></span>
 										</div>
 									</div>
-									<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right"><span class="uk-button-hover"></span></a>
+									<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right"><span
+											class="uk-button-hover"></span></a>
 								</div>
 							</div>
 							<div data-uk-alert class="destination-card uk-card uk-card-default uk-padding-remove">
@@ -495,6 +513,11 @@
 							<a href="#" class="uk-button uk-button-primary uk-button-primary-big uk-hidden@l"
 								data-uk-icon="arrow-right"><span class="uk-button-hover"
 									role="presentation"></span><span class="uk-button--text">Meet the member</span></a>
+							<a href="#"
+								class="uk-button uk-button-primary uk-button-primary-big uk-width-1-2 uk-hidden@s"
+								data-uk-icon="arrow-right"><span class="uk-button-hover"
+									role="presentation"></span><span class="uk-button--text">View all the
+									members</span></a>
 						</div>
 						<div class="uk-flex uk-flex-column uk-flex-between uk-width-1-2@s">
 							<p>Forth Ports offers dedicated berthing facilities to cruise operators at Forth Ports
@@ -506,7 +529,8 @@
 									data-uk-icon="arrow-right"><span class="uk-button-hover"
 										role="presentation"></span><span class="uk-button--text">Meet the
 										member</span></a>
-								<a href="#" class="uk-button-primary uk-button-primary-big uk-width-1-2"
+								<a href="#"
+									class="uk-button uk-button-primary uk-button-primary-big uk-width-1-2 uk-visible@s"
 									data-uk-icon="arrow-right"><span class="uk-button-hover"
 										role="presentation"></span><span class="uk-button--text">View all the
 										members</span></a>
@@ -519,85 +543,106 @@
 		<section class="recent-stories">
 			<div class="uk-container uk-container-large">
 				<h2>Most Recent Stories</h2>
-				<div uk-slider class="js-intro-slider">
-					<ul class="uk-slider-items uk-child-width-1-4@s uk-child-width-1-4@">
+				<div data-uk-slider class="js-recent-slider">
+					<ul class="uk-slider-items  uk-child-width-1-4@l uk-child-width-1-3@s uk-child-width-1-1">
 						<li>
 							<a href="#" class="js-toggle-txt" aria-label="Click here to visit page"></a>
-							<div class="uk-card uk-card-default uk-animation-toggle">
+							<div
+								class="uk-card uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_1.jpg')"></span>
-								<div class="uk-card-body recent-story__bottom" data-uk-height-match=".uk-card-body">
+								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
 									<h3>Viking Jupiter visits Scotland for first time</h3>
-									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
-									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
-									<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
-										role="presentation"></span>
+									<div class="recent-text">
+										<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
+									</div>
+									<div class="recent-btns">
+										<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
+										<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
+											role="presentation"></span>
+									</div>
 								</div>
 							</div>
 						</li>
 						<li>
 							<a href="#" class="js-toggle-txt" aria-label="Click here to visit page"></a>
-							<div class="uk-card uk-card-default uk-animation-toggle">
+							<div class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_2.jpg')"></span>
 								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
 									<h3>Record-breaking cruise season at Lerwick includes multiple visits</h3>
-									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
-									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
-									<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
-										role="presentation"></span>
+									<div class="recent-text">
+										<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
+									</div>
+									<div class="recent-btns">
+										<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
+										<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
+											role="presentation"></span>
+									</div>
 								</div>
 							</div>
 						</li>
 						<li>
 							<a href="#" class="js-toggle-txt" aria-label="Click here to visit page"></a>
-							<div class="uk-card uk-card-default uk-animation-toggle">
+							<div class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_3.jpg')"></span>
 								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
 									<h3>New initiatives for record cruise season underway at Lerwick</h3>
-									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
-									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
-									<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
-										role="presentation"></span>
+									<div class="recent-text">
+										<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
+									</div>
+									<div class="recent-btns">
+										<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
+										<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
+											role="presentation"></span>
+									</div>
 								</div>
 							</div>
 						</li>
 						<li>
 							<a href="#" class="js-toggle-txt" aria-label="Click here to visit page"></a>
-							<div class="uk-card uk-card-default uk-animation-toggle">
+							<div class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_1.jpg')"></span>
 								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
 									<h3>Another Record-Breaking Year for Cruise in the Port of Cromarty</h3>
-									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
-									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
-									<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
-										role="presentation"></span>
+									<div class="recent-text">
+										<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
+									</div>
+									<div class="recent-btns">
+										<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
+										<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
+											role="presentation"></span>
+									</div>
 								</div>
 							</div>
 						</li>
 						<li>
 							<a href="#" class="js-toggle-txt" aria-label="Click here to visit page"></a>
-							<div class="uk-card uk-card-default uk-animation-toggle">
+							<div class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_2.jpg')"></span>
 								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
 									<h3>Viking Jupiter visits Scotland for first time</h3>
-									<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
-									<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
-									<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
-										role="presentation"></span>
+									<div class="recent-text">
+										<p>A warm Scottisch welcome for Viking Jupiter's maiden call in Edinburgh</p>
+									</div>
+									<div class="recent-btns">
+										<span class="font-ico-calendar">July 2<sup>nd</sup> 2019</span>
+										<span class="uk-button uk-button-secondary" data-uk-icon="arrow-right"
+											role="presentation"></span>
+									</div>
 								</div>
 							</div>
 						</li>
 					</ul>
-					<a class="js-slider-arrow-next uk-button uk-button-secondary uk-position-small uk-hidden-hover"
-						href="#" uk-slidenav-previous uk-slider-item="previous"><span class="uk-button-hover"
-							role="presentation"></span></a>
-					<a class="js-slider-arrow-prev uk-button uk-button-secondary uk-position-small uk-hidden-hover"
-						href="#" uk-slidenav-next uk-slider-item="next"><span class="uk-button-hover"
-							role="presentation"></span></a>
+					<button class="js-recent-arrow-next uk-button uk-button-secondary uk-position-small uk-hidden-hover"
+						data-uk-slidenav-previous data-uk-slider-item="previous"><span class="uk-button-hover"
+							role="presentation"></span></button>
+					<button class="js-recent-arrow-prev uk-button uk-button-secondary uk-position-small uk-hidden-hover"
+						data-uk-slidenav-next data-uk-slider-item="next"><span class="uk-button-hover"
+							role="presentation"></span></button>
 				</div>
 			</div>
 		</section>
@@ -611,7 +656,8 @@
 							<input id="email" type="email" name="email" aria-label="Enter your email address"
 								placeholder="Enter your email address..." required>
 							<button class="uk-button uk-button-primary" data-uk-icon="arrow-right"><span
-									class="uk-button-hover" role="presentation"></span><span class="uk-button--text">Subscribe</span></button>
+									class="uk-button-hover" role="presentation"></span><span
+									class="uk-button--text">Subscribe</span></button>
 						</div>
 					</form>
 				</div>
@@ -657,13 +703,13 @@
 					</div>
 					<div class="uk-width-1-4 footer-box">
 						<ul>
-							<li><a class="uk-button--underline" href="#">Terms & Conditions</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
 						</ul>
 						<ul>
-							<li><a class="uk-button--underline" href="#">Privacy Policy</a></li>
+							<li><a href="#">Privacy Policy</a></li>
 						</ul>
 						<ul>
-							<li><a class="uk-button--underline" href="#">Disclaimer</a></li>
+							<li><a href="#">Disclaimer</a></li>
 						</ul>
 					</div>
 					<div class="uk-width-1-4 brochure-img-wrap uk-visible@s">
@@ -672,8 +718,8 @@
 							<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
 							<img data-uk-img src="./images/brochure.png" alt="brochure">
 							<a href="#" class="uk-button uk-button-secondary icon-download-1" download
-							aria-label="Click to download brochure"><span class="uk-button-hover"
-								role="presentation"></span></a>
+								aria-label="Click to download brochure"><span class="uk-button-hover"
+									role="presentation"></span></a>
 						</div>
 					</div>
 				</div>

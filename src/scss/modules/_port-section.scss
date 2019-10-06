@@ -41,7 +41,7 @@
 	}
 
 	.uk-button-primary {
-		padding: 45px 0;
+		padding: 25px 0;
 	}
 
 	.uk-button-primary:last-of-type {
@@ -85,10 +85,7 @@
 		.uk-button-primary {
 			padding: 45px 20px;
 			text-align: left;
-			&:last-of-type {
-				position: absolute;
-				bottom: 0;
-			}
+			position: relative;
 		}
 	}
 }
@@ -132,6 +129,13 @@
 
 	@media (max-width: $breakpointSmall) {
 		max-width: 100%;
-		padding-bottom: 92px;
+		padding-bottom: 0;
+		margin-bottom: 100px;
+
+		.uk-button-primary:last-of-type {
+			background: rgba($white, .5);
+			position: absolute;
+			top: 100%;
+		}
 	}
 }

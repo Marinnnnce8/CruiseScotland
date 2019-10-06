@@ -7,6 +7,7 @@
 
 	@media (max-width: $breakpointSmall) {
 		padding-top: 30px;
+
 		>.uk-flex {
 			flex-direction: column;
 		}
@@ -19,6 +20,7 @@
 		min-height: 150px;
 		padding: 30px 50px 50px 30px;
 		position: relative;
+		transition: $nbSpeed ease-in-out;
 	}
 
 	&:not(:first-of-type) {
@@ -48,9 +50,16 @@
 		right: 0;
 		height: 50px;
 		width: 50px;
+		pointer-events: none;
 
 		svg {
 			transform: translate(-32%, -70%) rotate(45deg);
+		}
+	}
+
+	@include hover {
+		>div {
+			background: rgba($white, .7);
 		}
 	}
 
@@ -58,17 +67,21 @@
 		span {
 			font-size: 16px;
 		}
+
 		&:not(:first-of-type) {
 			padding: 0 0 1px;
 		}
+
 		&:nth-of-type(even) {
 			padding-left: 1px;
 		}
 	}
+
 	@media (max-width: $breakpointSmall) {
 		&:not(:first-of-type) {
 			padding: 0 0 1px;
 		}
+
 		&:first-of-type {
 			padding: 0 0 1px;
 		}

@@ -6,17 +6,11 @@
 @import 'base/fonts.scss';
 @import 'base/typography.scss';
 @import 'layout/buttons.scss';
-@import 'layout/forms.scss';
 @import 'layout/uikit.scss';
-@import 'layout/nb.scss';
+@import 'nb/nb.scss';
 @import 'uikit/breadcrumb.scss';
 
-// NB
-@import 'nb/block.scss';
 @import 'nb/responsive.scss';
-@import 'nb/file-icon.scss';
-@import 'nb/legal.scss';
-@import 'nb/credit.scss';
 @import 'helpers/print.scss';
 @import 'modules/header.scss';
 @import 'modules/footer.scss';

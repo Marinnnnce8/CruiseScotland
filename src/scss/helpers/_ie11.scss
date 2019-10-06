@@ -1,37 +1,15 @@
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-    .header {
-        padding-bottom: 30px;
-    }
-    .area-card--full {
-        .area-card--inner {
-            height: 610px;
-        }
-        @media (max-width: $breakpointSmall) {
-            .area-card--inner {
-                height: 300px;
-            }
-        }
-    }
-    
-    .area-card--half {
-        .area-card--inner {
-            height: 300px;
-        }
-    }
-
-    .listing-item__inner {
-        height: 365px;
-    }
-
-    .banner-section {
+    .port-section > .uk-container {
         position: relative;
+        height: 100vh;
+        width: 100%;
+        .port-wrap {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
     }
-
-    .banner-box {
-        position: absolute;
-        left: 100px;
-        bottom: 200px;
-        z-index: 1;
+    .recent-stories .uk-button-secondary {
+        visibility: visible !important;
     }
-    
 }

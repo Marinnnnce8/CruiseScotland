@@ -6,10 +6,8 @@ files:
     - 'src/scss/helpers/_print.scss'
     - 'src/scss/helpers/_mixins.scss'
     - 'src/scss/layout/_icon-font.scss'
-    - 'src/scss/base/_grid-layout.scss'
-    - 'src/scss/base/_grid-framework.scss'
     - 'src/scss/base/_fonts.scss'
-    - 'src/scss/layout/_nb.scss'
+    - 'src/scss/nb/_nb.scss'
     - 'src/scss/helpers/_ie11.scss'
 
 rules:

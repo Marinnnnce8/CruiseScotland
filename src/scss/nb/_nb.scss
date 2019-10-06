@@ -28,6 +28,10 @@ em {
 		margin-top: 0;
 	}
 
+	.nb-blue {
+		background: $blue;
+	}
+
 	h2,
 	h3,
 	h4 {
@@ -116,6 +120,11 @@ em {
 		display: table;
 		width: 100%;
 
+		.nb-gallery-box {
+			background: $white;
+			display: block;
+		}
+
 		.nb-gallery-image {
 			border: $nbGutterXsmall solid transparent;
 			display: table-cell;
@@ -124,7 +133,6 @@ em {
 			overflow: hidden;
 			position: relative;
 			vertical-align: top;
-			transition: .3s ease-in-out;
 
 			&::after {
 				position: absolute;
@@ -167,10 +175,13 @@ em {
 				height: auto;
 				width: 100%;
 				vertical-align: middle;
+				transition: .3s ease-in-out;
 			}
 
 			@include hover {
-				transform: scale(.95);
+				img {
+					transform: scale(.9);
+				}
 
 				&::after {
 					opacity: 1;
@@ -209,6 +220,11 @@ em {
 			}
 		}
 
+		input,
+		textarea {
+			font-size: 18px;
+		}
+
 		textarea {
 			width: 100%;
 			min-height: 246px;
@@ -229,7 +245,11 @@ em {
 	.uk-input .uk-textarea {
 		border: 2px solid $grey;
 		font-family: $font-default;
-		font-size: 16px;
+		font-size: 18px;
+
+		&::placeholder {
+			font-size: 18px;
+		}
 
 		&:focus {
 			border: 2px solid $blue !important;
@@ -240,7 +260,6 @@ em {
 
 		.uk-form-label:after {
 			content: "*";
-			// color: $red;
 			display: inline-block;
 			margin-left: $nbGutterXsmall;
 			opacity: 0.5;
@@ -298,7 +317,7 @@ em {
 	margin-bottom: 35px;
 	padding: 1px;
 	border-collapse: separate;
-    border-spacing: 2px;
+	border-spacing: 2px;
 
 	caption,
 	thead th {
@@ -408,7 +427,6 @@ em {
 		font-weight: 700;
 
 		&:hover {
-			// color: $red;
 			text-decoration: none;
 		}
 

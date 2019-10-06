@@ -5,7 +5,7 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
 
 	.uk-logo {
 		background: $white;
@@ -299,7 +299,7 @@
 		}
 
 		.uk-navbar-dropdown {
-			z-index: 3;
+			z-index: 10;
 			max-width: 100%;
 			box-shadow: none;
 			left: 0 !important; // sass-lint:disable-line no-important
@@ -345,6 +345,7 @@
 			font-family: $font-heavy;
 			text-transform: uppercase;
 			padding: 25px;
+			transition: $nbSpeed ease-in-out;
 		}
 
 		&:first-of-type {
@@ -359,6 +360,10 @@
 					transform: translateY(-50%);
 					position: absolute;
 				}
+				@include hover {
+					background: $lightblue;
+					text-decoration: none;
+				}
 			}
 
 			span {
@@ -367,19 +372,25 @@
 		}
 
 		&:last-of-type {
-			background: $lightblue;
 			font-size: 12px;
 
 			a {
+				background: $lightblue;
+				border: 1px solid $lightblue;
 				padding: 25px 45px 25px 20px;
 				position: relative;
+				height: 100%;
 
-				&::before {
+				.icon-user {
 					position: absolute;
 					right: 20px;
 					font-size: 18px;
 					top: 50%;
 					transform: translateY(-50%);
+				}
+				@include hover {
+					background: transparent;
+					text-decoration: none;
 				}
 			}
 
@@ -423,7 +434,7 @@
 					padding: 8px;
 					text-align: center;
 
-					&::before {
+					.icon-user {
 						transform: none;
 						position: relative;
 						display: block;
@@ -433,7 +444,7 @@
 						margin-bottom: 7px;
 					}
 
-					span {
+					span:last-of-type {
 						display: none;
 					}
 				}
@@ -449,6 +460,10 @@
 			top: 0;
 			height: 100%;
 			bottom: 0;
+			a {
+				background: transparent;
+				border: 0;
+			}
 		}
 	}
 }

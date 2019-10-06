@@ -25,20 +25,20 @@
 
 	<header class="header">
 		<nav data-uk-navbar>
-			<div class="uk-logo">
+			<a class="uk-logo">
 				<img class="uk-visible@l" src="./images/logo.png" alt="home logo">
 				<img class="uk-hidden@l" src="./images/logo_tablet.jpg" alt="home logo">
-			</div>
+			</a>
 			<div class="uk-flex-wrap-bottom uk-flex uk-flex-column">
 				<div class="uk-flex uk-flex-between">
 					<span class="nav-info uk-visible@s">Information for Scotland's cruise Industry partners</span>
 					<ul class="uk-flex nav-social">
 						<li>
-							<a href="#" class="font-ico-linkedin uk-visible@s"><span class="uk-visible@l">Follow us
+							<a href="#" class="font-ico-linkedin uk-visible@s"><span>Follow us
 									on</span></a>
 						</li>
 						<li>
-							<a href="#">Members <span class="uk-visible@l">area</span></a>
+							<a href="#"><span class="icon-user" role="presentation"></span>Members <span>area</span></a>
 						</li>
 					</ul>
 				</div>
@@ -54,7 +54,7 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-hidden@s"><button
 											data-uk-toggle="target: #nav-children-1; animation: true">Back<span
-												data-uk-icon="triangle-left" role="presentation"></span></li>
+												data-uk-icon="triangle-left" role="presentation"></span></button></li>
 									<li class="uk-hidden@s"><span class="uk-text-uppercase">Why scotland</span></li>
 									<li><a href="#">History, Heritage, Myths & Legends</a></li>
 									<li><a href="#">Stunning Scenery</a></li>
@@ -74,7 +74,7 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-hidden@s"><button
 											data-uk-toggle="target: #nav-children-2; animation: true">Back<span
-												data-uk-icon="triangle-left" role="presentation"></span></li>
+												data-uk-icon="triangle-left" role="presentation"></span></button></li>
 									<li class="uk-hidden@s"><span class="uk-text-uppercase">Why scotland</span></li>
 									<li><a href="#">History, Heritage, Myths & Legends</a></li>
 									<li><a href="#">Stunning Scenery</a></li>
@@ -94,7 +94,7 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-hidden@s"><button
 											data-uk-toggle="target: #nav-children-3; animation: true">Back<span
-												data-uk-icon="triangle-left" role="presentation"></span></li>
+												data-uk-icon="triangle-left" role="presentation"></span></button></li>
 									<li class="uk-hidden@s"><span class="uk-text-uppercase">Members</span></li>
 									<li><a href="#">Port Members</a></li>
 									<li><a href="#">Other Members</a></li>
@@ -216,8 +216,9 @@
 						<div class="signup-box">
 							<input id="email" type="email" name="email" aria-label="Enter your email address"
 								placeholder="Enter your email address..." required>
-								<button class="uk-button uk-button-primary" data-uk-icon="arrow-right"><span
-									class="uk-button-hover" role="presentation"></span><span class="uk-button--text">Subscribe</span></button>
+							<button class="uk-button uk-button-primary" data-uk-icon="arrow-right"><span
+									class="uk-button-hover" role="presentation"></span><span
+									class="uk-button--text">Subscribe</span></button>
 						</div>
 					</form>
 				</div>
@@ -236,69 +237,69 @@
 	</main>
 
 	<footer class="footer">
-			<div data-uk-img class="footer-top uk-background-cover"
-				style="background-image: url('./images/footer_bckg.jpg')">
-				<div class="uk-container uk-container-large">
-					<h2>Get in touch with us</h2>
-					<div class="uk-flex uk-flex-between">
-						<div class="uk-width-1-4@l uk-width-1-1@m footer-box">
-							<span class="uk-text-bold">Allison McGuire</span>
-							<span>Market Development Manager</span>
-							<span>c/o Port od Cromarty Firth</span>
-							<span>Shore Road, Invergordon</span>
-							<span>Ross-shire, Scotland</span>
-							<span>IV18 0HD</span>
-						</div>
-						<div class="uk-width-1-4 footer-box">
-							<ul>
-								<li>
-									<a href="#"><span class="icon-calendar"></span>Make enquiry</a>
-								</li>
-								<li><a href="tel:+4401349852308"><span class="icon-phone-call"></span>+44 (0) 1349
-										852308</a></li>
-								<li><a href="mailto:allison@cfpa.co.uk"><span
-											class="icon-mail"></span>allison@cfpa.co.uk</a></li>
-								<li><a href="#"><span class="font-ico-linkedin"></span>Follow us on Linkedin</a></li>
-							</ul>
-						</div>
-						<div class="uk-width-1-4 footer-box">
-							<ul>
-								<li><a class="uk-button--underline" href="#">Terms & Conditions</a></li>
-							</ul>
-							<ul>
-								<li><a class="uk-button--underline" href="#">Privacy Policy</a></li>
-							</ul>
-							<ul>
-								<li><a class="uk-button--underline" href="#">Disclaimer</a></li>
-							</ul>
-						</div>
-						<div class="uk-width-1-4 brochure-img-wrap uk-visible@s">
-							<div class="brochure-img">
-								<h2>Download Our Brochure</h2>
-								<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
-								<img data-uk-img src="./images/brochure.png" alt="brochure">
-								<a href="#" class="uk-button uk-button-secondary icon-download-1" download
+		<div data-uk-img class="footer-top uk-background-cover"
+			style="background-image: url('./images/footer_bckg.jpg')">
+			<div class="uk-container uk-container-large">
+				<h2>Get in touch with us</h2>
+				<div class="uk-flex uk-flex-between">
+					<div class="uk-width-1-4@l uk-width-1-1@m footer-box">
+						<span class="uk-text-bold">Allison McGuire</span>
+						<span>Market Development Manager</span>
+						<span>c/o Port od Cromarty Firth</span>
+						<span>Shore Road, Invergordon</span>
+						<span>Ross-shire, Scotland</span>
+						<span>IV18 0HD</span>
+					</div>
+					<div class="uk-width-1-4 footer-box">
+						<ul>
+							<li>
+								<a href="#"><span class="icon-calendar"></span>Make enquiry</a>
+							</li>
+							<li><a href="tel:+4401349852308"><span class="icon-phone-call"></span>+44 (0) 1349
+									852308</a></li>
+							<li><a href="mailto:allison@cfpa.co.uk"><span
+										class="icon-mail"></span>allison@cfpa.co.uk</a></li>
+							<li><a href="#"><span class="font-ico-linkedin"></span>Follow us on Linkedin</a></li>
+						</ul>
+					</div>
+					<div class="uk-width-1-4 footer-box">
+						<ul>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Disclaimer</a></li>
+						</ul>
+					</div>
+					<div class="uk-width-1-4 brochure-img-wrap uk-visible@s">
+						<div class="brochure-img">
+							<h2>Download Our Brochure</h2>
+							<a href="#">Destination Scotland - The Cruise Industry Guide.</a>
+							<img data-uk-img src="./images/brochure.png" alt="brochure">
+							<a href="#" class="uk-button uk-button-secondary icon-download-1" download
 								aria-label="Click to download brochure"><span class="uk-button-hover"
 									role="presentation"></span></a>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="footer-bottom">
-				<div class="uk-container uk-container-large">
-					<div class="uk-flex uk-flex-between uk-flex-bottom">
-						<div class="uk-width-1-2@l uk-width-1-1@m">
-							<img data-uk-img src="./images/footer_logos.jpg" alt="companies logos">
-						</div>
-						<div class="uk-width-1-2@l uk-width-1-1@m uk-flex uk-flex-between">
-							<span>Copyright &reg; 2009-2019 Cruise Scotland. All right reserved.</span>
-							<span>Website by NB</span>
-						</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="uk-container uk-container-large">
+				<div class="uk-flex uk-flex-between uk-flex-bottom">
+					<div class="uk-width-1-2@l uk-width-1-1@m">
+						<img data-uk-img src="./images/footer_logos.jpg" alt="companies logos">
+					</div>
+					<div class="uk-width-1-2@l uk-width-1-1@m uk-flex uk-flex-between">
+						<span>Copyright &reg; 2009-2019 Cruise Scotland. All right reserved.</span>
+						<span>Website by NB</span>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'
 		integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>

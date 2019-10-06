@@ -7,6 +7,10 @@
 			width: 100%;
 		}
 	}
+
+	@media (max-width: $breakpointSmall) {
+		padding: 100px 0 70px;
+	}
 }
 
 .intro__container {
@@ -15,12 +19,12 @@
 
 	.uk-slider {
 		position: relative;
-        min-height: 300px;
-        margin-bottom: 115px;
+		margin-bottom: 115px;
 		left: 0;
 
 		li {
 			position: relative;
+			min-height: 350px;
 
 			h3,
 			h2,
@@ -31,22 +35,23 @@
 
 			h3 {
 				font-size: 26px;
-            }
-            
-            >a {
-                background: rgba($blue, .4);
-                opacity: 0;
-                left: 0;
-                top: 0;
-                bottom: 0;
-                position: absolute;
-                width: 100%;
-                z-index: 2;
-                transition: $nbSpeed ease-in-out;
-                @include hover {
-                    opacity: 1;
-                }
-            }
+			}
+
+			>a {
+				background: rgba($blue, .4);
+				opacity: 0;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				position: absolute;
+				width: 100%;
+				z-index: 2;
+				transition: $nbSpeed ease-in-out;
+
+				@include hover {
+					opacity: 1;
+				}
+			}
 
 			&:first-of-type {
 				background: $blue;
@@ -67,6 +72,7 @@
 
 			.uk-panel {
 				padding: 50px 40px 40px;
+				width: 100%;
 
 				>span {
 					background: rgba($white, .5);
@@ -83,37 +89,95 @@
 						top: 50%;
 						transform: translate(-50%, -50%);
 						left: 50%;
-                        color: $white;
-                        width: 30px;
+						color: $white;
+						width: 30px;
 					}
 				}
 			}
 		}
-    }
-    .uk-button-secondary {
-        position: absolute;
-        left: auto;
-        bottom: 0;
-        top: auto;
-        transform: none;
-        margin: 0;
-        svg {
-            width: 22px;
-        }
-    }
+	}
+
+	.uk-button-secondary {
+		position: absolute;
+		left: auto;
+		bottom: 0;
+		top: auto;
+		transform: none;
+		margin: 0;
+		&:last-of-type {
+			border-left: 1px solid $white;
+		}
+
+		svg {
+			width: 22px;
+		}
+	}
+
+	@media (max-width: $breakpointSmall) {
+		.uk-slider li {
+			min-height: 290px;
+			max-width: 280px;
+
+			&:first-of-type {
+				display: none;
+			}
+		}
+
+		.uk-hidden\@s {
+			background: $blue;
+			max-width: 280px;
+
+			>.uk-flex {
+				min-height: 290px;
+				padding: 50px 40px 40px;
+			}
+
+			h2 {
+				font-size: 42px;
+			}
+
+			h2,
+			a {
+				font-family: $font-black;
+				color: $white;
+			}
+
+			a {
+				font-size: 14px;
+			}
+		}
+
+		.uk-button {
+			z-index: 2;
+			width: 50px;
+			border: 0;
+			height: 50px;
+		}
+	}
 }
 
 .intro-text {
-    h2 {
-        color: $blue;
-        font-size: 54px;
-        font-family: $font-black;
-        margin-bottom: 45px;
-    }
-    p {
-        margin: 0 0 20px;
-        font-weight: $light;
-        font-size: 18px;
-        width: 47%;
-    }
+	h2 {
+		color: $blue;
+		font-size: 54px;
+		font-family: $font-black;
+		margin-bottom: 45px;
+	}
+
+	p {
+		margin: 0 0 20px;
+		font-weight: $light;
+		font-size: 18px;
+		padding-right: 30px;
+	}
+
+	@media (max-width: $breakpointLarge) {
+		.uk-flex {
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 44px;
+		}
+	}
 }

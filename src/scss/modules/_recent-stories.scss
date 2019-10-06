@@ -2,6 +2,11 @@
 	background: $pastelblue;
 	padding-top: 170px;
 
+	h2 {
+		font-family: $font-black;
+		color: $blue;
+	}
+
 	.uk-slider {
 		position: relative;
 	}
@@ -15,34 +20,49 @@
 			font-size: 20px;
 		}
 
+		.recent-text {
+			position: relative;
+			bottom: -100px;
+			left: 0;
+			width: 100%;
+			transition: $nbSpeed .3s;
+			z-index: 0;
+		}
+
 		p {
 			font-weight: $light;
 			font-size: 16px;
-			margin-bottom: 30px;
-			overflow-y: hidden;
-			max-height: 0;
-			transition-duration: .5s;
-			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-        }
-        p.closed {
-            max-height: 30px;
-            overflow-y: visible;
-        }
+		}
 
-		.uk-card {
-			min-height: 550px;
+		.recent-btns {
+			background: $white;
+			min-height: 50px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			z-index: 3;
+		}
+
+		p.closed {
+			max-height: 30px;
+			overflow-y: visible;
 		}
 
 		.uk-card-media-top {
 			display: block;
 			height: 340px;
+			position: relative;
+			transition: $nbSpeed .3s;
 		}
 
 		.uk-card-body {
-			min-height: 180px;
-			position: absolute;
+			bottom: 0;
 			left: 0;
 			width: 100%;
+			position: absolute;
+			transition: $nbSpeed .3s;
+			min-height: 220px;
 			background: $white;
 
 			.uk-button-secondary {
@@ -58,7 +78,9 @@
 			display: block;
 			font-size: 12px;
 			padding-left: 45px;
-			position: relative;
+			left: 45px;
+			bottom: 25px;
+			position: absolute;
 
 			&::before {
 				color: $blue;
@@ -78,7 +100,21 @@
 			bottom: 0;
 			position: absolute;
 			width: 100%;
-			z-index: 2;
+			z-index: 4;
+		}
+		&.recent-card--active {
+			.uk-card-body {
+				min-height: 250px;
+			}
+
+			.uk-card-media-top {
+				margin-top: -20px;
+			}
+
+			.recent-text {
+				bottom: 0;
+				transform: translateY(25%);
+			}
 		}
 	}
 
@@ -89,9 +125,42 @@
 		top: auto;
 		transform: none;
 		margin: 0;
+		&:last-of-type {
+			border-left: 1px solid $white;
+		}
 
 		svg {
 			width: 22px;
+		}
+	}
+
+	.uk-card {
+		z-index: 2;
+		min-height: 550px;
+	}
+
+	@media (max-width: $breakpointSmall) {
+		h2 {
+			font-size: 44px;
+		}
+
+		.uk-slider {
+			li {
+				max-width: 280px;
+
+				h3 {
+					font-size: 18px;
+				}
+			}
+
+			.uk-card-body .uk-button {
+				display: none;
+			}
+		}
+
+		.uk-button {
+			width: 50px;
+			height: 50px;
 		}
 	}
 }
