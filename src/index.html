@@ -8,10 +8,11 @@
 
 	<title>Cruise Scotland</title>
 	<meta name='description' content='This is a meta description'>
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
+	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
@@ -25,7 +26,7 @@
 
 	<header class="header">
 		<nav data-uk-navbar>
-			<a class="uk-logo">
+			<a class="uk-logo" title="Cruise Scotland">
 				<img class="uk-visible@l" src="./images/logo.png" alt="home logo">
 				<img class="uk-hidden@l" src="./images/logo_tablet.jpg" alt="home logo">
 			</a>
@@ -105,21 +106,11 @@
 						<li>
 							<a href="#">News</a>
 						</li>
-						<li class="nav-hidden-tablet">
+						<li>
 							<a href="#">About us</a>
 						</li>
-						<li class="nav-hidden-tablet">
+						<li>
 							<a href="#">Contact</a>
-						</li>
-						<li class="uk-parent uk-parent--dropdown uk-hidden@l uk-visible@s">
-							<button class="js-toggle-dropdown">More<span data-uk-icon="triangle-down"
-									role="presentation"></span></button>
-							<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
-								<ul class="uk-nav uk-navbar-dropdown-nav">
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
 						</li>
 					</ul>
 				</div>
@@ -138,8 +129,9 @@
 					<h1>Destination Scotland</h1>
 					<span>Promoting Scotland as a cruise destination to industry operators.</span>
 					<div class="uk-flex">
-						<a href="#" download class="uk-button uk-button-secondary" aria-label="Click to download file"
-							data-uk-icon="arrow-down"><span class="uk-button-hover" role="presentation"></span></a>
+						<button class="uk-button uk-button-secondary js-button-down"
+							aria-label="Click to slide to next section" data-uk-icon="arrow-down"><span
+								class="uk-button-hover" role="presentation"></span></button>
 						<span>Image Caption - With Nearest Port Name</span>
 					</div>
 				</div>
@@ -227,10 +219,10 @@
 						</li>
 					</ul>
 					<button class="js-intro-arrow-next uk-button uk-button-secondary uk-position-small uk-hidden-hover"
-						data-uk-slidenav-previous data-uk-slider-item="previous"><span class="uk-button-hover"
+						data-uk-slidenav-previous data-uk-slider-item="previous" aria-label="Click here to slide previous item"><span class="uk-button-hover"
 							role="presentation"></span></button>
 					<button class="js-intro-arrow-prev uk-button uk-button-secondary uk-position-small uk-hidden-hover"
-						data-uk-slidenav-next data-uk-slider-item="next"><span class="uk-button-hover"
+						data-uk-slidenav-next data-uk-slider-item="next" aria-label="Click here to slide next item"><span class="uk-button-hover"
 							role="presentation"></span></button>
 				</div>
 			</div>
@@ -329,7 +321,7 @@
 											<span></span>
 										</div>
 									</div>
-									<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right"><span
+									<a href="#" class="uk-button uk-button-secondary" data-uk-icon="arrow-right" aria-label="Click here to navigate the page"><span
 											class="uk-button-hover"></span></a>
 								</div>
 							</div>
@@ -566,7 +558,8 @@
 						</li>
 						<li>
 							<a href="#" class="js-toggle-txt" aria-label="Click here to visit page"></a>
-							<div class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
+							<div
+								class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_2.jpg')"></span>
 								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
@@ -584,7 +577,8 @@
 						</li>
 						<li>
 							<a href="#" class="js-toggle-txt" aria-label="Click here to visit page"></a>
-							<div class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
+							<div
+								class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_3.jpg')"></span>
 								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
@@ -602,7 +596,8 @@
 						</li>
 						<li>
 							<a href="#" class="js-toggle-txt" aria-label="Click here to visit page"></a>
-							<div class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
+							<div
+								class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_1.jpg')"></span>
 								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
@@ -620,7 +615,8 @@
 						</li>
 						<li>
 							<a href="#" class="js-toggle-txt" aria-label="Click here to visit page"></a>
-							<div class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
+							<div
+								class="uk-card  uk-flex uk-flex-column uk-flex-between uk-card-default uk-animation-toggle">
 								<span data-uk-img class="uk-card-media-top uk-background-cover"
 									style="background-image: url('./images/recent_stories_2.jpg')"></span>
 								<div class="uk-card-body" data-uk-height-match=".uk-card-body">
@@ -638,11 +634,11 @@
 						</li>
 					</ul>
 					<button class="js-recent-arrow-next uk-button uk-button-secondary uk-position-small uk-hidden-hover"
-						data-uk-slidenav-previous data-uk-slider-item="previous"><span class="uk-button-hover"
+						data-uk-slidenav-previous data-uk-slider-item="previous" aria-label="Click here to slide previous item"><span class="uk-button-hover"
 							role="presentation"></span></button>
 					<button class="js-recent-arrow-prev uk-button uk-button-secondary uk-position-small uk-hidden-hover"
 						data-uk-slidenav-next data-uk-slider-item="next"><span class="uk-button-hover"
-							role="presentation"></span></button>
+							role="presentation" aria-label="Click here to slide next item"></span></button>
 				</div>
 			</div>
 		</section>

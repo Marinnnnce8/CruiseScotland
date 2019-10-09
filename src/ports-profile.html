@@ -8,10 +8,11 @@
 
 	<title>Ports profile</title>
 	<meta name='description' content='This is a meta description'>
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/site.webmanifest">
+	<link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
@@ -25,7 +26,7 @@
 
 	<header class="header">
 		<nav data-uk-navbar>
-			<a class="uk-logo">
+			<a class="uk-logo" title="Cruise Scotland">
 				<img class="uk-visible@l" src="./images/logo.png" alt="home logo">
 				<img class="uk-hidden@l" src="./images/logo_tablet.jpg" alt="home logo">
 			</a>
@@ -105,21 +106,11 @@
 						<li>
 							<a href="#">News</a>
 						</li>
-						<li class="nav-hidden-tablet">
+						<li>
 							<a href="#">About us</a>
 						</li>
-						<li class="nav-hidden-tablet">
+						<li>
 							<a href="#">Contact</a>
-						</li>
-						<li class="uk-parent uk-parent--dropdown uk-hidden@l uk-visible@s">
-							<button class="js-toggle-dropdown">More<span data-uk-icon="triangle-down"
-									role="presentation"></span></button>
-							<div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
-								<ul class="uk-nav uk-navbar-dropdown-nav">
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
 						</li>
 					</ul>
 				</div>
@@ -138,8 +129,8 @@
 					<h1>Destination Scotland</h1>
 					<span>Promoting Scotland as a cruise destination to industry operators.</span>
 					<div class="uk-flex">
-						<a href="#" download class="uk-button uk-button-secondary" aria-label="Click to download file"
-							data-uk-icon="arrow-down"><span class="uk-button-hover" role="presentation"></span></a>
+						<button class="uk-button uk-button-secondary js-button-down" aria-label="Click to slide to next section"
+						data-uk-icon="arrow-down"><span class="uk-button-hover" role="presentation"></span></button>
 						<span>Image Caption - With Nearest Port Name</span>
 					</div>
 				</div>
@@ -640,7 +631,7 @@
 					<div class="uk-flex uk-flex-left uk-flex-wrap">
 						<div class="related-link uk-width-1-4@l uk-width-1-2@m uk-width-1-1">
 							<div>
-								<a href="#"></a>
+								<a href="#" aria-label="Click here to navigate the page"></a>
 								<span>Invergordon Town Website</span>
 								<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
 									role="presentation"></span>
@@ -648,7 +639,7 @@
 						</div>
 						<div class="related-link uk-width-1-4@l uk-width-1-2@m uk-width-1-1">
 							<div>
-								<a href="#"></a>
+								<a href="#" aria-label="Click here to navigate the page"></a>
 								<span>Invergordon Tourism Alliance Website</span>
 								<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
 									role="presentation"></span>
@@ -656,7 +647,7 @@
 						</div>
 						<div class="related-link uk-width-1-4@l uk-width-1-2@m uk-width-1-1">
 							<div>
-								<a href="#"></a>
+								<a href="#" aria-label="Click here to navigate the page"></a>
 								<span>Walk Highlands - Loch Ness & Glen Affric</span>
 								<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
 									role="presentation"></span>
@@ -664,7 +655,7 @@
 						</div>
 						<div class="related-link uk-width-1-4@l uk-width-1-2@m uk-width-1-1">
 							<div>
-								<a href="#"></a>
+								<a href="#" aria-label="Click here to navigate the page"></a>
 								<span>Cawdor Castle</span>
 								<span class="uk-button uk-button-secondary" data-uk-icon="arrow-up"
 									role="presentation"></span>

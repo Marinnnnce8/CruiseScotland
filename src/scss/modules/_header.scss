@@ -1,6 +1,6 @@
 .header {
-	background: $blue;
-	padding-left: 400px;
+	background: $header-blue;
+	padding-left: 290px;
 	left: 0;
 	position: absolute;
 	top: 0;
@@ -10,7 +10,7 @@
 	.uk-logo {
 		background: $white;
 		padding: 0 35px 0 40px;
-		max-width: 395px;
+		max-width: 285px;
 		position: absolute;
 		width: 100%;
 		left: 0;
@@ -43,7 +43,7 @@
 			button {
 				color: $white;
 				padding: 25px;
-				text-transform: initial;
+				text-transform: none;
 				font-family: $font-black;
 				font-size: 20px;
 				transition: $nbSpeed ease-in-out;
@@ -100,10 +100,10 @@
 	}
 
 	@media (max-width: $breakpointLarge) {
-		padding-left: 180px;
+		padding-left: 130px;
 
 		.uk-logo {
-			max-width: 175px;
+			max-width: 128px;
 		}
 
 		.uk-navbar-nav {
@@ -111,8 +111,8 @@
 
 				a,
 				button {
-					padding: 20px;
-					font-size: 16px;
+					padding: 20px 8px;
+					font-size: 14px;
 				}
 			}
 		}
@@ -145,7 +145,7 @@
 
 		span {
 			&:first-of-type {
-				font-size: 8px;
+				font-size: 10px;
 				position: absolute;
 				bottom: 10px;
 				left: 50%;
@@ -159,7 +159,7 @@
 				height: 2px;
 				background: $white;
 				content: '';
-				top: 40%;
+				top: 33%;
 				transform: translate(-50%, -50%);
 				transition: .5s ease-in-out;
 
@@ -183,6 +183,9 @@
 					width: 80%;
 				}
 			}
+		}
+		.uk-text-uppercase {
+			font-family: $font-default;
 		}
 	}
 
@@ -342,7 +345,6 @@
 		a {
 			display: block;
 			color: $white;
-			font-family: $font-heavy;
 			text-transform: uppercase;
 			padding: 25px;
 			transition: $nbSpeed ease-in-out;
@@ -361,13 +363,13 @@
 					position: absolute;
 				}
 				@include hover {
-					background: $lightblue;
+					background: $mediumblue;
 					text-decoration: none;
 				}
 			}
 
 			span {
-				font-size: 8px;
+				font-size: 10px;
 			}
 		}
 
@@ -375,8 +377,8 @@
 			font-size: 12px;
 
 			a {
-				background: $lightblue;
-				border: 1px solid $lightblue;
+				background: $mediumblue;
+				border: 1px solid $mediumblue;
 				padding: 25px 45px 25px 20px;
 				position: relative;
 				height: 100%;
@@ -395,7 +397,6 @@
 			}
 
 			span {
-				font-family: $font-heavy;
 				font-size: 12px;
 			}
 		}
@@ -404,7 +405,7 @@
 	@media (max-width: $breakpointLarge) {
 		li {
 			a {
-				width: 50px;
+				min-width: 65px;
 				height: 50px;
 				padding: 7px 9px;
 			}
@@ -427,8 +428,8 @@
 			}
 
 			&:last-of-type {
-				background: $lightblue;
-				font-size: 7px;
+				background: $mediumblue;
+				font-size: 10px;
 
 				a {
 					padding: 8px;
@@ -441,7 +442,7 @@
 						right: auto;
 						top: auto;
 						text-align: center;
-						margin-bottom: 7px;
+						margin-bottom: 6px;
 					}
 
 					span:last-of-type {

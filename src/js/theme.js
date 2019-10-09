@@ -15,7 +15,7 @@ var theme = {
 		const classActive = "uk-navbar-toggle--active";
 		const dropdownBtn = $(".js-toggle-dropdown");
 		const dropdownActive = "dropdown--active";
-		const fixedBckg = $(".members-section"); //za paralax mozes iskoristiti
+		const downBtn = $(".js-button-down");
 		const introSlider = $(".js-intro-slider");
 		const introCard = $(".js-intro-slider .uk-slider-items li");
 		const introSliderArrowPrev = $(".js-intro-arrow-next");
@@ -33,6 +33,9 @@ var theme = {
 		const cardBtnClassActive = "active";
 		if (buttonHover.length) {
 			this.btnHoverEffect(buttonHover);
+		}
+		if (downBtn.length) {
+			this.slideToNextSection(downBtn);
 		}
 		if (mapBtn.length) {
 			this.toggleDestinationCard(
@@ -53,22 +56,53 @@ var theme = {
 			this.toggleDropdown(dropdownBtn, dropdownActive);
 		}
 		if (introCard.length) {
-			this.calcSliderWidth(
-				introCard,
-				introSlider,
-				introSliderArrowPrev,
-				introSliderArrowNext,
-				4
-			);
+			if (
+				navigator.userAgent.indexOf("MSIE") !== -1 ||
+				navigator.appVersion.indexOf("Trident/") > 0
+			){
+				theme.calcSliderWidth(
+					introCard,
+					introSlider,
+					introSliderArrowPrev,
+					introSliderArrowNext,
+					4
+				);
+			} else {
+				$(window).on("load resize", function() {
+					theme.calcSliderWidth(
+						introCard,
+						introSlider,
+						introSliderArrowPrev,
+						introSliderArrowNext,
+						4
+					);
+				});
+			}
 		}
 		if (recentCard.length) {
-			this.calcSliderWidth(
-				recentCard,
-				recentSlider,
-				recentSliderArrowPrev,
-				recentSliderArrowNext,
-				3
-			);
+			if (
+				navigator.userAgent.indexOf("MSIE") !== -1 ||
+				navigator.appVersion.indexOf("Trident/") > 0
+			){ 
+				theme.calcSliderWidth(
+					recentCard,
+					recentSlider,
+					recentSliderArrowPrev,
+					recentSliderArrowNext,
+					3
+				);
+			} else {
+				$(window).on("load resize", function() {
+					theme.calcSliderWidth(
+						recentCard,
+						recentSlider,
+						recentSliderArrowPrev,
+						recentSliderArrowNext,
+						3
+					);
+				});
+			}
+
 			if (!$(".touch").length) {
 				this.recentCardHover(recentCard, recentCardActive);
 			}
@@ -98,6 +132,20 @@ var theme = {
 				return false;
 			});
 		}
+	},
+
+	slideToNextSection: function(downBtn) {
+		downBtn.click(function() {
+			const nextSection = $(this)
+				.closest("section")
+				.next();
+			$("html, body").animate(
+				{
+					scrollTop: nextSection.offset().top
+				},
+				500
+			);
+		});
 	},
 
 	equalHeight: function(equalItem) {

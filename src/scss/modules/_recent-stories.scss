@@ -4,7 +4,7 @@
 
 	h2 {
 		font-family: $font-black;
-		color: $blue;
+		color: $heroblue;
 	}
 
 	.uk-slider {
@@ -15,7 +15,7 @@
 		position: relative;
 
 		h3 {
-			color: $blue;
+			color: $heroblue;
 			font-family: $font-black;
 			font-size: 20px;
 		}
@@ -83,7 +83,7 @@
 			position: absolute;
 
 			&::before {
-				color: $blue;
+				color: $heroblue;
 				font-size: 20px;
 				left: 0;
 				position: absolute;
@@ -124,6 +124,7 @@
 		bottom: 0;
 		top: auto;
 		transform: none;
+		visibility: visible !important;// sass-lint:disable-line no-important
 		margin: 0;
 		&:last-of-type {
 			border-left: 1px solid $white;

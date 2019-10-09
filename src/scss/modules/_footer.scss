@@ -43,9 +43,8 @@
 					position: absolute;
 					font-size: 20px;
 					color: inherit;
-					top: 50%;
+					top: -3px;
 					left: 0;
-					transform: translateY(-50%);
 				}
 				@include hover {
 					text-decoration: underline;
@@ -120,7 +119,7 @@
 
 	h2,
 	a {
-		color: $blue;
+		color: $heroblue;
 	}
 
 	h2 {

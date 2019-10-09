@@ -15,7 +15,7 @@
 	}
 
 	h3 {
-		color: $blue;
+		color: $heroblue;
 		font-family: $font-black;
 	}
 	@media (max-width: $breakpointLarge) {
@@ -42,7 +42,7 @@
 
 .ports-text {
 	h2 {
-		color: $blue;
+		color: $heroblue;
 		font-family: $font-black;
 	}
 
@@ -89,7 +89,7 @@
 	h3 {
 		font-family: $font-black;
 		font-size: 20px;
-		color: $blue;
+		color: $heroblue;
 	}
 
 	p {
@@ -101,7 +101,7 @@
 }
 
 .ports-label {
-	background: $blue;
+	background: $heroblue;
 	display: block;
 	padding: 10px 50px 10px 20px;
 	color: $white;

@@ -5,6 +5,12 @@
 		position: relative;
 		min-height: 100vh;
 	}
+	.uk-button-secondary {
+		background: $heroblue;
+		@include hover {
+			background: $heroblue;
+		}
+	}
 }
 
 .banner-inner {

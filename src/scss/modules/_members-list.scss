@@ -7,7 +7,7 @@
     }
     
     h2, span {
-        color: $blue;
+        color: $heroblue;
     }
 
 	span,
@@ -35,7 +35,7 @@
 			}
 
 			.uk-button-secondary {
-				background: rgba($blue, 1);
+				background: rgba($heroblue, 1);
 			}
         }
         
@@ -87,7 +87,7 @@
 		}
 
 		a {
-			background: rgba($blue, .7);
+			background: rgba($heroblue, .7);
 			position: absolute;
 			left: 0;
 			bottom: 0;

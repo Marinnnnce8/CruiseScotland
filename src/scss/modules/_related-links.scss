@@ -2,7 +2,7 @@
 	h2 {
 		font-size: 34px;
 		font-family: $font-black;
-		color: $blue;
+		color: $heroblue;
 	}
 
 	@media (max-width: $breakpointSmall) {
@@ -37,7 +37,7 @@
 	}
 
 	span {
-		color: $blue;
+		color: $heroblue;
 		font-size: 20px;
 		font-family: $font-black;
 		text-decoration: underline;

@@ -5,7 +5,7 @@
 	padding: 50px 50px 60px;
 
 	h3 {
-		color: $blue;
+		color: $heroblue;
 		font-family: $font-black;
 		font-size: 34px;
 		margin-bottom: 40px;
@@ -43,7 +43,8 @@
 			border: 2px solid $red;
 		}
 	}
-	@media (max-width: $breakpointSmall) { 
+
+	@media (max-width: $breakpointSmall) {
 		margin-bottom: 20px;
 		padding: 30px 25px 20px;
 
@@ -55,23 +56,29 @@
 
 .contact-details {
 	margin-bottom: 70px;
+
 	h3 {
 		font-size: 34px;
-		color: $blue;
+		color: $heroblue;
 		font-family: $font-black;
 	}
+
 	ul {
 		li {
 			font-size: 18px;
 			color: $black;
 		}
-		span, a {
+
+		span,
+		a {
 			font-weight: $light;
 		}
+
 		span {
 			display: inline-block;
 			margin-right: 5px;
 		}
+
 		a {
 			color: $downblue;
 		}
@@ -81,32 +88,38 @@
 .contact-card {
 	box-shadow: 0 0 25px -12px rgba($black, .3);
 	max-width: 300px;
+
 	.uk-card-media-top {
 		padding: 30px 25px;
 		border-bottom: 1px solid $grey-input;
 	}
+
 	img {
 		width: 100%;
 		height: auto;
 	}
+
 	.uk-card-body {
 		padding: 25px 25px 65px;
+
 		>span {
 			padding-left: 25px;
 		}
 	}
 
 	h4 {
-		color: $blue;
+		color: $heroblue;
 		font-family: $font-black;
 		font-size: 20px;
 	}
+
 	.uk-text-uppercase {
 		display: block;
 		margin-bottom: 10px;
 		font-size: 12px;
 		color: $grey;
 		position: relative;
+
 		span {
 			top: 50%;
 			transform: translateY(-50%);
@@ -116,35 +129,43 @@
 			position: absolute;
 		}
 	}
+
 	span {
-		font-size: 14px;	
+		font-size: 14px;
 		color: $black;
 		display: block;
 	}
-	a:not(.uk-button) {
-		position: relative;
-		color: $downblue;
-		text-decoration: underline;
-		transition: $nbSpeed ease-in-out;
-		padding-left: 25px;
-		span {
-			position: absolute;
-			left: -5px;
-			top: 50%;
-			transform: translateY(-50%);
-			color: $blue;
-			font-size: 18px;
-		}
-		@include hover {
-			color: rgba($downblue, .7);
+
+	li {
+		margin-bottom: 10px;
+		a:not(.uk-button) {
+			position: relative;
+			color: $downblue;
+			text-decoration: underline;
+			transition: $nbSpeed ease-in-out;
+			padding-left: 25px;
+
+			span {
+				position: absolute;
+				left: -5px;
+				top: 50%;
+				transform: translateY(-50%);
+				color: $blue;
+				font-size: 18px;
+			}
+
+			@include hover {
+				color: rgba($downblue, .7);
+			}
 		}
 	}
+
 	.uk-button {
-		background: $blue;
+		background: $heroblue;
 		font-family: $font-heavy;
 		font-size: 14px;
 		color: $white;
-		border: 1px solid $blue;
+		border: 1px solid $heroblue;
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -152,6 +173,7 @@
 		margin-bottom: 0;
 		padding: 10px 50px 10px 25px;
 		text-align: center;
+
 		span {
 			position: absolute;
 			top: 50%;
@@ -160,20 +182,24 @@
 			color: $white;
 			font-size: 30px;
 			left: auto;
+
 			&::before {
 				transition: $nbSpeed ease-in-out;
 			}
 		}
+
 		@include hover {
 			background: $white;
 			color: $blue;
-			border-color: $blue;
+			border-color: $heroblue;
+
 			span::before {
-				color: $blue;
+				color: $heroblue;
 			}
 		}
 	}
-	@media (max-width: $breakpointSmall) { 
+
+	@media (max-width: $breakpointSmall) {
 		max-width: 100%;
 	}
 }

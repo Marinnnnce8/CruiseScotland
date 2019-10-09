@@ -29,13 +29,13 @@ em {
 	}
 
 	.nb-blue {
-		background: $blue;
+		background: $heroblue;
 	}
 
 	h2,
 	h3,
 	h4 {
-		color: $blue;
+		color: $heroblue;
 		font-family: $font-black;
 	}
 
@@ -52,7 +52,7 @@ em {
 	}
 
 	a {
-		color: $blue;
+		color: $heroblue;
 		text-decoration: underline;
 	}
 
@@ -148,7 +148,7 @@ em {
 			}
 
 			.nb-gallery-info {
-				background: $blue;
+				background: $heroblue;
 				width: 50px;
 				height: 50px;
 				opacity: 0;
@@ -322,7 +322,7 @@ em {
 	caption,
 	thead th {
 		background: $pastelblue;
-		color: $blue;
+		color: $heroblue;
 		font-family: $font-black;
 		text-transform: uppercase;
 	}
