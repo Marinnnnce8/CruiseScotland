@@ -1,4 +1,5 @@
 .port-section {
+	background-color: $heroblue;
 	min-height: 100vh;
 	padding-top: 145px;
 	position: relative;
@@ -45,7 +46,7 @@
 	}
 
 	.uk-button-primary:last-of-type {
-		background: rgba($white, .5);
+		background: $dark-blue;
 	}
 
 	@media (max-width: $breakpointLarge) {
@@ -107,7 +108,9 @@
 	}
 
 	@media (max-width: $breakpointLarge) {
-		padding-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 40px;
 		flex-direction: column;
 		max-width: 50%;
 
@@ -123,7 +126,7 @@
 		}
 
 		.uk-button-primary:last-of-type {
-			background: $blue;
+			background: $dark-blue;
 		}
 	}
 
@@ -133,7 +136,7 @@
 		margin-bottom: 100px;
 
 		.uk-button-primary:last-of-type {
-			background: rgba($white, .5);
+			background: $dark-blue;
 			position: absolute;
 			top: 100%;
 		}

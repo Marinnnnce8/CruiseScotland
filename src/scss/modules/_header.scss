@@ -1,5 +1,5 @@
 .header {
-	background: $header-blue;
+	background: $heroblue;
 	padding-left: 290px;
 	left: 0;
 	position: absolute;
@@ -63,12 +63,12 @@
 			}
 
 			button[aria-expanded='true'] {
-				background: $lightblue;
+				background: $midblue;
 			}
 
 			a {
 				@include hover {
-					background: $lightblue;
+					background: $midblue;
 				}
 			}
 		}
@@ -92,7 +92,7 @@
 
 				@include hover {
 					background: $softblue;
-					color: $downblue;
+					color: $heroblue;
 					font-weight: $bold;
 				}
 			}
@@ -131,7 +131,7 @@
 	}
 
 	.uk-navbar-toggle {
-		background: $lightblue;
+		background: $midblue;
 		color: $white;
 		position: absolute;
 		right: 0;

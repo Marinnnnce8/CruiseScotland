@@ -56,10 +56,7 @@ var theme = {
 			this.toggleDropdown(dropdownBtn, dropdownActive);
 		}
 		if (introCard.length) {
-			if (
-				navigator.userAgent.indexOf("MSIE") !== -1 ||
-				navigator.appVersion.indexOf("Trident/") > 0
-			){
+			$(window).on("resize", function() {
 				theme.calcSliderWidth(
 					introCard,
 					introSlider,
@@ -67,23 +64,24 @@ var theme = {
 					introSliderArrowNext,
 					4
 				);
-			} else {
-				$(window).on("load resize", function() {
-					theme.calcSliderWidth(
-						introCard,
-						introSlider,
-						introSliderArrowPrev,
-						introSliderArrowNext,
-						4
-					);
-				});
-			}
+			});
+			theme.calcSliderWidth(
+				introCard,
+				introSlider,
+				introSliderArrowPrev,
+				introSliderArrowNext,
+				4
+			);
 		}
 		if (recentCard.length) {
-			if (
-				navigator.userAgent.indexOf("MSIE") !== -1 ||
-				navigator.appVersion.indexOf("Trident/") > 0
-			){ 
+			theme.calcSliderWidth(
+				recentCard,
+				recentSlider,
+				recentSliderArrowPrev,
+				recentSliderArrowNext,
+				3
+			);
+			$(window).on("resize", function() {
 				theme.calcSliderWidth(
 					recentCard,
 					recentSlider,
@@ -91,17 +89,7 @@ var theme = {
 					recentSliderArrowNext,
 					3
 				);
-			} else {
-				$(window).on("load resize", function() {
-					theme.calcSliderWidth(
-						recentCard,
-						recentSlider,
-						recentSliderArrowPrev,
-						recentSliderArrowNext,
-						3
-					);
-				});
-			}
+			});
 
 			if (!$(".touch").length) {
 				this.recentCardHover(recentCard, recentCardActive);
@@ -166,7 +154,7 @@ var theme = {
 		multipleNum
 	) {
 		const cardWidth = card.width();
-		const arrowWidth = sliderArrowPrev.width();
+		let arrowWidth = sliderArrowPrev.width();
 		const cardPartWidth = cardWidth / 5;
 		const sliderWidth = cardPartWidth + $(window).width();
 		slider.css("width", sliderWidth);
@@ -189,6 +177,12 @@ var theme = {
 			);
 			sliderArrowNext.css("left", cardWidthArrows * multipleNumber);
 		} else {
+			if (window.matchMedia("(width: 640px)").matches) {
+				arrowWidth = 48; 
+			}
+			if (window.matchMedia("(width: 641px)").matches) {
+				arrowWidth = 100; 
+			}
 			sliderArrowPrev.css(
 				"left",
 				cardWidthArrows * multipleNumber - arrowWidth * 2

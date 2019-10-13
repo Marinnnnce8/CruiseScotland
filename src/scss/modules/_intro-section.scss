@@ -23,6 +23,7 @@
 		left: 0;
 
 		li {
+			background-color: $dark-blue;
 			position: relative;
 			min-height: 350px;
 
@@ -54,7 +55,7 @@
 			}
 
 			&:first-of-type {
-				background: $blue;
+				background: $heroblue;
 
 				.uk-panel {
 					min-height: 100%;
@@ -124,7 +125,7 @@
 		}
 
 		.uk-hidden\@s {
-			background: $blue;
+			background: $heroblue;
 			max-width: 280px;
 
 			>.uk-flex {

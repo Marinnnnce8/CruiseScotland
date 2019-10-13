@@ -15,11 +15,4 @@ screen and (-ms-high-contrast: none) {
 	.uk-background-fixed {
 		background-attachment: scroll;
 	}
-
-	.port-wrap .uk-button-primary:last-of-type {
-        color: $heroblue;
-        .uk-button--text {
-            color: $heroblue;
-        }
-	}
 }
