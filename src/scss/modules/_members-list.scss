@@ -55,6 +55,15 @@
 			bottom: 1px;
 			top: 1px;
 			width: calc(100% - 1px);
+			&::after {
+				background: rgba($black, .4);
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0%;
+				bottom: 0;
+				width: 100%;
+			}
 		}
 
 		.font-ico-bollard {

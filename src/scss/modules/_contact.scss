@@ -24,6 +24,10 @@
 		margin-bottom: 28px;
 	}
 
+	input, textarea {
+		border: 1px solid $grey-border;
+	}
+
 	textarea {
 		min-height: 190px;
 		resize: none;
@@ -97,7 +101,7 @@
 
 	.uk-card-media-top {
 		padding: 30px 25px;
-		border-bottom: 1px solid $grey-input;
+		border-bottom: 1px solid $grey-light;
 	}
 
 	img {
@@ -169,9 +173,9 @@
 	.uk-button {
 		background: $heroblue;
 		font-family: $font-heavy;
+		border: 1px solid $herobluedark;
 		font-size: 14px;
 		color: $white;
-		border: 1px solid $heroblue;
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -195,13 +199,7 @@
 		}
 
 		@include hover {
-			background: $white;
-			color: $heroblue;
-			border-color: $heroblue;
-
-			span::before {
-				color: $heroblue;
-			}
+			background: $herobluedark;
 		}
 	}
 

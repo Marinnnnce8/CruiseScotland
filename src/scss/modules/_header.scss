@@ -378,7 +378,6 @@
 
 			a {
 				background: $mediumblue;
-				border: 1px solid $mediumblue;
 				padding: 25px 45px 25px 20px;
 				position: relative;
 				height: 100%;
@@ -391,7 +390,7 @@
 					transform: translateY(-50%);
 				}
 				@include hover {
-					background: transparent;
+					background: $herobluedark;
 					text-decoration: none;
 				}
 			}
