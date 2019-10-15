@@ -7,13 +7,6 @@
 
 .port-wrap {
 
-	span,
-	p,
-	h2,
-	a {
-		color: $white;
-	}
-
 	>span {
 		position: relative;
 		padding-left: 45px;
@@ -31,13 +24,7 @@
 		}
 	}
 
-	h2 {
-		font-family: $font-black;
-		margin: 0 0 60px;
-	}
-
 	p {
-		font-size: 18px;
 		padding-left: 40px;
 	}
 
@@ -71,10 +58,6 @@
 			font-size: 12px;
 		}
 
-		h2 {
-			font-size: 44px;
-		}
-
 		p {
 			padding-left: 0;
 		}
@@ -89,6 +72,10 @@
 			position: relative;
 		}
 	}
+}
+
+.port-heading {
+	margin: 0 0 60px;
 }
 
 .port-img {

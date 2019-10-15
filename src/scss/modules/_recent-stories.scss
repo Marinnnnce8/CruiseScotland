@@ -2,23 +2,12 @@
 	background: $pastelblue;
 	padding-top: 170px;
 
-	h2 {
-		font-family: $font-black;
-		color: $heroblue;
-	}
-
 	.uk-slider {
 		position: relative;
 	}
 
 	li {
 		position: relative;
-
-		h3 {
-			color: $heroblue;
-			font-family: $font-black;
-			font-size: 20px;
-		}
 
 		.recent-text {
 			position: relative;
@@ -141,17 +130,10 @@
 	}
 
 	@media (max-width: $breakpointSmall) {
-		h2 {
-			font-size: 44px;
-		}
 
 		.uk-slider {
 			li {
 				max-width: 280px;
-
-				h3 {
-					font-size: 18px;
-				}
 			}
 
 			.uk-card-body .uk-button {

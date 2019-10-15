@@ -14,6 +14,26 @@ em {
 	}
 }
 
+.nb-color-blue {
+	color: $heroblue;
+}
+
+.nb-color-white {
+	color: $white;
+}
+
+.nb-font-black {
+	font-family: $font-black;
+}
+
+.nb-font-light {
+	font-weight: $light;
+}
+
+.nb-h3 {
+	font-size: 26px;
+}
+
 .nb-block {
 	clear: both;
 	margin: $nbSpace 0;
@@ -30,25 +50,6 @@ em {
 
 	.nb-blue {
 		background: $heroblue;
-	}
-
-	h2,
-	h3,
-	h4 {
-		color: $heroblue;
-		font-family: $font-black;
-	}
-
-	h2 {
-		font-size: 34px;
-	}
-
-	h3 {
-		font-size: 26px;
-	}
-
-	h4 {
-		font-size: 20px;
 	}
 
 	a {
@@ -96,19 +97,6 @@ em {
 				font-style: normal;
 			}
 		}
-
-		p {
-			font-size: 18px;
-			font-weight: $light;
-		}
-	}
-}
-
-.nb-gallery {
-	h3 {
-		color: $blue;
-		font-family: $font-black;
-		font-size: 34px;
 	}
 }
 
@@ -505,12 +493,9 @@ em {
 	margin-bottom: 10px;
 
 	li {
-		font-size: 18px;
-		font-weight: $light;
 		margin-bottom: 40px;
 		padding-left: 35px;
 		position: relative;
-		color: $black;
 
 		&::before {
 			position: absolute;
@@ -545,8 +530,6 @@ em {
 		list-style-type: decimal;
 		padding-left: 5px;
 		margin-bottom: 7px;
-		font-size: 18px;
-		font-weight: $light;
 
 		a {
 			color: $blue;
@@ -562,7 +545,6 @@ em {
 
 	p {
 		font-size: 16px;
-		font-weight: $light;
 	}
 }
 
@@ -611,4 +593,19 @@ figcaption {
 	z-index: 2;
 	font-size: 14px;
 	font-weight: $light;
+}
+
+.nb-text-lead {
+	color: $black;
+	font-size: 34px;
+	font-weight: $thin;
+
+	a {
+		font-size: inherit;
+		font-weight: inherit;
+		color: $midblue;
+		@include hover {
+			text-decoration: underline;
+		}
+	}
 }

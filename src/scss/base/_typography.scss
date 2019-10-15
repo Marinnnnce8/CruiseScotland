@@ -31,22 +31,30 @@ h1,
 h2,
 .h2 {
 	font-size: 54px;
+	@media (max-width: $breakpointLarge) {
+		font-size: 44px;
+	}
 	@media (max-width: $breakpointSmall) {
 		margin-bottom: 20px;
+		font-size: 44px;
 	}
 }
 
 h3,
 .h3 {
 	font-size: 34px;
+	@media (max-width: $breakpointLarge) {
+		font-size: 28px;
+	}
 }
 
 h4,
 .h4 {
-	font-size: 24px;
+	font-size: 20px;
+	font-family: $font-black;
 	font-weight: 400;
 	@media (max-width: $breakpointSmall) {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 
@@ -64,7 +72,8 @@ h6,
 
 p {
 	margin-bottom: 15px;
-	font-size: 20px;
+	font-size: 18px;
+	font-weight: $light;
 	color: $black;
 
 	a {
@@ -74,6 +83,10 @@ p {
 	}
 }
 
+.text-small {
+	font-size: 16px;
+}
+
 span {
 	font-size: 18px;
 }
@@ -81,6 +94,11 @@ span {
 ul {
 	padding-left: 0;
 	list-style-type: none;
+	li {
+		font-size: 18px;
+		font-weight: $light;
+		color: $black;
+	}
 }
 
 ol {
@@ -93,4 +111,8 @@ img {
 
 b {
 	font-weight: $bold;
+}
+
+a {
+	font-size: 18px;
 }

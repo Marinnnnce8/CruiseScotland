@@ -62,7 +62,6 @@
 				}
 
 				h2 {
-
 					font-size: 44px;
 				}
 
@@ -105,6 +104,7 @@
 		top: auto;
 		transform: none;
 		margin: 0;
+
 		&:last-of-type {
 			border-left: 1px solid $white;
 		}
@@ -158,27 +158,27 @@
 }
 
 .intro-text {
-	h2 {
-		color: $heroblue;
-		font-size: 54px;
-		font-family: $font-black;
-		margin-bottom: 45px;
+	.text-medium {
+		margin: 0 0 20px;
+		padding-right: 30px;
 	}
 
 	p {
-		margin: 0 0 20px;
-		font-weight: $light;
-		font-size: 18px;
-		padding-right: 30px;
+		margin-top: 0;
 	}
 
 	@media (max-width: $breakpointLarge) {
 		.uk-flex {
 			flex-direction: column;
 		}
+	}
+}
 
-		h2 {
-			font-size: 44px;
-		}
+.intro-heading {
+	font-size: 54px;
+	margin-bottom: 45px;
+
+	@media (max-width: $breakpointLarge) {
+		font-size: 44px;
 	}
 }

@@ -1,28 +1,5 @@
 .members-section {
     padding: 305px 0 100px;
-	h2 {
-		font-size: 67px;
-		font-family: $font-black;
-		margin: 0 0 40px;
-    }
-    
-    h2, span {
-        color: $heroblue;
-    }
-
-	span,
-	p {
-		font-size: 34px;
-	}
-
-	span {
-        font-weight: $light;
-	}
-
-	p {
-		font-weight: $thin;
-		margin-bottom: 70px;
-	}
 
 	li {
 		padding: 1px;
@@ -44,10 +21,6 @@
             padding: 30px;
             height: 100%;
         }
-
-		span {
-			color: $white;
-		}
 
 		.uk-background-cover {
 			position: absolute;
@@ -71,6 +44,7 @@
 			top: 30px;
 			left: 35px;
 			z-index: 2;
+			font-size: 34px;
 			pointer-events: none;
 		}
 
@@ -110,15 +84,17 @@
 	}
 	@media (max-width: $breakpointLarge) {
 		padding: 190px 0 25px;
-		span {
-			font-size: 30px;
-		}
-		h2 {
-			font-size: 54px;
-		}
 		p {
 			font-size: 30px;
 			margin-bottom: 30px;
 		}
+	}
+}
+
+.member-heading {
+	font-size: 67px;
+	margin: 0 0 40px;
+	@media (max-width: $breakpointLarge) {
+		font-size: 54px;
 	}
 }

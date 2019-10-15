@@ -1,10 +1,4 @@
 .related-links {
-	h2 {
-		font-size: 34px;
-		font-family: $font-black;
-		color: $heroblue;
-	}
-
 	@media (max-width: $breakpointSmall) {
 		padding-top: 30px;
 
@@ -12,6 +6,10 @@
 			flex-direction: column;
 		}
 	}
+}
+
+.related-heading {
+	font-size: 44px;
 }
 
 .related-link {

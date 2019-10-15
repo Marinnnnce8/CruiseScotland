@@ -3,49 +3,26 @@
 	background-position: bottom;
 	background-repeat: no-repeat;
 
-	h2 {
-		font-size: 34px;
-		font-weight: $thin;
-		margin-bottom: 50px;
-	}
-
-	p {
-		font-weight: $light;
-		font-size: 18px;
-	}
-
-	h3 {
-		color: $heroblue;
-		font-family: $font-black;
-	}
 	@media (max-width: $breakpointLarge) {
-		>.uk-container >.uk-flex {
+		>.uk-container>.uk-flex {
 			flex-direction: column;
 		}
-		h2 {
-			font-size: 30px;
-			margin-bottom: 30px;
-		}
+
 		h3 {
 			margin-top: 25px;
-			font-size: 28px;
 		}
 	}
 }
 
 .ports-left {
 	padding-right: 50px;
+
 	@media (max-width: $breakpointLarge) {
 		padding-right: 0;
 	}
 }
 
 .ports-text {
-	h2 {
-		color: $heroblue;
-		font-family: $font-black;
-	}
-
 	p {
 		margin: 0 0 50px;
 	}
@@ -60,8 +37,9 @@
 	margin-bottom: 2px;
 	position: relative;
 	padding-left: 215px;
+
 	@media (max-width: $breakpointSmall) {
-		padding: 250px 0 0;	
+		padding: 250px 0 0;
 		margin-bottom: 25px;
 	}
 }
@@ -75,6 +53,7 @@
 	left: 0;
 	top: 0;
 	bottom: 0;
+
 	@media (max-width: $breakpointSmall) {
 		width: 100%;
 		max-width: 100%;
@@ -86,15 +65,10 @@
 .ports-card-body {
 	padding: 35px 40px 35px 50px;
 
-	h3 {
-		font-family: $font-black;
-		font-size: 20px;
-		color: $heroblue;
-	}
-
 	p {
 		font-size: 14px;
 	}
+
 	@media (max-width: $breakpointSmall) {
 		padding: 30px 20px;
 	}
@@ -123,6 +97,7 @@
 		width: 1px;
 		z-index: 2;
 	}
+
 	span {
 		color: $white;
 		position: absolute;
@@ -131,9 +106,8 @@
 		top: 50%;
 		transform: translateY(-50%);
 	}
+
 	@media (max-width: $breakpointSmall) {
 		left: 0;
 	}
 }
-
-
