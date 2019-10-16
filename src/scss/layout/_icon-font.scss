@@ -35,26 +35,29 @@
 	@if $filename == ico-bollard {
 		$char: '\E003';
 	}
-	@if $filename == ico-calendar {
+	@if $filename == ico-brush-shape {
 		$char: '\E004';
 	}
-	@if $filename == ico-chevron-down {
+	@if $filename == ico-calendar {
 		$char: '\E005';
 	}
-	@if $filename == ico-email {
+	@if $filename == ico-chevron-down {
 		$char: '\E006';
 	}
-	@if $filename == ico-linkedin {
+	@if $filename == ico-email {
 		$char: '\E007';
 	}
-	@if $filename == ico-medal {
+	@if $filename == ico-linkedin {
 		$char: '\E008';
 	}
-	@if $filename == ico-news {
+	@if $filename == ico-medal {
 		$char: '\E009';
 	}
-	@if $filename == ico-quote {
+	@if $filename == ico-news {
 		$char: '\E00A';
+	}
+	@if $filename == ico-quote {
+		$char: '\E00B';
 	}
 
 	@return $char;
@@ -83,6 +86,9 @@
 }
 .font-ico-bollard {
 	@include font(ico-bollard);
+}
+.font-ico-brush-shape {
+	@include font(ico-brush-shape);
 }
 .font-ico-calendar {
 	@include font(ico-calendar);
