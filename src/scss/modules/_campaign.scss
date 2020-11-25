@@ -1,0 +1,477 @@
+.template-campaign {
+	.uk-container {
+		max-width: 1295px;
+	}
+
+	.uk-breadcrumb {
+		padding-bottom: 65px;
+
+		* {
+			font-size: 21px;
+			line-height: 1;
+			color: $blue-campaign;
+		}
+
+		>:last-child>*,
+		>:nth-child(n+2):not(.uk-first-column)::before {
+			color: $blue-campaign;
+		}
+
+		a {
+			text-decoration: none;
+			position: relative;
+
+			&::before {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 2px;
+				background-color: $blue-campaign;
+				content: '';
+				transition: $nbSec ease-in-out;
+			}
+
+			@include hover {
+				color: $blue-campaign;
+
+				&::before {
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
+
+.campaign-intro {
+	background-color: $blue-light-alt;
+	padding: 65px 0 285px;
+
+	.uk-text-lead {
+		font-size: 24px;
+		color: $blue-campaign;
+		font-family: $font-black;
+	}
+
+	@media(min-width: $breakpointMedium) {
+		.uk-text-lead {
+			font-size: 32px;
+			color: $blue-campaign;
+			font-family: $font-black;
+			max-width: 90%;
+		}
+	}
+}
+
+.campaign-section {
+
+	&:not(.uk-background-cover) {
+
+		&::before,
+		&::after {
+			position: absolute;
+			content: '';
+			background-color: $blue-light-alt;
+			z-index: -1;
+			mix-blend-mode: multiply;
+		}
+
+		&::after {
+			left: 175px;
+			top: 0;
+			height: 100%;
+			width: 185px;
+		}
+
+		&::before {
+			top: 95px;
+			left: 0;
+			height: 185px;
+			width: 54%;
+		}
+
+		&.campaign-dark {
+
+			&::before,
+			&::after {
+				background-color: $blue-campaign;
+			}
+
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+
+	h2 {
+		font-size: 50px;
+		font-family: $font-black;
+		margin-bottom: 45px;
+		line-height: 64px;
+	}
+
+	p {
+		font-size: 21px;
+		line-height: 40px;
+	}
+
+	@media(min-width: $breakpointMedium) {
+		h2 {
+			font-size: 70px;
+			margin-bottom: 75px;
+			line-height: 84px;
+		}
+	}
+}
+
+.campaign-light {
+	h2 {
+		color: $blue-campaign;
+	}
+
+	p {
+		color: $grey-campaign;
+	}
+}
+
+.campaign-dark {
+	background-color: $blue-campaign;
+
+	.uk-flex {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	img {
+		position: absolute;
+		left: 0;
+		width: 50%;
+	}
+
+	h2,
+	p {
+		color: $white;
+	}
+
+	&.uk-background-cover {
+		.campaign-text {
+			clip-path: url('#objectBoundingBox');
+		}
+	}
+
+	&.campaign-dark-arrival {
+		padding-top: 15px;
+
+		.campaign-text {
+			padding-top: 50px;
+		}
+	}
+}
+
+.campaign-text {
+	position: relative;
+	z-index: 1;
+
+	@media(min-width: $breakpointLarge) {
+		width: 48%;
+		padding-left: 15px;
+
+		h2 {
+			padding-right: 80px;
+		}
+	}
+}
+
+.campaign-info {
+
+	svg {
+		fill: $blue-campaign-icon;
+	}
+
+	.uk-svg:not(.uk-preserve) [stroke*='#']:not(.uk-preserve) {
+		stroke: $blue-campaign-icon;
+	}
+
+	span {
+		display: block;
+		color: $blue-campaign-icon;
+		font-size: 16px;
+		font-family: $font-black;
+	}
+
+	ul li {
+		>div {
+			padding-left: 20px;
+		}
+
+		&:first-of-type {
+			>div {
+				padding-left: 20px;
+			}
+
+			h3 {
+				line-height: 1.1;
+				font-size: 40px;
+			}
+
+			svg {
+				width: 80px;
+			}
+		}
+
+		&:nth-of-type(2) {
+			>div {
+				padding-left: 20px;
+			}
+
+			svg {
+				width: 115px;
+			}
+		}
+
+		&:nth-of-type(3) {
+
+			svg {
+				width: 80px;
+			}
+
+			span {
+				padding-right: 30px;
+			}
+		}
+
+		&:last-of-type {
+			svg {
+				width: 105px;
+			}
+		}
+
+		&:not(:first-of-type) h3 {
+			font-size: 30px;
+		}
+	}
+
+	h3 {
+		margin-bottom: 0;
+		color: $blue-campaign;
+		font-family: $font-black;
+	}
+
+	@media(min-width: $breakpointSmall) {
+		span {
+			font-size: 20px;
+		}
+
+		ul li {
+
+			&:first-of-type svg,
+			&:nth-of-type(2) svg,
+			&:nth-of-type(3) svg {
+				width: 80px;
+			}
+
+			&:first-of-type {
+				h3 {
+					padding-left: 10px;
+					font-size: 46px;
+				}
+			}
+
+			&:last-of-type svg {
+				width: 100px;
+			}
+
+			&:not(:first-of-type) h3 {
+				font-size: 36px;
+			}
+		}
+	}
+
+	@media(min-width: $breakpointMedium) {
+		width: 50%;
+		padding-left: 20px;
+
+		ul {
+			max-width: 400px;
+
+			li {
+
+				&:nth-of-type(2) {
+					svg {
+						width: 150px;
+					}
+				}
+
+				&:nth-of-type(3) {
+					padding-left: 30px;
+
+					svg {
+						width: 150px;
+					}
+
+					>div {
+						padding-left: 30px;
+					}
+				}
+
+				&:last-of-type {
+					svg {
+						width: 105px;
+					}
+				}
+
+				&:nth-of-type(even) {
+					flex-direction: row-reverse;
+					text-align: right;
+
+					>div {
+						padding-right: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	@media(min-width: $breakpointXlarge) {
+		width: 46%;
+		padding-left: 90px;
+
+		ul {
+			max-width: 100%;
+
+			li {
+
+				&:first-of-type {
+					margin-bottom: 12px;
+
+					h3 {
+						font-size: 60px;
+					}
+
+					svg {
+						width: 121px;
+					}
+				}
+
+				&:nth-of-type(2) {
+					margin-bottom: 50px;
+
+					svg {
+						width: 223px;
+					}
+				}
+
+				&:nth-of-type(3) {
+					margin-bottom: 40px;
+					justify-content: center;
+
+					svg {
+						width: 170px;
+					}
+				}
+
+				&:last-of-type {
+					svg {
+						width: 147px;
+					}
+				}
+
+				&:not(:first-of-type) h3 {
+					font-size: 46px;
+				}
+			}
+
+			span {
+				font-size: 28px;
+			}
+		}
+	}
+}
+
+.campaign-map {
+	padding-top: 90px;
+	padding-bottom: 380px;
+
+	img {
+		bottom: 300px;
+		position: absolute;
+		left: 48%;
+		width: 582px;
+	}
+
+	//finish
+	@media(min-width: $breakpointLarge) {
+		img {
+			bottom: 300px;
+			left: 48%;
+			width: 582px;
+		}
+	}
+}
+
+.campaign-rebuild {
+	.uk-container>.uk-flex {
+		flex-direction: column;
+	}
+
+	p:last-of-type {
+		margin-bottom: 97px;
+	}
+
+	.source {
+		span {
+			font-size: 18px;
+		}
+	}
+
+	@media(min-width: $breakpointMedium) {
+		.campaign-text {
+			width: 48%;
+		}
+
+		.uk-container>.uk-flex {
+			flex-direction: row;
+		}
+	}
+}
+
+.campaign-ship-img {
+	padding-left: 30px;
+}
+
+.campaign-enjoy {
+	.uk-flex-right>div {
+		width: 47%;
+		padding-right: 25px;
+	}
+
+	h2 {
+		margin-bottom: 47px;
+	}
+}
+
+.campaign-brochure {
+	background-color: $blue-light-alt;
+	//delete this later
+	margin-bottom: 150px;
+
+	span,
+	.uk-button {
+		font-family: $font-black;
+	}
+
+	span {
+		font-size: 65px;
+		line-height: 78px;
+		color: $blue-campaign;
+		padding-right: 27px;
+	}
+
+	.uk-button {
+		background-color: $blue-campaign;
+		font-size: 30px;
+		color: $blue-light-alt;
+		line-height: 36px;
+		padding: 50px 63px;
+	}
+}

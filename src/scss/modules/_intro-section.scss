@@ -70,6 +70,19 @@
 				}
 			}
 
+			&:not(:last-of-type) {
+				&::after {
+					position: absolute;
+					content: '';
+					width: 1px;
+					background: $white;
+					right: -1px;
+					top: 0;
+					bottom: 0;
+					z-index: 1;
+				}
+			}
+
 			.uk-panel {
 				padding: 50px 40px 40px;
 				width: 100%;

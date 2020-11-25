@@ -1,12 +1,14 @@
 * {
 	box-sizing: border-box;
+
 	&::before,
 	&::after {
 		box-sizing: border-box;
 	}
 }
 
-html, body {
+html,
+body {
 	overflow-x: hidden;
 	font-family: $font-default;
 	width: 100%;
@@ -17,6 +19,7 @@ html, body {
 .brush-icon {
 	overflow: hidden;
 	position: relative;
+
 	&::before {
 		display: block;
 		content: font-char($brush);
@@ -30,14 +33,22 @@ html, body {
 		font-size: 125px;
 		z-index: 0;
 	}
+
+	&.brush-icon-blue {
+		&::before {
+			color: $blue-light-alt;
+		}
+	}
 }
 
 @each $colors-name in $site-colors {
 	$name: nth($colors-name, 1);
 	$color: nth($colors-name, 2);
+
 	.bg-#{$name} {
 		background-color: $color;
 	}
+
 	.color-#{$name} {
 		color: $color;
 	}
