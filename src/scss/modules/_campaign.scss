@@ -53,7 +53,7 @@
 		font-family: $font-black;
 	}
 
-	@media(min-width: $breakpointMedium) {
+	@media (min-width: $breakpointMedium) {
 		.uk-text-lead {
 			font-size: 32px;
 			color: $blue-campaign;
@@ -104,18 +104,31 @@
 	}
 
 	h2 {
-		font-size: 50px;
+		font-size: 46px;
 		font-family: $font-black;
-		margin-bottom: 45px;
+		margin-bottom: 30px;
 		line-height: 64px;
 	}
 
 	p {
-		font-size: 21px;
-		line-height: 40px;
+		font-size: 18px;
+		line-height: 36px;
 	}
 
-	@media(min-width: $breakpointMedium) {
+	@media (min-width: $breakpointMedium) {
+		h2 {
+			font-size: 60px;
+			margin-bottom: 55px;
+			line-height: 64px;
+		}
+
+		p {
+			font-size: 21px;
+			line-height: 40px;
+		}
+	}
+
+	@media (min-width: $breakpointLarge) {
 		h2 {
 			font-size: 70px;
 			margin-bottom: 75px;
@@ -152,19 +165,13 @@
 	p {
 		color: $white;
 	}
+}
 
-	&.uk-background-cover {
-		.campaign-text {
-			clip-path: url('#objectBoundingBox');
-		}
-	}
+.campaign-arrival {
+	padding-top: 15px;
 
-	&.campaign-dark-arrival {
-		padding-top: 15px;
-
-		.campaign-text {
-			padding-top: 50px;
-		}
+	.campaign-text {
+		padding-top: 50px;
 	}
 }
 
@@ -172,7 +179,7 @@
 	position: relative;
 	z-index: 1;
 
-	@media(min-width: $breakpointLarge) {
+	@media (min-width: $breakpointLarge) {
 		width: 48%;
 		padding-left: 15px;
 
@@ -183,6 +190,7 @@
 }
 
 .campaign-info {
+	margin-top: 40px;
 
 	svg {
 		fill: $blue-campaign-icon;
@@ -257,7 +265,7 @@
 		font-family: $font-black;
 	}
 
-	@media(min-width: $breakpointSmall) {
+	@media (min-width: $breakpointSmall) {
 		span {
 			font-size: 20px;
 		}
@@ -287,9 +295,10 @@
 		}
 	}
 
-	@media(min-width: $breakpointMedium) {
+	@media (min-width: $breakpointMedium) {
 		width: 50%;
 		padding-left: 20px;
+		margin-top: 0;
 
 		ul {
 			max-width: 400px;
@@ -332,7 +341,7 @@
 		}
 	}
 
-	@media(min-width: $breakpointXlarge) {
+	@media (min-width: $breakpointXlarge) {
 		width: 46%;
 		padding-left: 90px;
 
@@ -389,18 +398,47 @@
 }
 
 .campaign-map {
-	padding-top: 90px;
 	padding-bottom: 380px;
+	padding-top: 90px;
 
 	img {
-		bottom: 300px;
+		bottom: 0;
 		position: absolute;
-		left: 48%;
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
 		width: 582px;
+		max-width: 280px;
 	}
 
 	//finish
-	@media(min-width: $breakpointLarge) {
+	@media (min-width: $breakpointSmall) {
+		padding-bottom: 480px;
+
+		img {
+			left: auto;
+			right: 30px;
+			width: 415px;
+			max-width: 100%;
+			transform: translateX(0);
+		}
+	}
+
+	@media (min-width: $breakpointMedium) {
+		padding-bottom: 380px;
+
+		.campaign-text {
+			width: 48%;
+		}
+
+		img {
+			left: 55%;
+			right: auto;
+			width: 415px;
+		}
+	}
+
+	@media (min-width: $breakpointLarge) {
 		img {
 			bottom: 300px;
 			left: 48%;
@@ -415,7 +453,7 @@
 	}
 
 	p:last-of-type {
-		margin-bottom: 97px;
+		margin-bottom: 37px;
 	}
 
 	.source {
@@ -424,7 +462,7 @@
 		}
 	}
 
-	@media(min-width: $breakpointMedium) {
+	@media (min-width: $breakpointMedium) {
 		.campaign-text {
 			width: 48%;
 		}
@@ -433,20 +471,121 @@
 			flex-direction: row;
 		}
 	}
+
+	@media (min-width: $breakpointLarge) {
+		p:last-of-type {
+			margin-bottom: 97px;
+		}
+	}
+}
+
+.campaign-consistency {
+	.campaign-text {
+		padding-top: 30px;
+	}
+}
+
+.campaign-ship {
+	.uk-container>.uk-flex {
+		flex-direction: column;
+	}
+
+	@media (min-width: $breakpointMedium) {
+
+		.campaign-text {
+			width: 80%;
+		}
+
+		.uk-container>.uk-flex {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+
+	@media (min-width: $breakpointLarge) {
+		.campaign-text {
+			width: 48%;
+		}
+	}
 }
 
 .campaign-ship-img {
-	padding-left: 30px;
+	img {
+		max-width: 280px;
+	}
+
+	@media (min-width: $breakpointMedium) {
+		width: 50%;
+		padding-left: 30px;
+
+		img {
+			max-width: 100%;
+		}
+	}
 }
 
 .campaign-enjoy {
-	.uk-flex-right>div {
-		width: 47%;
-		padding-right: 25px;
+
+	.campaign-enjoy-wrap {
+		margin-right: 0;
+		width: 100%;
 	}
 
-	h2 {
-		margin-bottom: 47px;
+	.campaign-enjoy-inner {
+		background-color: rgba($blue-campaign-gradient, .8);
+		padding: 25px 15px;
+	}
+
+	.campaign-text {
+		width: 100%;
+		padding: 0;
+
+		h2 {
+			margin-bottom: 47px;
+			padding-right: 0;
+		}
+	}
+
+	@media (min-width: $breakpointSmall) {
+
+		.campaign-enjoy-wrap {
+			clip-path: url('#campaign-enjoy-path');
+			margin-right: -60%;
+			width: 150%;
+		}
+
+		.campaign-enjoy-inner {
+			background-image: linear-gradient(to right, $blue-campaign-gradient 10%, rgba($blue-campaign-gradient, .5), rgba($blue-campaign-gradient, .15), transparent);
+			padding-bottom: 135px;
+			padding-top: 135px;
+			padding-left: 179px;
+		}
+
+		.campaign-text {
+			width: 48%;
+		}
+	}
+
+	@media (min-width: $breakpointMedium) {
+		.campaign-enjoy-inner {
+			padding-top: 135px;
+			padding-left: 210px;
+		}
+
+		.campaign-enjoy-wrap {
+			margin-right: -80%;
+		}
+
+		.campaign-text {
+			width: 34%;
+		}
+	}
+
+	@media (min-width: $breakpointLarge) {
+		.campaign-enjoy-inner {
+			padding-top: 170px;
+			padding-left: 355px;
+		}
 	}
 }
 
@@ -473,5 +612,49 @@
 		color: $blue-light-alt;
 		line-height: 36px;
 		padding: 50px 63px;
+	}
+}
+
+.campaign-arrival,
+.campaign-consistency {
+	.uk-container>.uk-flex {
+		flex-direction: column;
+	}
+
+	@media (min-width: $breakpointLarge) {
+		.uk-container>.uk-flex {
+			flex-direction: row;
+		}
+	}
+}
+
+.campaign-clipped {
+	clip-path: url('#campaign-arrival-path');
+	display: block;
+	// width: 2053px;
+	position: relative;
+	width: 125%;
+	margin-left: -25%;
+	min-height: 350px;
+	transform: none;
+	background-position: center;
+	background-size: cover;
+
+	@media (min-width: $breakpointLarge) {
+		left: 0;
+		top: 0;
+		width: 109.3%;
+		background-size: 85%;
+		background-position: 132% 50%;
+		position: absolute;
+		transform: translateX(-55%);
+		height: 100%;
+		margin-left: 0;
+	}
+
+	@media (min-width: $breakpointMediumLarge) {
+		background-size: 70%;
+		background-position: 180% 50%;
+		background-repeat: no-repeat;
 	}
 }
