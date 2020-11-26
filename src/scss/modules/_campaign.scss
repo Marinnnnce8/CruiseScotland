@@ -4,7 +4,7 @@
 	}
 
 	.uk-breadcrumb {
-		padding-bottom: 65px;
+		padding-bottom: 25px;
 
 		* {
 			font-size: 21px;
@@ -44,21 +44,25 @@
 
 	h1 {
 		font-size: 44px;
-		margin-bottom: 30px;
+		margin-bottom: 130px;
 		line-height: 1.2;
 	}
 
 	@media (min-width: $breakpointSmall) {
 		h1 {
 			font-size: 72px;
-			margin-bottom: 40px;
+			margin-bottom: 140px;
+		}
+
+		.uk-breadcrumb {
+			padding-bottom: 65px;
 		}
 	}
 
 	@media (min-width: $breakpointMedium) {
 		h1 {
 			font-size: 90px;
-			margin-bottom: 89px;
+			margin-bottom: 189px;
 		}
 	}
 
@@ -69,9 +73,15 @@
 	}
 }
 
+.campaign-button-wrap {
+	margin-top: -100px;
+}
+
 .campaign-intro {
+	clip-path: url('#campaign-intro-path');
 	background-color: $blue-light-alt;
-	padding: 65px 0 285px;
+	padding: 125px 0 130px;
+	margin-top: -95px;
 
 	.uk-text-lead {
 		font-size: 24px;
@@ -79,7 +89,13 @@
 		font-family: $font-black;
 	}
 
+	@media (min-width: $breakpointSmall) {
+		margin-top: -87px;
+	}
+
 	@media (min-width: $breakpointMedium) {
+		padding: 148px 0 278px;
+
 		.uk-text-lead {
 			font-size: 32px;
 			color: $blue-campaign;
@@ -103,7 +119,7 @@
 		}
 
 		&::after {
-			left: 50px;
+			left: 20px;
 			top: 0;
 			height: 100%;
 			width: 150px;
@@ -124,7 +140,7 @@
 			}
 
 			&::after {
-				right: 30px;
+				right: 20px;
 				top: 0;
 				height: 100%;
 				left: auto;
@@ -238,6 +254,11 @@
 
 .campaign-dark {
 	background-color: $blue-campaign;
+	clip-path: url('#campaign-dark-path');
+
+	&:not(.uk-background-cover) {
+		padding: 130px 0;
+	}
 
 	.uk-flex {
 		display: flex;
@@ -257,7 +278,7 @@
 
 	@media (min-width: $breakpointLarge) {
 		&:not(.uk-background-cover) {
-			padding: 163px 0;
+			padding: 164px 0;
 		}
 	}
 }
@@ -494,11 +515,11 @@
 }
 
 .campaign-map {
-	padding-bottom: 380px;
+	padding-bottom: 450px;
 	padding-top: 90px;
 
 	img {
-		bottom: 0;
+		bottom: 20px;
 		position: absolute;
 		left: 50%;
 		right: auto;
@@ -507,7 +528,6 @@
 		max-width: 280px;
 	}
 
-	//finish
 	@media (min-width: $breakpointSmall) {
 		padding-bottom: 480px;
 
@@ -521,13 +541,14 @@
 	}
 
 	@media (min-width: $breakpointMedium) {
-		padding-bottom: 380px;
+		padding-bottom: 215px;
 
 		.campaign-text {
 			width: 48%;
 		}
 
 		img {
+			bottom: 115px;
 			left: 55%;
 			right: auto;
 			width: 415px;
@@ -536,7 +557,6 @@
 
 	@media (min-width: $breakpointLarge) {
 		img {
-			bottom: 300px;
 			left: 48%;
 			width: 582px;
 		}
@@ -544,8 +564,15 @@
 }
 
 .campaign-rebuild {
+	padding: 35px 0 133px;
+
 	.uk-container>.uk-flex {
 		flex-direction: column;
+		padding-top: 60px;
+	}
+
+	h2 {
+		padding-right: 0;
 	}
 
 	p:last-of-type {
@@ -561,6 +588,7 @@
 	@media (min-width: $breakpointMedium) {
 		.campaign-text {
 			width: 48%;
+			padding-top: 25px;
 		}
 
 		.uk-container>.uk-flex {
@@ -582,14 +610,21 @@
 }
 
 .campaign-ship {
+	padding: 155px 0;
+
 	.uk-container>.uk-flex {
 		flex-direction: column;
+	}
+
+	.campaign-text {
+		margin-bottom: 30px;
 	}
 
 	@media (min-width: $breakpointMedium) {
 
 		.campaign-text {
 			width: 80%;
+			margin-bottom: 0;
 		}
 
 		.uk-container>.uk-flex {
@@ -599,8 +634,13 @@
 	}
 
 	@media (min-width: $breakpointLarge) {
+		&.campaign-section:not(.uk-background-cover)::before {
+			top: 153px;
+		}
+
 		.campaign-text {
 			width: 48%;
+			padding-top: 25px;
 		}
 	}
 }
@@ -627,6 +667,7 @@
 
 	.campaign-enjoy-wrap {
 		margin-right: 0;
+		padding: 130px 0;
 		width: 100%;
 	}
 
@@ -648,6 +689,7 @@
 	@media (min-width: $breakpointSmall) {
 
 		.campaign-enjoy-wrap {
+			padding: 0;
 			clip-path: url('#campaign-enjoy-path');
 			margin-right: -60%;
 			width: 150%;
@@ -690,8 +732,13 @@
 
 .campaign-brochure {
 	background-color: $blue-light-alt;
-	//delete this later
-	margin-bottom: 150px;
+	padding: 230px 0 120px;
+	margin-top: -160px;
+	z-index: 0;
+
+	.uk-container>.uk-flex {
+		flex-direction: column;
+	}
 
 	span,
 	.uk-button {
@@ -699,18 +746,64 @@
 	}
 
 	span {
-		font-size: 65px;
-		line-height: 78px;
+		font-size: 40px;
+		line-height: 50px;
 		color: $blue-campaign;
-		padding-right: 27px;
+		padding-right: 20px;
+		display: block;
+		margin-bottom: 35px;
 	}
 
 	.uk-button {
 		background-color: $blue-campaign;
-		font-size: 30px;
+		font-size: 20px;
 		color: $blue-light-alt;
-		line-height: 36px;
-		padding: 50px 63px;
+		line-height: 26px;
+		padding: 28px 40px;
+
+		.uk-button--text {
+			color: inherit;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	@media (min-width: $breakpointSmall) {
+		.uk-container>.uk-flex {
+			flex-direction: row;
+		}
+
+		span {
+			margin-bottom: 0;
+		}
+	}
+
+	@media (min-width: $breakpointMedium) {
+		span {
+			font-size: 58px;
+			line-height: 70px;
+		}
+
+		.uk-button {
+			font-size: 24px;
+			padding: 35px 45px;
+		}
+	}
+
+	@media (min-width: $breakpointLarge) {
+		padding: 190px 0;
+		margin-top: -100px;
+
+		span {
+			font-size: 65px;
+			line-height: 78px;
+			padding-right: 40px;
+		}
+
+		.uk-button {
+			font-size: 30px;
+			padding: 50px 63px;
+		}
 	}
 }
 
@@ -738,6 +831,7 @@
 	background-position: center;
 	background-size: cover;
 	z-index: 1;
+	margin-top: 20px;
 
 	@media (min-width: $breakpointLarge) {
 		left: 0;
@@ -749,6 +843,7 @@
 		transform: translateX(-55%);
 		height: calc(100% - 328px);
 		margin-left: 0;
+		margin-top: 0;
 	}
 
 	@media (min-width: $breakpointMediumLarge) {
@@ -781,5 +876,24 @@ screen and (-ms-high-contrast: none) {
 
 	.campaign-info ul {
 		max-width: 500px;
+	}
+
+	.campaign-enjoy {
+		.campaign-enjoy-wrap {
+			width: 100%;
+			margin-right: -50%;
+		}
+
+		.campaign-enjoy-inner {
+			padding-left: 120px;
+		}
+
+		.campaign-text {
+			width: 50%;
+		}
+	}
+
+	.campaign-intro {
+		padding: 148px 0 178px;
 	}
 }

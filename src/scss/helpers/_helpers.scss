@@ -33,12 +33,6 @@ body {
 		font-size: 125px;
 		z-index: 0;
 	}
-
-	&.brush-icon-blue {
-		&::before {
-			color: $blue-light-alt;
-		}
-	}
 }
 
 @each $colors-name in $site-colors {
