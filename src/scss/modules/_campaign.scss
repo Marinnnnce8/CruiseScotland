@@ -651,6 +651,7 @@
 
 	img {
 		max-width: 280px;
+		min-height: auto;
 	}
 
 	@media (min-width: $breakpointMedium) {
@@ -854,6 +855,7 @@
 }
 
 // sass-lint:disable no-vendor-prefixes
+//IE11 specific
 @media screen and (-ms-high-contrast: active),
 screen and (-ms-high-contrast: none) {
 	.campaign-section {
@@ -895,5 +897,16 @@ screen and (-ms-high-contrast: none) {
 
 	.campaign-intro {
 		padding: 148px 0 178px;
+	}
+}
+
+
+//IOS specific
+@supports (-webkit-touch-callout: none) {
+	@media (max-width: $breakpointMedium) {
+
+		.campaign-intro {
+			clip-path: none;
+		}
 	}
 }
