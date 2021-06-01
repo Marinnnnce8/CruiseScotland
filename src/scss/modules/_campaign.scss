@@ -1,3 +1,30 @@
+$blue-campaign-light: #ddecf7;
+$blue-campaign: #2e5086;
+$blue-campaign-ie: #1b2f50;
+$blue-campaign-gradient: #2960ad;
+$blue-campaign-icon: #5ca4d9;
+$grey-campaign: #636261;
+$white: #fff;
+
+$breakpointSmall: 640px;
+$breakpointMedium: 960px;
+$breakpointLarge: 1200px;
+$breakpointMediumLarge: 1400px;
+$breakpointXlarge: 1600px;
+$breakpointMobile: 479px;
+
+$font-default: 'Aileron', sans-serif;
+$font-black: 'Aileron Black', sans-serif;
+
+@mixin hover {
+
+	&:hover,
+	&:focus,
+	&:active {
+		@content;
+	}
+}
+
 .template-campaign {
 	.uk-container {
 		max-width: 1295px;
@@ -29,7 +56,7 @@
 				height: 2px;
 				background-color: $blue-campaign;
 				content: '';
-				transition: $nbSec ease-in-out;
+				transition: .35s ease-in-out;
 			}
 
 			@include hover {
@@ -79,7 +106,7 @@
 
 .campaign-intro {
 	clip-path: url('#campaign-intro-path');
-	background-color: $blue-light-alt;
+	background-color: $blue-campaign-light;
 	padding: 125px 0 130px;
 	margin-top: -95px;
 
@@ -113,7 +140,7 @@
 		&::after {
 			position: absolute;
 			content: '';
-			background-color: $blue-light-alt;
+			background-color: $blue-campaign-light;
 			z-index: 0;
 			mix-blend-mode: multiply;
 		}
@@ -732,7 +759,7 @@
 }
 
 .campaign-brochure {
-	background-color: $blue-light-alt;
+	background-color: $blue-campaign-light;
 	padding: 230px 0 120px;
 	margin-top: -160px;
 	z-index: 0;
@@ -758,7 +785,7 @@
 	.uk-button {
 		background-color: $blue-campaign;
 		font-size: 20px;
-		color: $blue-light-alt;
+		color: $blue-campaign-light;
 		line-height: 26px;
 		padding: 28px 40px;
 
@@ -863,7 +890,7 @@ screen and (-ms-high-contrast: none) {
 
 			&::before,
 			&::after {
-				background-color: rgba($blue-light-alt, .5);
+				background-color: rgba($blue-campaign-light, .5);
 			}
 
 			&.campaign-dark {
